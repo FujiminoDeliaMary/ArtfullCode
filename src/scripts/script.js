@@ -1,4 +1,8 @@
 
+import React from "react";
+
+
+
 // Animation du menu
 const menuTriggers = document.querySelectorAll('.menuTrigger');
 const menu = document.querySelector('.header__menu');
