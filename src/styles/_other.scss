@@ -1,0 +1,19 @@
+$bleu: #27496D;
+$bleuocean: #053F5E;
+$blanc: #FFFF;
+$orange: #d27c2c;
+$marble: #F2F8FC;
+$nacre:#EFEBEB;
+
+ 
+@keyframes levitate {
+    0% {
+      transform: translateY(0); /* Position initiale */
+    }
+    50% {
+      transform: translateY(-10px); /* Position de lévitation */
+    }
+    100% {
+      transform: translateY(0); /* Retour à la position initiale */
+    }
+  }

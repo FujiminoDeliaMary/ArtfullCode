@@ -1,0 +1,332 @@
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20rem 30vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(1.4vh , 1.6vh, 1.6vh);
+    font-family: "P", sans-serif;
+    background-image: url("../assets/vecteurs.png");
+    background-repeat: no-repeat;
+    background-position: left top -100px;
+    background-size: cover;
+    color: $bleu;
+}
+
+.equipe {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    position: relative;
+    margin:5vh 0;
+    h2 {
+        background-color: $bleu;
+        padding: 4% 0;
+        text-align: center;
+        font-size: medium;
+        z-index: 5;
+        font-family: "Poppins";
+        box-shadow:
+            rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        width: 40%;
+        height:fit-content;
+        margin: 0 auto;
+        position: absolute;
+        top: -10vh;
+        right:30%;
+        color: #efebeb;
+    }
+
+    &__membres {
+        display: flex;
+        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        // position: relative;
+    }
+
+    .membre {
+        &__nom,
+        &__filiere {
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: "Poppins";
+        }
+
+        &__nom {
+            line-height: 1.2;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+        }
+    }
+    &--bleu {
+        background-color: $bleu;
+        color: $blanc;
+        position: relative;
+
+        padding: {
+            // top: 10%;;
+        }
+    }
+    &__fig {
+        z-index: 1;
+        position: relative;
+        padding : {
+            right: 2.5vw;
+            left: 2.5vw;
+            top: 10%;
+            bottom: 2%;
+        }
+    }
+}
+
+.services {
+    position: relative;
+    padding: 0 7rem;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    background-color: #EFEBEB;
+    width:70%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    // todo
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        width: fit-content;
+        margin : 0 auto;
+        margin-bottom: 8vh;
+        
+        &::after{
+            content: "";
+            display: block;
+            width: 70%;
+            margin : 0 auto;
+            height:1px;
+            margin-top: 4%;
+            background-color: #0e0c0c;
+            // todo
+        }
+
+    }
+
+    &__button{
+        height:10px;
+        width:10px;
+        margin-bottom:10px;
+
+        &::before, &::after{
+            content:"";
+            font-size:70px;
+        }
+    }
+
+    &__next::after, &__prev::after {
+        display: none;
+      }
+      
+    &__next{
+        background-image: url('../assets/arrow-right.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+    }
+
+    &__prev{
+        background-image: url('../assets/arrow-left.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+    }
+
+      
+
+
+    &__pagination{
+        margin-bottom:2vh;
+    }
+
+    // .swiper-wrapper{
+    //     margin: 0 auto;
+    // }
+
+
+
+    .service{
+    
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        padding: 0 8rem;
+        figure {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:8vw;
+
+            figcaption{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        &__title{
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            h3{
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                font-size: 1.8rem;
+            }
+        }
+        &__image{
+            width:30rem;
+        }
+
+        &__icone{
+            width: 3rem;
+        }
+    }
+
+
+
+}
+
+
+/* debut de nos avis */
+.avis {
+    
+    position: relative;
+    padding: 20rem 0vw;
+    height: 100vh;
+    max-width: 100%;
+    svg {
+        width: 100px;
+        height: 100px;
+    }
+    
+    
+    &__titre {
+        text-align: center;
+        font: {
+            size: 2.5rem;
+        }
+        margin: {
+            bottom: 5%;
+        }
+    }
+}
+.swipClass {
+    width: 60%;
+    padding-top: 50px;
+    padding-bottom: 20%;
+    // height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    &__slide {
+        position: relative;
+
+        background-position: center;
+        background-size: cover;
+        width: 800px;
+    }
+
+    &__slide img {
+        position: relative;
+
+        display: block;
+        width: 80%;
+        // -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0002, #0004);
+        // box-reflect: below 1px linear-gradient(transparent, transparent, #0002, #0004);
+    }
+}
+// .carousel {
+//     position: relative;
+//     margin-bottom: 10%;
+
+// }
+.card{
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+    // width:25%;
+    padding: 4vh 2vw;
+    gap:2vh;
+    margin-bottom: 2vh;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    &image{
+        width:10vw;
+        max-width: 10vw;
+        border-radius: 70%;
+    }
+    &nom{
+        font-family: 'Poppins';
+        font-size:1.8rem;
+        font-weight:800;
+    }
+
+    &job{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+
+    }
+
+    &avis{
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    &__notes{
+        display: flex;
+        gap:1px;
+        margin-top: 3vh;
+    }
+
+}
+
+
+.carousel {
+    background: $blanc;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    // TODO
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+  /* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+ 
+ 
+  
