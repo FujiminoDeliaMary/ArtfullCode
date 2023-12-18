@@ -4,21 +4,21 @@ const Footer = () => {
     return <>
         <footer class="footer">
             <div class="footer__coordonnees">
-                <span
-                ><i class="fas fa-solid fa-location-dot fa-xl" style="color: #f7f3f3"></i
-                >&nbspAdresse</span
-                >
+                <span>
+                    {/* <i class="fas fa-solid fa-location-dot fa-xl">
+                        </i> */}
+                    &nbspAdresse
+                </span>
                 <p>44 avenue Albert Einstein, 17000 La Rochelle</p>
                 <br />
-                <span><i class="fas fa-light fa-envelope fa-xl"></i>&nbsp Mail</span>
+                <span>
+                    {/* <i class="fas fa-light fa-envelope fa-xl"></i>&nbsp Mail */}
+                </span>
                 <p>artfullcode@gmail.com</p>
                 <br />
-                <span
-                ><i
-                    class="fas fa-duotone fa-phone fa-xl"
-                    style="--fa-primary-color: #f1f2f3; --fa-secondary-color: #f1f2f3"
-                ></i
-                    >&nbspTel</span>
+                <span>
+                    {/* <i class="fas fa-duotone fa-phone fa-xl"></i> */}
+                    &nbspTel</span>
                 <p>0757130897</p>
             </div>
 
@@ -41,3 +41,4 @@ const Footer = () => {
         </footer>
     </>
 }
+export default Footer;
