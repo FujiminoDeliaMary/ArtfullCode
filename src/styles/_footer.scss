@@ -4,7 +4,7 @@
     justify-content: center;
     background-color: #27496D;
     color: #EFEBEB;
-    font-size: 1.5rem;
+    font-size: 1.6vh;
     font-family: 'gabriela', sans-serif;
     padding: 2rem 0;
     gap: 25vh;
@@ -13,6 +13,7 @@
     p {
         line-height: 2vw;
         margin-bottom: 1rem;
+        color:$nacre;
     }
 
     &__logo {

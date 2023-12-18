@@ -15,7 +15,7 @@ const Services = () => {
 
 
   return (
-    <section class="services">
+    <section class="services" id="services">
         <h2 className='services__title'>Quelques uns de nos services</h2>
     <Swiper
     // install Swiper modules
