@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Nav = (props) =>{
 
@@ -9,6 +10,7 @@ const Nav = (props) =>{
             <li><a href="/">Accueil</a></li>
             <li><a href="/">Nos services</a></li>
             <li><a href="/">Nos réalisations</a></li>
+            <li><Link to="equipe" activeClass="active" smooth={true} spy={true}>Notre equipe</Link></li>
             <li><a href="/">Contact</a></li>
             </ul>
  

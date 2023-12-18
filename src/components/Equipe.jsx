@@ -1,43 +1,45 @@
 import React from "react";
+import photo from "../assets/membre.jpg"
 
 const Equipe  = () => {
     return <section class="equipe">
-    <h2>
-    Notre équipe
+    <h2 className="equipe__title">
+     Notre équipe
     </h2>
 
-    <article class="equipe__membres">
-    <figure class="equipe__fig equipe--bleu">
-        <img src=" images/equipeClarence.png" alt="les membres de léquipe" />
+    <article className="equipe__membres">
+      <figure className="equipe__fig equipe--bleu">
+        <img src={photo} alt="les membres de léquipe" />
         <figcaption class="membre">
-        <p class="membre__nom">Victoria<br />Tandamba</p>
-        <p class="membre__filiere">Développeuse</p>
+          <p className="membre__nom">Victoria<br />Tandamba</p>
+          <p className="membre__filiere">Développeuse Full Satck</p>
         </figcaption>
-    </figure>
+      </figure>
 
-    <figure class="equipe__fig equipe--bleu">
-        <img src="images/equipeClarence.png" alt="les membres de léquipe" />
-        <figcaption class="membre">
-        <p class="membre__nom">Loane<br />Sene</p>
-        <p class="membre__filiere">Web Designer</p>
+        
+        <figure className="equipe__fig equipe--bleu">
+        <img src={photo} alt="les membres de léquipe" />
+        <figcaption className="membre">
+            <p className="membre__nom">Marilyne Delia<br />Tsene</p>
+            <p className="membre__filiere">Développeuse Full Stack</p>
         </figcaption>
-    </figure>
+        </figure>
 
-    <figure class="equipe__fig equipe--none">
-        <img src="images/equipeClarence.png" alt="les membres de léquipe" />
-        <figcaption class="membre">
-        <p class="membre__nom">Marilyne Delia<br />Tsene</p>
-        <p class="membre__filiere">Développeuse</p>
+      <figure className="equipe__fig equipe--none">
+        <img src={photo} alt="les membres de léquipe" />
+        <figcaption className="membre">
+          <p className="membre__nom">Loane<br />Sene</p>
+          <p className="membre__filiere">Web Designer</p>
         </figcaption>
-    </figure>
+      </figure>
 
-    <figure class="equipe__fig equipe--none">
-        <img src="images/equipeClarence.png" alt="les membres de léquipe" />
-        <figcaption class="membre">
-        <p class="membre__nom">Clarence<br />Noirot</p>
-        <p class="membre__filiere">Web Designer</p>
+      <figure className="equipe__fig equipe--none">
+        <img src={photo} alt="les membres de léquipe" />
+        <figcaption className="membre">
+          <p className="membre__nom">Clarence<br />Noirot</p>
+          <p className="membre__filiere">Web Designer</p>
         </figcaption>
-    </figure>
+      </figure>
     </article>
   </section>
 }

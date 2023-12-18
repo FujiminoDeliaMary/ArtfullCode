@@ -6,7 +6,7 @@ import { Link} from 'react-scroll';
 const Header = () =>{
 
         const [isMenuVisible, setMenuVisible] = useState(false);
-      
+
         const toggleModal = () => {
           setMenuVisible(!isMenuVisible);
         }
@@ -21,11 +21,11 @@ const Header = () =>{
                     width="80"
                     />
 
-                    <button className="header__menuBurger menuTrigger" onClick={toggleModal}>
+                    <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`}  onClick={toggleModal} >
                 
-                    <div id="bar1" className="bar"></div>
-                    <div id="bar2" className="bar"></div>
-                    <div id="bar3" className="bar"></div>
+                        <div id="bar1" className="bar"></div>
+                        <div id="bar2" className="bar"></div>
+                        <div id="bar3" className="bar"></div>
                     </button>
 
                     <Nav visible={isMenuVisible}/>
