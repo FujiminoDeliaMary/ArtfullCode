@@ -7,6 +7,7 @@ import Services from "./Services";
 const App = () =>{
     return <div className="App">
         <Header />
+        
         <About />
         <Equipe />
         <Services />

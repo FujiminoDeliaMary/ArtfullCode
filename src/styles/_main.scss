@@ -1,4 +1,11 @@
 
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8C8;
+    height: 20rem;
+}
 .about {
     display: flex;
     flex-direction: column;

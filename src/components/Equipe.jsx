@@ -1,6 +1,6 @@
 import React from "react";
 import photo from "../assets/membre.jpg"
-
+import { HiOutlineMail, FaMapAlt, FaMapMarkerAlt } from 'react-icons/hi';
 const Equipe  = () => {
     return <section class="equipe">
     <h2 className="equipe__title">
@@ -11,7 +11,7 @@ const Equipe  = () => {
       <figure className="equipe__fig equipe--bleu">
         <img src={photo} alt="les membres de léquipe" />
         <figcaption class="membre">
-          <p className="membre__nom">Victoria<br />Tandamba</p>
+          <p className="membre__nom">Victoria<br />Tandamba <HiOutlineMail size={50} /></p>
           <p className="membre__filiere">Développeuse Full Satck</p>
         </figcaption>
       </figure>
