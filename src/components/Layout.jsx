@@ -1,15 +1,10 @@
 import React from "react";
-import Footer from "./Footer";
 
+const Layout = (props) =>{
 
-const Layout = (props) => {
-
-    return <>
-        <main>
-            {props.children}
-        </main>
-        <Footer />
-    </>
+    return <main>
+        {props.children}
+    </main>
 }
 
 export default Layout;
