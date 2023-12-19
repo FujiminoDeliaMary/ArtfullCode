@@ -2,74 +2,51 @@ import React, { useState } from "react";
 import Logo from '../assets/logoBlanc.png'
 import Nav from "./Nav";
 import { Link } from 'react-scroll';
-import Particules from "./Particle";
 
 
-        const [isMenuVisible, setMenuVisible] = useState(false);
-        const [scrollDisabled, setScrollDisabled] = useState(false);
+const Header = () => {
+
+    const [isMenuVisible, setMenuVisible] = useState(false);
+    const [scrollDisabled, setScrollDisabled] = useState(false);
 
 
-        const handleItemClick = () => {
+    const handleItemClick = () => {
 
-            setMenuVisible(!isMenuVisible);
-            const shouldDisableScroll = window.innerWidth < 1200;
+        setMenuVisible(!isMenuVisible);
 
-            if( window.innerWidth < 1200) {
-              setScrollDisabled(!scrollDisabled);
-              const body = document.body;
-              if (scrollDisabled) {
+        if (window.innerWidth < 1200) {
+            setScrollDisabled(!scrollDisabled);
+            const body = document.body;
+            if (scrollDisabled) {
                 body.style.overflow = 'auto';
                 console.log('auto');
-              } else {
+            } else {
                 body.style.overflow = 'hidden';
-              }
             }
+        }
 
-          };
+    };
 
-           return <header className="header">
-                <div className="header__navbar">
-                    <img
-                    src={Logo}
-                    alt=""
-                    class="header__logo"
-                    width="80"
-                    />
-
-                    <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`}  onClick={handleItemClick} >
-                
-                        <div id="bar1" className="bar"></div>
-                        <div id="bar2" className="bar"></div>
-                        <div id="bar3" className="bar"></div>
-                    </button>
-                    <Nav visible={isMenuVisible}/>
-                </div>
-                <p class="header__nomAgence"><strong>Artfull Code</strong></p>
-                 <h1 class="header__slogan"> Collaborez de façon créative et innovante avec ArtFull Code</h1>
-            
-
-        <div class="header__navbar">
+    return <header className="header">
+        <div className="header__navbar">
             <img
                 src={Logo}
                 alt=""
                 class="header__logo"
-                width="80" />
+                width="80"
+            />
 
-            <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`} onClick={toggleModal}>
+            <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`} onClick={handleItemClick} >
 
                 <div id="bar1" className="bar"></div>
                 <div id="bar2" className="bar"></div>
                 <div id="bar3" className="bar"></div>
             </button>
-
             <Nav visible={isMenuVisible} />
         </div>
         <p class="header__nomAgence"><strong>Artfull Code</strong></p>
         <h1 class="header__slogan"> Collaborez de façon créative et innovante avec ArtFull Code</h1>
-        <span class="header__deco">
-            <div class="cercle cercle1"><img src="../images/ovale.svg" alt="" /></div>
-            <div class="cercle cercle2"></div>
-        </span>
+
 
         <div class="header__arrow">
             <Link to='about'
@@ -85,7 +62,7 @@ import Particules from "./Particle";
 
         </div>
 
-    </header></>
+    </header>
 }
 
 export default Header;
