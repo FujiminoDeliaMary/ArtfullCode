@@ -41,7 +41,7 @@ const Header = () =>{
                     <Nav visible={isMenuVisible}/>
                 </div>
                 <p class="header__nomAgence"><strong>Artfull Code</strong></p>
-                 <h1 class="header__slogan"> Collaborez de façon créative et innovante avec ArtFull Code</h1>
+                 <h1 class="header__slogan">Collaborez de façon créative et innovante avec ArtFull Code</h1>
             
 
                     <div class="header__arrow">
