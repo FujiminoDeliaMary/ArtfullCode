@@ -2,17 +2,20 @@ import React, { useState } from "react";
 import Logo from '../assets/logoBlanc.png'
 import Nav from "./Nav";
 import { Link } from 'react-scroll';
-import Particule from "../scripts/Particule";
+import Particules from "./Particle";
+
+
+
 const Header = () => {
 
     const [isMenuVisible, setMenuVisible] = useState(false);
-    // <particule />
-    <Particule />
+
     const toggleModal = () => {
         setMenuVisible(!isMenuVisible);
     }
-    return <header id="tsparticles" className="header">
 
+    return <><header id="tsparticles" className="header">
+        <Particules />
         <div className="triangle"></div>
 
         <div class="header__navbar">
@@ -20,10 +23,9 @@ const Header = () => {
                 src={Logo}
                 alt=""
                 class="header__logo"
-                width="80"
-            />
+                width="80" />
 
-            <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`} onClick={toggleModal} >
+            <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`} onClick={toggleModal}>
 
                 <div id="bar1" className="bar"></div>
                 <div id="bar2" className="bar"></div>
@@ -53,7 +55,7 @@ const Header = () => {
 
         </div>
 
-    </header>
+    </header></>
 }
 
 export default Header;

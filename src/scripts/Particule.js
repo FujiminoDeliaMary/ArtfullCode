@@ -1,14 +1,14 @@
-import React from "react";
-import Particles from "react-particles";
-import particlesConfig from "./particulesConfig";
-const Particule = () => {
-    return (
-        <Particles params={particlesConfig}>
+// import React from "react";
+// import Particles from "react-particles";
+// import particlesConfig from "./particulesConfig";
+// const Particule = () => {
+//     return (
+//         <Particles params={particlesConfig}>
 
-        </Particles>
-    )
-}
+//         </Particles>
+//     )
+// }
 
 
 
-export default Particule;
+// export default Particule;
