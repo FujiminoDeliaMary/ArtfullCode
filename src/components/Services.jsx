@@ -79,9 +79,9 @@ const Services = () => {
 
                 <figure className='services__service'>
                       <figcaption>
-                      <img src={icone} alt="" class="services__icone" />
                         <div class="services__serviceTitle">
-                          <h3>Développement Web</h3>
+                          <img src={icone} alt="" class="services__icone" />
+                          <h3>Déveeloppement Web</h3>
                         </div>
                       <p className='services__content'>
                       Du concept à la réalité, notre équipe de développeurs assure la création de sites web,
