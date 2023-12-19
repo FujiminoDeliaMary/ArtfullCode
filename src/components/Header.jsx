@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from '../assets/logoBlanc.png'
 import Nav from "./Nav";
 import { Link } from 'react-scroll';
+import Particules from "./Particle";
 
 
 const Header = () => {
@@ -28,6 +29,7 @@ const Header = () => {
     };
 
     return <header className="header">
+        <Particules />
         <div className="header__navbar">
             <img
                 src={Logo}
