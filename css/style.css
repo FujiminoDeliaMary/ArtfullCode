@@ -35,6 +35,10 @@ a, a:hover, a:visited {
   text-decoration: none;
 }
 
+.active {
+  color: #d27c2c;
+}
+
 .header {
   position: relative;
   top: 0;
@@ -244,7 +248,7 @@ a, a:hover, a:visited {
 .equipe {
   display: flex;
   z-index: 1;
-  margin: 10vh 0;
+  margin: 15vh 0;
   position: relative;
   width: 100%;
   background-color: rgba(39, 73, 109, 0.8);
@@ -708,7 +712,9 @@ a, a:hover, a:visited {
     font-family: "Poppins", sans-serif;
   }
   .about {
-    padding: 15vh 30vw;
+    padding: 0 30vw;
+    padding-bottom: 25vh;
+    padding-top: 10vh;
     background-image: url("../assets/vecteurs.png");
   }
   .equipe {
