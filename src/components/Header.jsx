@@ -6,14 +6,25 @@ import { Link} from 'react-scroll';
 const Header = () =>{
 
         const [isMenuVisible, setMenuVisible] = useState(false);
+        const [scrollDisabled, setScrollDisabled] = useState(false);
 
-        const toggleModal = () => {
-          setMenuVisible(!isMenuVisible);
-        }
-    return <header className="header">
-                <div className="triangle"></div>
 
-                <div class="header__navbar">
+        const handleItemClick = () => {
+
+            setMenuVisible(!isMenuVisible);
+            const shouldDisableScroll = window.innerWidth < 1200;
+            setScrollDisabled(!shouldDisableScroll);
+            const body = document.body;
+            if (scrollDisabled) {
+              body.style.overflow = 'auto';
+              console.log('auto');
+            } else {
+              body.style.overflow = 'hidden';
+            }
+          };
+
+           return <header className="header">
+                <div className="header__navbar">
                     <img
                     src={Logo}
                     alt=""
@@ -21,7 +32,7 @@ const Header = () =>{
                     width="80"
                     />
 
-                    <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`}  onClick={toggleModal} >
+                    <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`}  onClick={handleItemClick} >
                 
                         <div id="bar1" className="bar"></div>
                         <div id="bar2" className="bar"></div>

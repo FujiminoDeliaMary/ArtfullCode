@@ -1,97 +1,132 @@
 
-        
-@media screen and (max-width: 767px) {
-      .header{
-        position: relative;
-        &__arrow{
-            display:none;
-        }
 
-        &__menu{
-            opacity: 1;
-            bottom:0;
-        }
+@media  screen and (width > 767px) {
+    
+}
+
+
+@media  screen and (width > 1200px) {
+
+    .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        background-color: rgba(39, 73, 109, 0.9);
+    
+     
 
         &__logo{
-            margin:0;
-            width:14vh;
-            position: absolute;
-            top:5vh;
-            left: 50%;
-            transform: translateX(-50%); 
-            z-index: 0;
+
+            width:8vh;
+            position: relative;
+            top:0;
+            left:0;
+            margin-left:3vw;
+            transform: translateX(-50%);
+            z-index: 30; 
            
         }
-
-        &__menu {
-            opacity: 0;
-            background-color: rgb(39, 73, 109);
-            position: absolute;
-            left: -50%;
-            width: 100%;
-            &.visible { position: fixed;
-                top: 0;
-                left: 0;
-                height: 80vh;
+    
+        &__arrow{
+           display: flex;
+          
+        }
+    
+        &__menu{
+            background-color: rgba(39, 73, 109, 0);
+            top: -20%;
+            position: fixed;
+            left:0;
+            height: fit-content;
+            transition:
+            top 0.3s ease-out,
+            opacity 0.2s ease-out;
+            &.visible{
+                transition:
+                opacity 0.2s ease-out,
+                top 0.3s ease-out;
             }
 
             &-list{
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                flex-direction: row;
+                justify-content: center;
                 align-items: center;
             }
         }
-      }
 
-      .footer{
-        &__heure{
-            display: none;
+        &__menuBurger{
+            position: relative;
+            z-index:3000000;
         }
-       
-      }
+    
+    
+        
+        &__navbar {
+            display: flex;
+            margin: 1rem 0;
+            justify-content: space-between;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+    
+    
+    }
 
       .about{
-        background-image: none;
-        padding:2rem 1rem;
+        padding: 15vh 30vw;
+        background-image: url("../assets/vecteurs.png");
+
       }
 
       .equipe {
- 
-        flex-wrap:nowrap;
-        background-color: rgba(39,73,109,80%);
+        background-color: transparent;
         color:$black;
             &__title{
-                width: 100%;
-                top:-5vh;
-                left: 50%;
-                transform: translateX(-50%); 
+                top: -10vh;
+                right:30%;
+                width: 40%;
                 
             }
     
             &__membres {
-                flex-wrap: wrap;
-                gap:2rem;
+                gap:0;
             }
 
             &__fig {
-                flex-basis: 45%;
+                flex-basis: 25%;
             }
             &--bleu {
-                background-color: transparent;
+                background-color: $bleu;
+                color:$blanc;
             }
     }
 
     .services{
-        padding: 2vh 0;
-        display: block;
-        margin-bottom:5vh;
+        padding: 3vh 8vh;
         &__image{
-            display: none;
-        }
-
-        .swiper{
             display: block;
         }
+
+        &__service{
+            padding: 0 8vh;
+        }
     }
+
+    .footer{
+        &__heure, &__coordonnees, &__nav{
+            display: block;
+        }
+
+        &__mobile{
+            display: none;
+        }
+    }
+
+
 }
+
+

@@ -1,5 +1,6 @@
 
-.header {
+.header{
+    
     position: relative;
     top: 0;
     left: 0;
@@ -7,29 +8,10 @@
     height: 80vh;
     overflow: hidden;
     background-color: rgba(39, 73, 109, 0.9);
-
-    // .triangle {
-    //     width: 100%;
-    //     height: 80vh;
-     
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     z-index: -1;
-       
-    // }
-
-    &__logo {
-        width: 8vh;
-        margin-top: 2vh;
-        margin-left: 1%;
-        z-index: 30;
-    }
-
     &__arrow{
+        display:none;
         width:7vh;
         height:7vh;
-        display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
@@ -40,42 +22,45 @@
         bottom:1vh;
         left:50%;
         animation: levitate 2s infinite alternate ease-in-out;
-      
     }
 
     &__menu {
         opacity: 0;
-        background-color: rgba(39, 73, 109, 0);
+        background-color: rgb(39, 73, 109);
         position: absolute;
-        top: -20%;
+        left: -50%;
+        height: 80vh;
         padding: 4.5vh 0;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 15vw;
-        border-radius: 5px;
-        position: fixed;
+
+        z-index:-1;
         transition:
-            top 0.3s ease-out,
+            left 0.3s ease-out,
             opacity 0.2s ease-out;
 
-        &.visible { position: fixed;
+        &.visible { 
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 10;
             background-color:rgba(39, 73, 109, 0.9);
             opacity: 1;
-            top: 0;
             transition:
                 opacity 0.2s ease-out,
-                top 0.3s ease-out;
+                left 0.3s ease-out;
         }
 
-        ul {
-            position: relative;
+
+        &-list {
+            position: absolute;
+            z-index:-1;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 10rem;
@@ -126,18 +111,19 @@
     }
 
 
-    
-    &__navbar {
-        display: flex;
-        justify-content: space-between;
-        font-family: 'Poppins', sans-serif;
-        align-items: center;
-        
+    &__logo{
+        margin:0;
+        width:14vh;
+        position: absolute;
+        top:5vh;
+        left: 50%;
+        transform: translateX(-50%); 
+        z-index: 0;
+       
     }
 
-
-
     &__menuBurger {
+        position: relative;
         background: transparent;
         border: none;
         cursor: pointer;
@@ -146,7 +132,7 @@
         flex-direction: column;
         gap: 4px;
         justify-content: center;
-        z-index: 30;
+        z-index: 3000;
         padding: 1rem 1rem;
         margin-right: 1%;
         border-radius: 50%;
@@ -163,8 +149,8 @@
         .bar{
             font-size:10px;
             background: $blanc;
-            width:30px;
-            height:4px;
+            width:4vh;
+            height:6px;
             transition: all 0.3s ease-in;
         }
 
@@ -210,4 +196,7 @@
         bottom:55%;
     }
 
-}
+
+  }
+
+

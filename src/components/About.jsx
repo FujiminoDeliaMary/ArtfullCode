@@ -6,7 +6,7 @@ const About = () =>{
                 <p>
                 ArtFull Code est une <span>agence web</span> basé sur la conception de
                 site <span>e-learning</span>,<span>vitrine</span> et
-                <span>e-commerce</span>.
+                <span> e-commerce</span>.
                 </p>
                 <p>
                 Pour les entreprises cherchant à établir leur présence en ligne, notre équipe d'artisans numériques développe des sites vitrines qui sont bien plus que des pages web. Ce sont des reflets numériques de votre essence, capturant l'essence de votre marque et créant des interactions significatives avec votre audience.
