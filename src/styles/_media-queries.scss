@@ -77,7 +77,9 @@
     }
 
       .about{
-        padding: 15vh 30vw;
+        padding: 0 30vw;
+        padding-top:10vh;
+        padding-bottom: 25vh;
         background-image: url("../assets/vecteurs.png");
 
       }
@@ -109,6 +111,7 @@
         padding: 3vh 8vh;
         &__image{
             display: block;
+            width: 20vw;
         }
 
         &__service{
