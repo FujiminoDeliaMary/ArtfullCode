@@ -7,32 +7,48 @@
     height: 20rem;
 }
 .about {
+
+    span{
+        color:$orange;
+        width: 100%;
+    }
+    
+    &__title{
+        font-size:3vh;
+        font-family: 'David Libre';
+        font-weight: 600;
+    }
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 15vh 30vw;
+    padding:2rem 1rem;
     justify-content: center;
     line-height: 1.4;
     align-items: center;
     text-align: center;
     font-size: clamp(1.5vh , 1.7vh, 1.8vh);
     font-family: "Poppins", sans-serif;
-    background-image: url("../assets/vecteurs.png");
+    background-image: none;
     background-repeat: no-repeat;
     background-position: left top -17vh;
     background-size: cover;
     color: $bleu;
+
 }
 
 .equipe {
     display: flex;
     z-index: 1;
-    flex-wrap: wrap;
     margin: 10vh 0;
     position: relative;
     width:100%;
-  
+    background-color: rgba(39,73,109,80%);
     &__title {
+        width: 100%;
+        top:-5vh;
+        left: 50%;
+        transform: translateX(-50%); 
+
         background-color: $bleu;
         padding: 4% 0;
         text-align: center;
@@ -43,12 +59,10 @@
         box-shadow:
             rgba(0, 0, 0, 0.19) 0px 10px 20px,
             rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        width: 40%;
         height:fit-content;
         margin: 0 auto;
         position: absolute;
-        top: -10vh;
-        right:30%;
+
         color: #efebeb;
     }
 
@@ -58,6 +72,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        gap:2rem;
         // position: relative;
     }
 
@@ -77,7 +92,7 @@
         }
     }
     &--bleu {
-        background-color: $bleu;
+        background-color: transparent;
         color: $blanc;
         position: relative;
 
@@ -88,7 +103,7 @@
     &__fig {
         z-index: 1;
         position: relative;
-        flex-basis: 25%;
+        flex-basis: 45%;
         padding : {
             right: 2.5vw;
             left: 2.5vw;
@@ -100,9 +115,8 @@
 
 .services {
     position: relative;
-    padding: 0 7rem;
-    padding-top: 3rem;
-    padding-bottom: 10rem;
+    margin-bottom:5vh;
+    padding: 2rem 2rem;
     background-color: $blanc;
     width:80%;
     margin: 0 auto;
@@ -110,7 +124,8 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     // todo
     &__title {
-        font-family: 'David Libre', sans-serif;
+        font-family: "David Libre" sans-serif;
+        text-transform: uppercase;
         font-weight: 600;
         text-align: center;
         font-size: 3vh;
@@ -131,15 +146,15 @@
 
     }
     &__service{
-    
+        
+        padding: 0 2rem;
         display:flex;
         justify-content: center;
         align-items:center;
-        padding: 0 8rem;
         display: flex;
+        gap:4vw;
         justify-content: space-between;
         align-items: center;
-        gap:8vw;
 
             figcaption{
                 display: flex;
@@ -148,24 +163,30 @@
             }
         
 
-        &-title{
+        &Title{
             display: flex;
-            gap: 5px;
+            justify-content: flex-start;
             align-items: center;
+            width: 100%;
             h3{
                 font-family: 'Poppins', sans-serif;
                 text-align: center;
                 font-size: 1.8vh;
+                width: 100%;
             }
-        }
-       
-        &-content{
-            font-size:1.6vh;
-            line-height: 1.4;
         }
        
     }
 
+           
+    &__content{
+        font-size:1.6vh;
+        line-height: 1.4;
+    }
+
+    &__image{
+        display: none;
+    }
 
 
 }

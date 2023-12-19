@@ -5,18 +5,48 @@ import { Link } from 'react-scroll';
 import Particules from "./Particle";
 
 
+        const [isMenuVisible, setMenuVisible] = useState(false);
+        const [scrollDisabled, setScrollDisabled] = useState(false);
 
-const Header = () => {
 
-    const [isMenuVisible, setMenuVisible] = useState(false);
+        const handleItemClick = () => {
 
-    const toggleModal = () => {
-        setMenuVisible(!isMenuVisible);
-    }
+            setMenuVisible(!isMenuVisible);
+            const shouldDisableScroll = window.innerWidth < 1200;
 
-    return <><header id="tsparticles" className="header">
-        <Particules />
-        <div className="triangle"></div>
+            if( window.innerWidth < 1200) {
+              setScrollDisabled(!scrollDisabled);
+              const body = document.body;
+              if (scrollDisabled) {
+                body.style.overflow = 'auto';
+                console.log('auto');
+              } else {
+                body.style.overflow = 'hidden';
+              }
+            }
+
+          };
+
+           return <header className="header">
+                <div className="header__navbar">
+                    <img
+                    src={Logo}
+                    alt=""
+                    class="header__logo"
+                    width="80"
+                    />
+
+                    <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`}  onClick={handleItemClick} >
+                
+                        <div id="bar1" className="bar"></div>
+                        <div id="bar2" className="bar"></div>
+                        <div id="bar3" className="bar"></div>
+                    </button>
+                    <Nav visible={isMenuVisible}/>
+                </div>
+                <p class="header__nomAgence"><strong>Artfull Code</strong></p>
+                 <h1 class="header__slogan"> Collaborez de façon créative et innovante avec ArtFull Code</h1>
+            
 
         <div class="header__navbar">
             <img

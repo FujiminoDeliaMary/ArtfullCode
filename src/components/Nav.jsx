@@ -5,7 +5,7 @@ const Nav = (props) => {
     const { visible } = props;
 
     return <nav id="menu" className={(visible) ? "header__menu visible" : "header__menu"}>
-        <ul>
+        <ul className="header__menu-list">
             <li><a href="/">Accueil</a></li>
             <li><Link to="services" activeClass="active" smooth={true} spy={true}>Nos Services</Link></li>
             <li><a href="/realisation">Nos réalisations</a></li>

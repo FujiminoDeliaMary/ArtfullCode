@@ -12,7 +12,7 @@ const Equipe  = () => {
         <img src={photo} alt="les membres de léquipe" />
         <figcaption class="membre">
           <p className="membre__nom">Victoria<br />Tandamba </p>
-          <p className="membre__filiere">Développeuse Full Satck</p>
+          <p className="membre__filiere">Développeuse Full Stack</p>
         </figcaption>
       </figure>
 

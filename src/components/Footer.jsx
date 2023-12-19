@@ -57,6 +57,15 @@ const Footer = () => {
                 <p>Test</p>
 
             </div>
+
+            <div className="footer__mobile">
+
+                <h2>Artfull Code</h2>
+                <p>44 avenue albert einstein, 17000 La rochelle</p>
+                <p>artfullcode@gmail.com</p>
+                <p>Tél:06 34 76 12 34</p>
+
+            </div>
         </footer>
 }
 export default Footer;
