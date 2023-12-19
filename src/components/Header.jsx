@@ -12,7 +12,6 @@ const Header = () =>{
         const handleItemClick = () => {
 
             setMenuVisible(!isMenuVisible);
-            const shouldDisableScroll = window.innerWidth < 1200;
 
             if( window.innerWidth < 1200) {
               setScrollDisabled(!scrollDisabled);
