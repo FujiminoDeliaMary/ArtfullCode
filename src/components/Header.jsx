@@ -27,15 +27,11 @@ const Header = () =>{
                         <div id="bar2" className="bar"></div>
                         <div id="bar3" className="bar"></div>
                     </button>
-
                     <Nav visible={isMenuVisible}/>
                 </div>
                 <p class="header__nomAgence"><strong>Artfull Code</strong></p>
                  <h1 class="header__slogan"> Collaborez de façon créative et innovante avec ArtFull Code</h1>
-                <span class="header__deco">
-                    <div class="cercle cercle1"><img src="../images/ovale.svg" alt="" /></div>
-                    <div class="cercle cercle2"></div>
-                </span>
+            
 
                     <div class="header__arrow">
                         <Link to='about'

@@ -17,16 +17,15 @@ const Services = () => {
   return (
     <section class="services" id="services">
         <h2 className='services__title'>Quelques uns de nos services</h2>
-    <Swiper
+    <Swiper className='swiper_container'
     // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
-        pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
   
-      
+        pagination={false}
   >
           
            
@@ -34,11 +33,11 @@ const Services = () => {
 
                   <figure className='services__service'>
                       <figcaption>
-                        <div class="services__service-title">
-                          <img src={icone} alt="" class="services__service-icone" />
+                        <div class="services__serviceTitle">
+                          <img src={icone} alt="" class="services__icone" />
                           <h3>Référencement seo</h3>
                         </div>
-                        <p className='services__service-content'>
+                        <p className='services__content'>
                           Le référencement SEO, ou Search Engine Optimization, est un
                           ensemble de techniques visant à optimiser la visibilité d'un
                           site web sur les moteurs de recherche tels que Google.
@@ -53,7 +52,7 @@ const Services = () => {
                           images optimisées, etc.
                         </p>
                       </figcaption>
-                      <img src={service} alt="" class="service__image" />
+                      <img src={service} alt="" class="services__image" />
                     </figure>
 
                 </SwiperSlide>
@@ -61,11 +60,11 @@ const Services = () => {
                 <SwiperSlide>
                   <figure className='services__service'>
                       <figcaption>
-                        <div class="services__service-title">
-                          <img src={icone} alt="" class="services__service-icone" />
+                        <div class="services__serviceTitle">
+                          <img src={icone} alt="" class="services__icone" />
                           <h3>Maintenance et support technique</h3>
                         </div>
-                        <p className='services__service-content'>
+                        <p className='services__content'>
                           Le référencement SEO, ou Search Engine Optimization, est un
                           ensemble de techniques visant à optimiser la visibilité d'un
                           site web sur les moteurs de recherche tels que Google.
@@ -80,7 +79,7 @@ const Services = () => {
                           images optimisées, etc.
                         </p>
                       </figcaption>
-                      <img src={service} alt="" class="service__image" />
+                      <img src={service} alt="" class="services__image" />
                     </figure>
                 </SwiperSlide>
 
@@ -88,11 +87,11 @@ const Services = () => {
 
                 <figure className='services__service'>
                       <figcaption>
-                        <div class="services__service-title">
-                          <img src={icone} alt="" class="services__service-icone" />
+                        <div class="services__serviceTitle">
+                          <img src={icone} alt="" class="services__icone" />
                           <h3>Formation Client</h3>
                         </div>
-                      <p className='services__service-content'>
+                      <p className='services__content'>
                         Le référencement SEO, ou Search Engine Optimization, est un
                         ensemble de techniques visant à optimiser la visibilité d'un
                         site web sur les moteurs de recherche tels que Google.
@@ -107,18 +106,18 @@ const Services = () => {
                         images optimisées, etc.
                       </p>
                     </figcaption>
-                    <img src={service} alt="" class="service__image" />
+                    <img src={service} alt="" class="services__image" />
                   </figure>
 
                 </SwiperSlide>
                 <SwiperSlide>
                   <figure className='services__service'>
                       <figcaption>
-                        <div class="services__service-title">
-                          <img src={icone} alt="" class="services__service-icone" />
+                        <div class="services__serviceTitle">
+                          <img src={icone} alt="" class="services__icone" />
                           <h3>UI/UX Design</h3>
                         </div>
-                        <p className='services__service-content'>
+                        <p className='services__content'>
                           Le référencement SEO, ou Search Engine Optimization, est un
                           ensemble de techniques visant à optimiser la visibilité d'un
                           site web sur les moteurs de recherche tels que Google.
@@ -133,18 +132,18 @@ const Services = () => {
                           images optimisées, etc.
                         </p>
                       </figcaption>
-                      <img src={service} alt="" class="service__image" />
+                      <img src={service} alt="" class="services__image" />
                     </figure>
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <figure className='services__service'>
                       <figcaption>
-                        <div class="services__service-title">
-                          <img src={icone} alt="" class="services__service-icone" />
+                        <div class="services__serviceTitle">
+                          <img src={icone} alt="" class="services__icone" />
                           <h3>Responsive design</h3>
                         </div>
-                      <p className='services__service-content'>
+                      <p className='services__content'>
                         Le référencement SEO, ou Search Engine Optimization, est un
                         ensemble de techniques visant à optimiser la visibilité d'un
                         site web sur les moteurs de recherche tels que Google.
@@ -159,7 +158,7 @@ const Services = () => {
                         images optimisées, etc.
                       </p>
                     </figcaption>
-                    <img src={service} alt="" class="service__image" />
+                    <img src={service} alt="" class="services__image" />
                   </figure>
                   </SwiperSlide>
   
