@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20rem 30vw;
+    padding: 15vh 30vw;
     justify-content: center;
     line-height: 1.4;
     align-items: center;
@@ -19,7 +19,7 @@
     font-family: "Poppins", sans-serif;
     background-image: url("../assets/vecteurs.png");
     background-repeat: no-repeat;
-    background-position: left top -100px;
+    background-position: left top -17vh;
     background-size: cover;
     color: $bleu;
 }

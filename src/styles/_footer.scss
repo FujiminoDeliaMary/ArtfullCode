@@ -4,23 +4,44 @@
     justify-content: center;
     background-color: #27496D;
     color: #EFEBEB;
-    font-size: 1.6vh;
+    font-size: 1.8vh;
     font-family: 'gabriela', sans-serif;
     padding: 2rem 0;
     gap: 25vh;
     width: 100%;
 
+    span{
+        color:$orange;
+        display: flex;
+        align-items: center;
+    }
     p {
         line-height: 2vw;
         margin-bottom: 1rem;
-        color:$nacre;
+        a{
+            color:$nacre;
+        }
+        
     }
 
-    &__logo {
+    &__logos {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 2%;
+    }
+
+    &__logo{
+        border-radius: 50%;
+        width:4vh;
+        height: 4vh;
+        padding: 0.5rem 0.5rem;
+        &:first-child{
+            background-color:black
+        }
+        &:nth-child(2){
+            background-color: bisque;
+        }
     }
 
     &__heure {
@@ -31,5 +52,7 @@
 
 
     }
+
+  
 
 }

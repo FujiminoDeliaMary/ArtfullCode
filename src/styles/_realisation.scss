@@ -1,0 +1,72 @@
+.projet1{
+    display: flex;
+    flex-direction: column;
+
+    &__logo{
+        width: 10%;
+    }
+
+    &__img{
+        width: 15%;
+    }
+
+    .figure{
+        display: flex;
+    
+        &__img{
+            width: 30%;
+        }
+        &__figcaption{
+            display: flex;
+            flex-direction: row;
+            
+            
+
+            &__content{
+               padding-top: 20%; 
+               margin: 2rem;
+               padding-bottom: 5%;
+               
+               background-color: beige;
+            }
+        }
+    }
+}
+
+.projet2{
+    display: flex;
+    flex-direction: column;
+    
+
+    &__logo{
+        width: 10%;
+        margin-left:85%;
+    }
+
+    &__img{
+        width: 15%;
+        
+    }
+
+    .figure{
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__img{
+            width: 30%;
+        }
+
+        &__figcaption{
+            display: flex;
+            flex-direction: row;
+
+        &__content{
+            padding-top: 20%; 
+            margin: 2rem;
+            padding-bottom: 5%;
+            
+            background-color: beige;
+         }
+        }
+    }
+}
