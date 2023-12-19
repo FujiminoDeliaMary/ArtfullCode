@@ -1,4 +1,11 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+
+
+// import required modules
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const Avis = () => {
 
@@ -25,19 +32,19 @@ const Avis = () => {
                                 </p>
                                 <ul class="card__notes">
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/*    <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/*    <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/*    <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/*    <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i> */}
                                     </li>
                                 </ul>
                             </aside>
@@ -54,19 +61,19 @@ const Avis = () => {
                                 </p>
                                 <ul class="card__notes">
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/*    <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/*    <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/*    <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/*    <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i> */}
                                     </li>
                                 </ul>
                             </aside>
@@ -84,19 +91,19 @@ const Avis = () => {
                                 </p>
                                 <ul class="card__notes">
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/*    <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i> */}
                                     </li>
                                 </ul>
                             </aside>
@@ -114,19 +121,19 @@ const Avis = () => {
                                 </p>
                                 <ul class="card__notes">
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i> */}
                                     </li>
                                 </ul>
                             </aside>
@@ -142,19 +149,19 @@ const Avis = () => {
                                 </p>
                                 <ul class="card__notes">
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i> */}
                                     </li>
                                 </ul>
                             </aside>
@@ -170,19 +177,19 @@ const Avis = () => {
                                 </p>
                                 <ul class="card__notes">
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i> */}
                                     </li>
                                 </ul>
                             </aside>
@@ -198,19 +205,19 @@ const Avis = () => {
                                 </p>
                                 <ul class="card__notes">
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i> */}
                                     </li>
                                 </ul>
                             </aside>
@@ -229,19 +236,19 @@ const Avis = () => {
                                 </p>
                                 <ul class="card__notes">
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i> */}
                                     </li>
                                     <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
+                                        {/* <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i> */}
                                     </li>
                                 </ul>
                             </aside>
