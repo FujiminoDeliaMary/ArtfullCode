@@ -13,14 +13,18 @@ const Header = () =>{
 
             setMenuVisible(!isMenuVisible);
             const shouldDisableScroll = window.innerWidth < 1200;
-            setScrollDisabled(!shouldDisableScroll);
-            const body = document.body;
-            if (scrollDisabled) {
-              body.style.overflow = 'auto';
-              console.log('auto');
-            } else {
-              body.style.overflow = 'hidden';
+
+            if( window.innerWidth < 1200) {
+              setScrollDisabled(!scrollDisabled);
+              const body = document.body;
+              if (scrollDisabled) {
+                body.style.overflow = 'auto';
+                console.log('auto');
+              } else {
+                body.style.overflow = 'hidden';
+              }
             }
+
           };
 
            return <header className="header">
