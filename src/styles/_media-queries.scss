@@ -1,0 +1,97 @@
+
+        
+@media screen and (max-width: 767px) {
+      .header{
+        position: relative;
+        &__arrow{
+            display:none;
+        }
+
+        &__menu{
+            opacity: 1;
+            bottom:0;
+        }
+
+        &__logo{
+            margin:0;
+            width:14vh;
+            position: absolute;
+            top:5vh;
+            left: 50%;
+            transform: translateX(-50%); 
+            z-index: 0;
+           
+        }
+
+        &__menu {
+            opacity: 0;
+            background-color: rgb(39, 73, 109);
+            position: absolute;
+            left: -50%;
+            width: 100%;
+            &.visible { position: fixed;
+                top: 0;
+                left: 0;
+                height: 80vh;
+            }
+
+            &-list{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+      }
+
+      .footer{
+        &__heure{
+            display: none;
+        }
+       
+      }
+
+      .about{
+        background-image: none;
+        padding:2rem 1rem;
+      }
+
+      .equipe {
+ 
+        flex-wrap:nowrap;
+        background-color: rgba(39,73,109,80%);
+        color:$black;
+            &__title{
+                width: 100%;
+                top:-5vh;
+                left: 50%;
+                transform: translateX(-50%); 
+                
+            }
+    
+            &__membres {
+                flex-wrap: wrap;
+                gap:2rem;
+            }
+
+            &__fig {
+                flex-basis: 45%;
+            }
+            &--bleu {
+                background-color: transparent;
+            }
+    }
+
+    .services{
+        padding: 2vh 0;
+        display: block;
+        margin-bottom:5vh;
+        &__image{
+            display: none;
+        }
+
+        .swiper{
+            display: block;
+        }
+    }
+}

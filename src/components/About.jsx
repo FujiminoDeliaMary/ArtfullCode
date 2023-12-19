@@ -2,6 +2,7 @@ import React from "react";
 
 const About = () =>{
     return   <section class="about" id="about">
+                <h2 className="about__title">Notre Agence</h2>
                 <p>
                 ArtFull Code est une <span>agence web</span> basé sur la conception de
                 site <span>e-learning</span>,<span>vitrine</span> et

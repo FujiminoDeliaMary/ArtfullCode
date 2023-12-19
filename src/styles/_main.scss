@@ -7,6 +7,12 @@
     height: 20rem;
 }
 .about {
+
+    &__title{
+        font-size:3vh;
+        font-family: 'David Libre';
+        font-weight: 600;
+    }
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -22,12 +28,12 @@
     background-position: left top -17vh;
     background-size: cover;
     color: $bleu;
+
 }
 
 .equipe {
     display: flex;
     z-index: 1;
-    flex-wrap: wrap;
     margin: 10vh 0;
     position: relative;
     width:100%;
@@ -139,7 +145,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap:8vw;
 
             figcaption{
                 display: flex;
@@ -148,24 +153,26 @@
             }
         
 
-        &-title{
+        &Title{
             display: flex;
-            gap: 5px;
+            justify-content: flex-start;
             align-items: center;
+            width: 100%;
             h3{
                 font-family: 'Poppins', sans-serif;
                 text-align: center;
                 font-size: 1.8vh;
+                width: 100%;
             }
-        }
-       
-        &-content{
-            font-size:1.6vh;
-            line-height: 1.4;
         }
        
     }
 
+           
+    &__content{
+        font-size:1.6vh;
+        line-height: 1.4;
+    }
 
 
 }
