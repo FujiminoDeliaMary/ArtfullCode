@@ -1,6 +1,5 @@
+.header {
 
-.header{
-    
     position: relative;
     top: 0;
     left: 0;
@@ -8,19 +7,20 @@
     height: 80vh;
     overflow: hidden;
     background-color: rgba(39, 73, 109, 0.9);
-    &__arrow{
-        display:none;
-        width:7vh;
-        height:7vh;
+
+    &__arrow {
+        display: none;
+        width: 7vh;
+        height: 7vh;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
         background-color: rgba(88, 96, 133, 0.5);
-        margin-bottom:2vh;
+        margin-bottom: 2vh;
         cursor: pointer;
         position: absolute;
-        bottom:1vh;
-        left:50%;
+        bottom: 1vh;
+        left: 50%;
         animation: levitate 2s infinite alternate ease-in-out;
     }
 
@@ -37,18 +37,18 @@
         align-items: center;
         gap: 15vw;
 
-        z-index:-1;
+        z-index: -1;
         transition:
             left 0.3s ease-out,
             opacity 0.2s ease-out;
 
-        &.visible { 
+        &.visible {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 10;
-            background-color:rgba(39, 73, 109, 0.9);
+            background-color: rgba(39, 73, 109, 0.9);
             opacity: 1;
             transition:
                 opacity 0.2s ease-out,
@@ -58,19 +58,21 @@
 
         &-list {
             position: absolute;
-            z-index:-1;
+            z-index: -1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 10rem;
+
             a {
                 color: $blanc;
                 font-size: 2.2vh;
                 font-family: 'Poppins';
-               
+
             }
-            .active::after{
+
+            .active::after {
                 content: "";
                 display: block;
                 background-color: $orange;
@@ -83,9 +85,11 @@
                 position: relative;
                 left: 50%;
             }
+
             li {
                 position: relative;
             }
+
             li::after {
                 content: "";
                 display: block;
@@ -102,6 +106,7 @@
 
             li:hover {
                 cursor: pointer;
+
                 &::after {
                     width: 100%;
                     transition: width 0.3 ease-out;
@@ -111,15 +116,15 @@
     }
 
 
-    &__logo{
-        margin:0;
-        width:14vh;
+    &__logo {
+        margin: 0;
+        width: 14vh;
         position: absolute;
-        top:5vh;
+        top: 5vh;
         left: 50%;
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
         z-index: 0;
-       
+
     }
 
     &__menuBurger {
@@ -136,31 +141,32 @@
         padding: 1rem 1rem;
         margin-right: 1%;
         border-radius: 50%;
-        transition:all 0.2s ease-out;
+        transition: all 0.2s ease-out;
 
-        &:hover{
-            transform: rotate(25deg) ;
+        &:hover {
+            transform: rotate(25deg);
             border: 4px $orange;
             // border: 4px rgba(210,124,44,0.6) solid;
             //  TODO
             transition: transform 0.2s ease-out,
-                        border 0.3 ease-out;
+                border 0.3 ease-out;
         }
-        .bar{
-            font-size:10px;
+
+        .bar {
+            font-size: 10px;
             background: $blanc;
-            width:4vh;
-            height:6px;
+            width: 4vh;
+            height: 6px;
             transition: all 0.3s ease-in;
         }
 
-        &.open{
+        &.open {
             border: none;
             transform: rotate(180deg);
-    
-            #bar1{
-                    background-color: $blanc;
-                    transform: rotate(45deg) translate(6px, 5px);
+
+            #bar1 {
+                background-color: $blanc;
+                transform: rotate(45deg) translate(6px, 5px);
             }
 
             #bar3 {
@@ -184,7 +190,7 @@
         font-size: 1.8vh;
         text-align: center;
         bottom: 48%;
-        color:$blanc;
+        color: $blanc;
         width: 100%;
     }
 
@@ -192,11 +198,17 @@
         font-family: "David Libre";
         text-transform: uppercase;
         font-size: 4.2vh;
-        color:$blanc;
-        bottom:55%;
+        color: $blanc;
+        bottom: 55%;
     }
 
+}
 
-  }
-
-
+#tsparticles {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // // background: #000;
+    position: absolute;
+}
