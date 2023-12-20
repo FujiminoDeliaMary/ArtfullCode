@@ -1,12 +1,12 @@
 .contact{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 2vh 10vw;
 
     &__speech{
-       
-        font-size:2vw;
+        display: none;
+        font-size:clamp(2.5vh, 3vh, 3vh);
     }
 
     &__form{
@@ -42,14 +42,14 @@
     &__formGroup{
         span{
             color:red;
-            font-size:1.1rem;
+            font-size:1.1vh;
             font-family: 'Poppins';
         }
     }
 
     &__label{
         color:$blueberry; 
-        font-size:2rem;  
+        font-size:2vh;  
         font-weight:500;
          
     }
@@ -59,6 +59,7 @@
         resize: none;
         border-radius: 5px;
         margin-top: 1%;
+        font-size: 2vh;
         width:100%;
         &:focus{
             outline: none;

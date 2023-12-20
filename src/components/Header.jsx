@@ -22,7 +22,7 @@ const Header = () =>{
               console.log('auto');
             } else {
               body.style.overflow = 'hidden';
-            }
+            } 
           };
             }
             

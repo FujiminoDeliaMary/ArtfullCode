@@ -129,6 +129,14 @@
         }
     }
 
+    .contact{
+        justify-content: space-between;
+
+        &__speech{
+            display: inline;
+        }
+    }
+
 
 }
 

@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../assets/projet2.png"
 import projet1 from "../assets/projet1.png"
 import projet2 from "../assets/projet2.png"
 import projet1Logo from "../assets/projet1Logo.png"

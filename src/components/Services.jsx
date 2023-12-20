@@ -2,7 +2,11 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import service from '../assets/services/seo_image.png';
-import icone from '../assets/services/seo_icone.png';
+import iconeSeo from '../assets/services/seo_icone.png';
+import imageUx from '../assets/services/uxImage.jpg'
+import iconeUx from '../assets/services/uxIcone.png'
+import iconeMaintenance from '../assets/services/maintenanceIcone.png'
+import iconeClient from '../assets/services/formationIcone.png'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -34,7 +38,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={icone} alt="" class="services__icone" />
+                          <img src={iconeSeo} alt="" class="services__icone" />
                           <h3>Référencement seo</h3>
                         </div>
                         <p className='services__content'>
@@ -53,7 +57,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={icone} alt="" class="services__icone" />
+                          <img src={iconeMaintenance} alt="" class="services__icone" />
                           <h3>Maintenance et support technique</h3>
                         </div>
                         <p className='services__content'>
@@ -63,12 +67,7 @@ const Services = () => {
                           L'objectif principal du SEO est d'obtenir un meilleur
                           classement dans les résultats de recherche organiques afin
                           d'attirer un trafic qualifié et pertinent sur votre site.
-                          Le SEO se divise en deux grandes catégories : le
-                          référencement on-page et le référencement off-page. Le
-                          référencement on-page concerne l'optimisation des éléments
-                          directement liés à votre site web, tels que les mots-clés,
-                          la structure du site, le contenu, les balises méta, les
-                          images optimisées, etc.
+                   
                         </p>
                       </figcaption>
                       <img src={service} alt="" class="services__image" />
@@ -80,8 +79,8 @@ const Services = () => {
                 <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={icone} alt="" class="services__icone" />
-                          <h3>Déveeloppement Web</h3>
+                          <img src={iconeClient} alt="" class="services__icone" />
+                          <h3>Formation Client</h3>
                         </div>
                       <p className='services__content'>
                       Du concept à la réalité, notre équipe de développeurs assure la création de sites web,
@@ -98,7 +97,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={icone} alt="" class="services__icone" />
+                          <img src={iconeUx} alt="" class="services__icone" />
                           <h3>UI/UX Design</h3>
                         </div>
                         <p className='services__content'>
@@ -110,7 +109,7 @@ const Services = () => {
 
                         </p>
                       </figcaption>
-                      <img src={service} alt="" class="services__image" />
+                      <img src={imageUx} alt="" class="services__image" />
                     </figure>
                 </SwiperSlide>
 
@@ -118,7 +117,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={icone} alt="" class="services__icone" />
+                          <img src={iconeSeo} alt="" class="services__icone" />
                           <h3>Responsive design</h3>
                         </div>
                       <p className='services__content'>
