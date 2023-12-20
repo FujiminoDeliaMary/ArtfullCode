@@ -1,7 +1,11 @@
-@media screen and (width > 767px) {}
 
 
-@media screen and (width > 1200px) {
+@media  screen and (width > 767px) {
+    
+}
+
+
+@media  screen and (width > 1200px) {
 
     .header {
         position: relative;
@@ -11,43 +15,42 @@
         height: 80vh;
         overflow: hidden;
         background-color: rgba(39, 73, 109, 0.9);
+    
+     
 
+        &__logo{
 
-
-        &__logo {
-
-            width: 8vh;
+            width:8vh;
             position: relative;
-            top: 0;
-            left: 0;
-            margin-left: 3vw;
+            top:0;
+            left:0;
+            margin-left:3vw;
             transform: translateX(-50%);
-            z-index: 30;
-
+            z-index: 30; 
+           
         }
-
-        &__arrow {
-            display: flex;
-
+    
+        &__arrow{
+           display: flex;
+          
         }
-
-        &__menu {
+    
+        &__menu{
             background-color: rgba(39, 73, 109, 0);
             top: -20%;
             position: fixed;
-            left: 0;
+            left:0;
             height: fit-content;
             transition:
-                top 0.3s ease-out,
-                opacity 0.2s ease-out;
-
-            &.visible {
+            top 0.2s ease-out,
+            opacity 0.2s ease-out;
+            &.visible{
                 transition:
-                    opacity 0.2s ease-out,
-                    top 0.3s ease-out;
+                opacity 0.2s ease-out,
+                top 0.2s ease-out;
             }
 
-            &-list {
+            &-list{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -55,81 +58,92 @@
             }
         }
 
-        &__menuBurger {
+        &__menuBurger{
             position: relative;
-            z-index: 3000000;
+            z-index:3000000;
         }
-
-
-
+    
+    
+        
         &__navbar {
             display: flex;
             margin: 1rem 0;
             justify-content: space-between;
             font-family: 'Poppins', sans-serif;
-
+            
         }
-
-
+    
+    
     }
 
-    .about {
+      .about{
         padding: 0 30vw;
+        padding-top:10vh;
         padding-bottom: 25vh;
-        padding-top: 10vh;
         background-image: url("../assets/vecteurs.png");
 
-    }
+      }
 
-    .equipe {
+      .equipe {
         background-color: transparent;
-        color: $black;
+        color:$black;
+            &__title{
+                top: -10vh;
+                right:30%;
+                width: 40%;
+                
+            }
+    
+            &__membres {
+                gap:0;
+            }
 
-        &__title {
-            top: -10vh;
-            right: 30%;
-            width: 40%;
-
-        }
-
-        &__membres {
-            gap: 0;
-        }
-
-        &__fig {
-            flex-basis: 25%;
-        }
-
-        &--bleu {
-            background-color: $bleu;
-            color: $blanc;
-        }
+            &__fig {
+                flex-basis: 25%;
+            }
+            &--bleu {
+                background-color: $bleu;
+                color:$blanc;
+            }
     }
 
-    .services {
+    .services{
         padding: 3vh 8vh;
-
-        &__image {
+        &__image{
             display: block;
+            width: 20vw;
         }
 
-        &__service {
+        &__service{
             padding: 0 8vh;
+            &Title{
+                flex-direction: row;
+                h3{
+                    text-align: left;
+                }
+            }
         }
     }
 
-    .footer {
-
-        &__heure,
-        &__coordonnees,
-        &__nav {
+    .footer{
+        &__heure, &__coordonnees, &__nav{
             display: block;
         }
 
-        &__mobile {
+        &__mobile{
             display: none;
+        }
+    }
+
+    .contact{
+        justify-content: space-between;
+
+        &__speech{
+            display: inline;
         }
     }
 
 
 }
+
+

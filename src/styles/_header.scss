@@ -51,8 +51,8 @@
             background-color: rgba(39, 73, 109, 0.9);
             opacity: 1;
             transition:
-                opacity 0.2s ease-out,
-                left 0.3s ease-out;
+                opacity 0.3s ease-out,
+                left 0.2s ease-out;
         }
 
 
@@ -186,7 +186,7 @@
         bottom: 60%;
         left: 50%;
         transform: translate(-50%, 50%);
-        font-family: "Stick No Bills";
+        font-family: "Stick No Bills", sans-serif;
         font-size: 1.8vh;
         text-align: center;
         bottom: 48%;
