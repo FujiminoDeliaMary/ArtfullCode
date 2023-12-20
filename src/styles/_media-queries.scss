@@ -42,12 +42,12 @@
             left:0;
             height: fit-content;
             transition:
-            top 0.3s ease-out,
+            top 0.2s ease-out,
             opacity 0.2s ease-out;
             &.visible{
                 transition:
                 opacity 0.2s ease-out,
-                top 0.3s ease-out;
+                top 0.2s ease-out;
             }
 
             &-list{
@@ -116,6 +116,12 @@
 
         &__service{
             padding: 0 8vh;
+            &Title{
+                flex-direction: row;
+                h3{
+                    text-align: left;
+                }
+            }
         }
     }
 

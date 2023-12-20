@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from '../assets/logoBlanc.png'
 import Nav from "./Nav";
 import { Link } from 'react-scroll';
@@ -8,23 +8,38 @@ const Header = () => {
 
     const [isMenuVisible, setMenuVisible] = useState(false);
     const [scrollDisabled, setScrollDisabled] = useState(false);
+    const [scroll, setScroll] = useState(document.body.style.overflow);
 
+    console.log(scroll)
 
-    const handleItemClick = () => {
-
+    const handleItemClick = (e) => {
+      e.preventDefault();
         setMenuVisible(!isMenuVisible);
-
+              
         if (window.innerWidth < 1200) {
             setScrollDisabled(!scrollDisabled);
-            const body = document.body;
             if (scrollDisabled) {
-                body.style.overflow = 'auto';
+                setScroll('auto');
                 console.log('auto');
             } else {
-              body.style.overflow = 'hidden';
+              setScroll('hidden');
             }
           };
-            }
+    }
+
+    useEffect(() => {
+      
+      document.body.style.overflow = scroll;
+      return () => {
+        document.body.style.overflow = 'auto';
+      };
+    }, [scroll]); 
+
+    const handleChangeMenu = (param) =>{
+      setMenuVisible(param);
+      document.body.style.overflow = 'auto';
+    }
+  
             
 
     return <header className="header">
@@ -37,13 +52,13 @@ const Header = () => {
                 width="80"
             />
 
-            <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`} onClick={handleItemClick} >
+            <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`} type="button" onClick={handleItemClick} >
 
                 <div id="bar1" className="bar"></div>
                 <div id="bar2" className="bar"></div>
                 <div id="bar3" className="bar"></div>
             </button>
-            <Nav visible={isMenuVisible} />
+            <Nav visible={isMenuVisible} bref={handleChangeMenu}/>
         </div>
         <p class="header__nomAgence"><strong>Artfull Code</strong></p>
         <h1 class="header__slogan"> Collaborez de façon créative et innovante avec ArtFull Code</h1>

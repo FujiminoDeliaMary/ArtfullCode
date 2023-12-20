@@ -18,6 +18,8 @@ const Contact = () => {
         });
     };
 
+    
+
     return <section class="contact">
       
                 <h3 class="contact__speech"  ><TypeAnimation 
