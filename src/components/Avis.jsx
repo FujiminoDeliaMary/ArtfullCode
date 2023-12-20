@@ -3,7 +3,6 @@ import React from "react";
 const Avis = () => {
 
     return <>
-
         {/* nos avis  */}
         <section class="avis">
             <h2 class="avis__titre">Quelques <span>avis</span> de nos clients</h2>
