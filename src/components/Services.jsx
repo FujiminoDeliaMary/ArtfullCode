@@ -25,20 +25,16 @@ const Services = () => {
 
   return (
     <section class="services" id="services">
-        <h2 className='services__title'>Quelques uns de nos services</h2>
-    <Swiper className='swiper_container'
-    // install Swiper modules
+      <h2 className='services__title'>Quelques uns de nos services</h2>
+      <Swiper className='swiper_container'
+        // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
         autoplay={{ delay: 3000 }}
-  
         pagination={false}
-  >
-          
-           
-                <SwiperSlide>
+      >
 
                   <figure className='services__service'>
                       <figcaption>
@@ -56,7 +52,16 @@ const Services = () => {
                       <img src={imageseo} alt="" class="services__icone" />
                     </figure>
 
-                </SwiperSlide>
+          <figure className='services__service'>
+            <figcaption>
+              <div class="services__serviceTitle">
+                <img src={icone} alt="" class="services__icone" />
+                <h3>Référencement seo</h3>
+              </div>
+              <p className='services__content'>
+                Maximisez votre visibilité en ligne grâce à notre services de référencement.
+                Nous optimisons votre site pour les moteurs de recherche, mettons en place des stratégies
+                de mots-clés efficaces et veillons à ce que votre site soit classé en tête des résultats pertinents.
 
                 <SwiperSlide>
                   <figure className='services__service'>
@@ -79,7 +84,7 @@ const Services = () => {
                     </figure>
                 </SwiperSlide>
 
-                <SwiperSlide>
+        </SwiperSlide>
 
                 <figure className='services__service'>
                       <figcaption>
