@@ -9,25 +9,32 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { EffectCoverflow } from 'swiper/modules';
+import { EffectCoverflow, Navigation } from 'swiper/modules';
 
-export default function App() {
+const Avis = () => {
     return (
         <>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={'auto'}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
+                slidesPerView={2}
+                spaceBetween={0}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: true
                 }}
-                pagination={true}
-                modules={[EffectCoverflow]}
+                coverflowEffect={{
+                    rotate: 7,
+                    stretch: 0,
+                    depth: 800,
+                    modifier: 1,
+                    slideShadows: false,
+                }}
+                navigation={true}
+                pagination={false}
+                modules={[EffectCoverflow, Navigation]}
+                loop={true}
                 className="mySwiper"
             >
                 <SwiperSlide>
@@ -43,7 +50,7 @@ export default function App() {
                         </p>
                         <ul class="card__notes">
                             <li>
-                                test
+                                test 1
                             </li>
                             <li>
                                 test
@@ -66,7 +73,7 @@ export default function App() {
                         </p>
                         <ul class="card__notes">
                             <li>
-                                test
+                                test 2
                             </li>
                             <li>
                                 test
@@ -81,3 +88,4 @@ export default function App() {
         </>
     );
 }
+export default Avis;
