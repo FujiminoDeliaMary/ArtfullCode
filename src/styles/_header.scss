@@ -8,6 +8,13 @@
     height: 80vh;
     overflow: hidden;
     background-color: rgba(39, 73, 109, 0.9);
+
+    .particule{
+        width: 100%;
+        position: absolute;
+        bottom:0;
+        left:0;
+    }
     &__arrow{
         display:none;
         width:7vh;
@@ -85,28 +92,30 @@
             }
             li {
                 position: relative;
-            }
-            li::after {
-                content: "";
-                display: block;
-                background-color: $orange;
-                height: 2px;
-                width: 0;
-                border-radius: 10px;
-                margin-top: 3px;
-                transition: width 0.3s ease-out;
-                transform: translateX(-50%);
-                position: relative;
-                left: 50%;
-            }
 
-            li:hover {
-                cursor: pointer;
                 &::after {
-                    width: 100%;
-                    transition: width 0.3 ease-out;
+                    content: "";
+                    display: block;
+                    background-color: $orange;
+                    height: 2px;
+                    width: 0;
+                    border-radius: 10px;
+                    margin-top: 3px;
+                    transition: width 0.3s ease-out;
+                    transform: translateX(-50%);
+                    position: relative;
+                    left: 50%;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    &::after {
+                        width: 100%;
+                        transition: width 0.3 ease-out;
+                    }
                 }
             }
+        
         }
     }
 

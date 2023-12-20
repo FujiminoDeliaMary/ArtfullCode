@@ -1,9 +1,30 @@
 
-
-.title {
-    text-align: center;
-
+.realisations{
+    margin-top:2vw;
+    &__title {
+        position: relative;
+        text-align: center;
+        font-size: 3vh;
+        font-family: 'David Libre';
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom:5vh;
+        &::after{
+            content: "";
+            display: block;
+            background-color: $blueberry;
+            height: 2px;
+            border-radius: 10px;
+            margin-top: 8px;
+            width:60%;
+            transform: translateX(-50%);
+            position: relative;
+            left: 50%;
+            
+        }
+    }
 }
+
 
 
 .projet1 {

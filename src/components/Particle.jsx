@@ -97,6 +97,7 @@ const Particules = () => {
         return (
             <Particles
                 id="tsparticles"
+                className="particule"
                 particlesLoaded={particlesLoaded}
                 options={options}
             />

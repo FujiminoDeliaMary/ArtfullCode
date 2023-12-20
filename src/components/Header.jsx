@@ -43,7 +43,7 @@ const Header = () => {
             
 
     return <header className="header">
-        <Particules />
+        <Particules className="particule" />
         <div className="header__navbar">
             <img
                 src={Logo}
