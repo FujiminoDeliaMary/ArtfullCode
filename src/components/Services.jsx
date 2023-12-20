@@ -1,11 +1,12 @@
 // Import Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import imageresponsive from '../assets/services/image-responsive.jpeg';
-import imageseo from '../assets/services/image-seo.jpg';
-import imageux from '../assets/services/image-ux.jpg';
-import imagetechnique from '../assets/services/image-technique.jpg';
-import imageformation from '../assets/services/image-formation.jpg';
+import service from '../assets/services/seo_image.png';
+import iconeSeo from '../assets/services/seo_icone.png';
+import imageUx from '../assets/services/uxImage.jpg'
+import iconeUx from '../assets/services/uxIcone.png'
+import iconeMaintenance from '../assets/services/maintenanceIcone.png'
+import iconeClient from '../assets/services/formationIcone.png'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -37,7 +38,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imageseo} alt="" class="services__icone" />
+                          <img src={iconeSeo} alt="" class="services__icone" />
                           <h3>Référencement seo</h3>
                         </div>
                         <p className='services__content'>
@@ -47,6 +48,7 @@ const Services = () => {
 
                         </p>
                       </figcaption>
+                      <img src={service} alt="" class="services__image" />
                     </figure>
 
                 </SwiperSlide>
@@ -55,7 +57,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imagetechnique} alt="" class="services__icone" />
+                          <img src={iconeMaintenance} alt="" class="services__icone" />
                           <h3>Maintenance et support technique</h3>
                         </div>
                         <p className='services__content'>
@@ -68,6 +70,7 @@ const Services = () => {
                    
                         </p>
                       </figcaption>
+                      <img src={service} alt="" class="services__image" />
                     </figure>
                 </SwiperSlide>
 
@@ -76,7 +79,7 @@ const Services = () => {
                 <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imageformation} alt="" class="services__icone" />
+                          <img src={iconeClient} alt="" class="services__icone" />
                           <h3>Formation Client</h3>
                         </div>
                       <p className='services__content'>
@@ -86,6 +89,7 @@ const Services = () => {
 
                       </p>
                     </figcaption>
+                    <img src={service} alt="" class="services__image" />
                   </figure>
 
                 </SwiperSlide>
@@ -93,7 +97,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imageux} alt="" class="services__icone" />
+                          <img src={iconeUx} alt="" class="services__icone" />
                           <h3>UI/UX Design</h3>
                         </div>
                         <p className='services__content'>
@@ -105,6 +109,7 @@ const Services = () => {
 
                         </p>
                       </figcaption>
+                      <img src={imageUx} alt="" class="services__image" />
                     </figure>
                 </SwiperSlide>
 
@@ -112,7 +117,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imageresponsive} alt="" class="services__icone" />
+                          <img src={iconeSeo} alt="" class="services__icone" />
                           <h3>Responsive design</h3>
                         </div>
                       <p className='services__content'>
@@ -123,6 +128,7 @@ const Services = () => {
 
                       </p>
                     </figcaption>
+                    <img src={service} alt="" class="services__image" />
                   </figure>
                   </SwiperSlide>
   

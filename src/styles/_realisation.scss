@@ -1,6 +1,10 @@
 
 .realisations{
+    
     margin-top:2vw;
+    display: flex;
+    flex-direction: column;
+    
     &__title {
         position: relative;
         text-align: center;
@@ -23,6 +27,8 @@
             
         }
     }
+
+    
 }
 
 
@@ -126,10 +132,6 @@
                 color: #EFEBEB;
                 font-size: large;
                 padding-top: 20%;
-
-
-
-
 
             }
         }
