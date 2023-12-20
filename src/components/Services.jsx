@@ -6,6 +6,12 @@ import imageseo from '../assets/services/image-seo.jpg';
 import imageux from '../assets/services/image-ux.jpg';
 import imagetechnique from '../assets/services/image-technique.jpg';
 import imageformation from '../assets/services/image-formation.jpg';
+import uxIcone from '../assets/services/uxIcone.png';
+import uxImage from '../assets/services/uxImage.jpg';
+import seoicone from '../assets/services/seo_icone.png';
+import maintenanceIcone from '../assets/services/maintenanceIcone.png';
+import formationIcone from '../assets/services/formationIcone.png';
+import responsiveIcone from '../assets/services/responsiveIcone.png';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -37,7 +43,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imageseo} alt="" class="services__icone" />
+                          <img src={seoicone} alt="" class="services__icone" />
                           <h3>Référencement seo</h3>
                         </div>
                         <p className='services__content'>
@@ -47,6 +53,7 @@ const Services = () => {
 
                         </p>
                       </figcaption>
+                      <img src={imageseo} alt="" class="services__icone" />
                     </figure>
 
                 </SwiperSlide>
@@ -55,7 +62,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imagetechnique} alt="" class="services__icone" />
+                          <img src={maintenanceIcone} alt="" class="services__icone" />
                           <h3>Maintenance et support technique</h3>
                         </div>
                         <p className='services__content'>
@@ -68,6 +75,7 @@ const Services = () => {
                    
                         </p>
                       </figcaption>
+                      <img src={imagetechnique} alt="" class="services__icone"/>
                     </figure>
                 </SwiperSlide>
 
@@ -76,7 +84,7 @@ const Services = () => {
                 <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imageformation} alt="" class="services__icone" />
+                          <img src={formationIcone} alt="" class="services__icone" />
                           <h3>Formation Client</h3>
                         </div>
                       <p className='services__content'>
@@ -86,6 +94,7 @@ const Services = () => {
 
                       </p>
                     </figcaption>
+                    <img src={imageformation} alt="" class="services__icone" />
                   </figure>
 
                 </SwiperSlide>
@@ -93,7 +102,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imageux} alt="" class="services__icone" />
+                          <img src={uxIcone} alt="" class="services__icone" />
                           <h3>UI/UX Design</h3>
                         </div>
                         <p className='services__content'>
@@ -105,6 +114,7 @@ const Services = () => {
 
                         </p>
                       </figcaption>
+                      <img src={imageux} alt="" class="services__icone" />
                     </figure>
                 </SwiperSlide>
 
@@ -112,7 +122,7 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={imageresponsive} alt="" class="services__icone" />
+                          <img src={responsiveIcone} alt="" class="services__icone" />
                           <h3>Responsive design</h3>
                         </div>
                       <p className='services__content'>
@@ -120,9 +130,9 @@ const Services = () => {
                           Le webdesign ne se contente pas d'être esthétique, il est fonctionnel. 
                           Chaque élément visuel est soigneusement élaboré pour refléter votre identité de marque tout en 
                           offrant une expérience visuelle immersive et engageante.
-
                       </p>
                     </figcaption>
+                    <img src={imageresponsive} alt="" class="services__icone"/>
                   </figure>
                   </SwiperSlide>
   
