@@ -44,6 +44,7 @@
             justify-content: center;
             align-items: center;
             height:50vh;
+         
         }
 
         &__libelle{
@@ -147,6 +148,7 @@
 
             &__fig {
                 flex-basis: 25%;
+               
             }
             &--bleu {
                 background-color: $bleu;
@@ -178,6 +180,7 @@
             justify-content: center;
             align-items: center;
             gap:0;
+            flex-basis:0%;
         }
 
        
@@ -206,7 +209,7 @@
         }
 
         &__content{
-            font-size: 0.8vw;
+            font-size: 1vw;
         }
        
     }

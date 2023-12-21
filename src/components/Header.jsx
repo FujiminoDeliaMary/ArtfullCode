@@ -7,7 +7,7 @@ import Particules from "./Particle";
 const Header = () => {
 
     window.addEventListener('scroll',()=>{
-      if (window.scrollY > 50){
+      if (window.scrollY >  270){
         document.getElementById('menu').classList.add('scrolled');
       }else{
         document.getElementById('menu').classList.remove('scrolled');

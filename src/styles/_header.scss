@@ -62,7 +62,7 @@
         }
 
         &.scrolled{
-            background-color: rgba(39, 73, 109,0.9);
+            background-color: rgb(39, 73, 109);
             box-shadow: rgba(0, 0, 0, 0.40) 1.95px 1.95px 2.6px;
             transition: background-color .3s ease-in;
         }
@@ -84,18 +84,8 @@
 
             }
 
-            .active::after {
-                content: "";
-                display: block;
-                background-color: $orange;
-                height: 2px;
-                width: 0;
-                border-radius: 10px;
-                margin-top: 3px;
-                transition: width 0.3s ease-out;
-                transform: translateX(-50%);
-                position: relative;
-                left: 50%;
+            .active{
+                color:$orange
             }
 
             li {
