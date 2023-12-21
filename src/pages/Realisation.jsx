@@ -1,36 +1,32 @@
 import React from "react";
+import '../components/Nav';
 import projet1 from "../assets/projet1.png"
-import projet2 from "../assets/projet2.png"
 import projet1Logo from "../assets/projet1Logo.png"
-import projet2Logo from "../assets/projet2Logo.png"
+import imagerealisation2 from "../assets/services/image-realisation2.jpg"
+import Nav from "../components/Nav";
 const Realisation = () => {
 
-    return <>
+    return <section className="realisations" id="realisations">
+           
+            <h2 className="realisations__title">Nos réalisations</h2>
+      
+                {/* <figure class="realisations__projet">
+                    <img class="realisations__img" src={projet1} alt="projet1" />
+                    <figcaption class="realisations__libelle">
+                        <p class="realisations__content">Ce club de canoë-kayak a fait appel à nous afin de retravailler leur site </p>
+                    </figcaption>
+                </figure> */}
 
-        <h2 class="title">Ils nous ont fait confiance</h2>
-        <main>
-            <section class="projet1">
-                <img class="projet1__logo" src={projet1Logo} alt="logo " />
-                <div class="rectangle"></div>
-                <figure class="figure">
-                    <img class="figure__img" src={projet1} alt="projet1" />
-                    <figcaption class="figure__figcaption">
-                        <p class="figure__figcaption__content">Ce club de canoë-kayak a fait appel à nous afin de retravailler leur site </p>
+                <figure className="realisations__projet">
+                    <img className="realisations__img" src={imagerealisation2} alt="projet1" />
+                    <figcaption class="realisations__libelle">
+                        <h3 className="realisations__name">Soutien à l'apprentissage de la lecture pour les détenus en situation d'illettrisme</h3>
+                        <p className="realisations__content">Nous avons eu la chance d'initier notre entreprise avec un projet phare : une application web qui vise à offrir une meilleure approche d'apprentissage du français aux illettrés, aux allophones et aux analphabètes, dans le but de favoriser leur réinsertion future.</p><br></br>
+                        <p className="realisations__content">Étant profondément touchées par leur situation, nous avons décidé de nous porter volontaires, offrant nos services gratuitement pour les aider à améliorer leur situation et à bénéficier d'un meilleur système d'éducation. Notre objectif est de contribuer à leur réinsertion en proposant des outils éducatifs adaptés à leurs besoins spécifiques.</p>
                     </figcaption>
                 </figure>
-            </section>
 
-            <section class="projet2">
-                <img class="projet2__logo" src={projet2} alt="logo " />
-                <div class="rectangle"></div>
-                <figure class="figure">
-                    <img class="figure__img" src={projet2Logo} alt="projet1" />
-                    <figcaption class="figure__figcaption">
-                        <p class="figure__figcaption__content">Studio Light Tattoo nous à fait confiance pour la création et la réalisation de son site web </p>
-                    </figcaption>
-                </figure>
-            </section>
-        </main>
-    </>
+
+    </section>
 }
 export default Realisation;

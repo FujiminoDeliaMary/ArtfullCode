@@ -5,6 +5,15 @@ const Nav = (props) => {
     const { visible, bref} = props;
     const [isVisible, setIsVisible] = useState(visible);
 
+    if (window.innerWidth<1200){
+        const menu = document.getElementById('menu');
+        console.log(menu);
+        if (menu){
+            menu.style.backgroundColor = 'rgb(39, 73, 109)';
+        }
+      
+      }
+
     useEffect(() => {
         setIsVisible(visible);
       }, [visible]); 
@@ -21,9 +30,9 @@ const Nav = (props) => {
     return <nav id="menu" className={(isVisible) ? "header__menu visible" : "header__menu"}>
         <ul className="header__menu-list">
             <li><a href="/">Accueil</a></li>
-            <li><Link to="services" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick}>Nos Services</Link></li>
-            <li><a href="/realisation">Nos réalisations</a></li>
             <li><Link to="equipe" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick}>Notre equipe</Link></li>
+            <li><Link to="services" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick}>Nos Services</Link></li>
+            <li><Link to="realisations" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick}>Nos réalisations</Link></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
 

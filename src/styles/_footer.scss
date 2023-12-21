@@ -12,11 +12,14 @@
     gap: 25vh;
     width: 100%;
 
-    span{
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-        color:$nacre;
+    &__adress,&__tel,&__email,&__heure{
+        p{
+            display: flex;
+            align-items: center;
+            gap:2px;
+        }
+      
+
     }
    
     p {
@@ -36,17 +39,15 @@
     }
 
     &__logo{
-        border-radius: 50%;
-        width:4vh;
-        height: 4vh;
-        padding: 0.5rem 0.5rem;
-        &:first-child{
-            background-color:black
-        }
-        &:nth-child(2){
-            background-color: bisque;
-        }
+        width:40px;
+        height:40px;
     }
+
+    &__icon{
+        width:30px;
+        height:30px;
+    }
+
 
     &__heure {
         display: flex;

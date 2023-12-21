@@ -115,7 +115,6 @@
         }
 
         &__service{
-            padding: 0 8vh;
             &Title{
                 flex-direction: row;
                 h3{
@@ -123,6 +122,41 @@
                 }
             }
         }
+    }
+
+    .realisations{
+       
+        &__projet{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap:0;
+        }
+
+       
+        &__img{
+            border-radius: 0;
+            width: 100vh;
+            position: relative;
+          
+        }
+
+        &__name{
+            color:$blanc;
+            text-align: center;
+        }
+        &__libelle{
+
+            text-align: center;
+            padding: 4vh 4rem;
+            padding-right:7rem;
+            color:$blanc;
+            background-color: $blueberry;
+            width: 100%;
+            height:fit-content ;
+            margin :0 auto;
+        }
+       
     }
 
     .footer{
