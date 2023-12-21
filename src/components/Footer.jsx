@@ -1,11 +1,11 @@
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa";
-import { BsTelephoneFill } from "react-icons/bs";
-import { IoMail } from "react-icons/io5";
-import { FaClock } from "react-icons/fa";
-
+import facebookIcon from '../assets/icons/Facebook.png'
+import twitterIcon from '../assets/icons/Twitter.png'
+import linkedinIcon from '../assets/icons/LinkedIn.png'
+import emailIcon from '../assets/icons/Email.png'
+import PhoneIcon from '../assets/icons/Phone.png'
+import { IoLocation } from "react-icons/io5";
+import { FaClock } from "react-icons/fa6";
 const Footer = () => {
 
     const emailAddress = 'marilynedelia@gmail.com';
@@ -22,37 +22,35 @@ const Footer = () => {
 
     return <footer className="footer">
             <div className="footer__coordonnees">
-                <span>
-                    Adresse
-                </span>
+                 <div className="footer__adress">
+                    <p><IoLocation size={30} color="white"/>Adresse</p>
                     <p><a href={`geo:${latitude},${longitude}`} onClick={handleLocalisationClick}>44 avenue Albert Einstein, 17000 La Rochelle</a></p>
                     <br />
-                <span>
-                   <IoMail size={30} />Email
-                </span>
-                <p><a href={`mailto:${emailAddress}`} onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
-                <br />
-                <span>
-                    <BsTelephoneFill size={20} />
-                    Tel
-                </span>
-                <p>0757130897</p>
+                 </div>
+                 <div className="footer__email">
+                    <p><img className="footer__icon" src={emailIcon} alt="" />Email:</p>
+                    <p><a href={`mailto:${emailAddress}`} onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
+                    <br />
+                 </div>
+                <div className="footer__tel">
+                    <p><img src={PhoneIcon} alt="" className="footer__icon" /> Tel:</p>                    
+                    <p>0757130897</p>
+                </div>
+                
             </div>
 
             <div className="footer__heure">
-               <FaClock size={30} /> Horaires : Du lundi au vendredi de 9h à 17h
+              <p><FaClock size={30} color="white"/> Horaires: Du lundi au vendredi, de 8h à 17h </p>
             </div>
 
             <div className="footer__nav">
                 <nav >
-                    <ul class="footer__logos">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                <path d="M256 512C397.385 512 512 397.385 512 256C512 114.615 397.385 3.8147e-05 256 3.8147e-05C114.615 3.8147e-05 3.05176e-05 114.615 3.05176e-05 256C3.05176e-05 397.385 114.615 512 256 512Z" fill="#3C5A9A"/>
-                            </svg>
+                    <ul className="footer__logos">
+                        <li className="footer__logo">
+                            <img src={facebookIcon} alt="" />
                         </li>
-                        <li><FaLinkedinIn size={30} className="footer__logo"/></li>
-                        <li><FaTwitter size={30} className="footer__logo"/></li>
+                        <li className="footer__logo"><img src={linkedinIcon} alt="" /></li>
+                        <li className="footer__logo"><img src={twitterIcon} alt="" /></li>
                     </ul>
                 </nav>
                 <p>Nous contacter</p>

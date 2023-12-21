@@ -8,7 +8,10 @@ const Nav = (props) => {
     if (window.innerWidth<1200){
         const menu = document.getElementById('menu');
         console.log(menu);
-        menu.style.backgroundColor = 'rgb(39, 73, 109)';
+        if (menu){
+            menu.style.backgroundColor = 'rgb(39, 73, 109)';
+        }
+      
       }
 
     useEffect(() => {
