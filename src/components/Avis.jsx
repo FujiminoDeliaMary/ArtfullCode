@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { IoStar } from "react-icons/io5";
 import { IoStarHalf } from "react-icons/io5";
 import { IoStarOutline } from "react-icons/io5";
-
+import AnimatedPath from './AnimatedPath';
 // import avis
 import avisHomme from "../assets/avis/avatar-homme.png"
 import avisHomme2 from "../assets/avis/avatar-homme2.png"
@@ -14,6 +14,12 @@ import avisFemme2 from "../assets/avis/avatar-femme2.png"
 import avisFemme3 from "../assets/avis/avatar-femme3.png"
 import avisFemme4 from "../assets/avis/avatar-femme4.png"
 
+// gsap
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
+
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -23,10 +29,14 @@ import 'swiper/css/pagination';
 // import required modules
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 
+
 const Avis = () => {
+    const container = useRef();
+
+
     return (
-        // <>
-        <section className='avis'>
+
+        <><section className='avis'>
 
 
             <Swiper
@@ -173,7 +183,9 @@ const Avis = () => {
                     </aside>
                 </SwiperSlide>
             </Swiper>
-        </section>
+        </section><div class="leSvg" >{/*style="display: flex; position :relative; z-index: 10; "*/}
+                <AnimatedPath />
+            </div></>
 
     );
 }

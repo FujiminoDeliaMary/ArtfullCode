@@ -1,4 +1,3 @@
-
 .about {
 
     span {
@@ -144,12 +143,13 @@
         }
 
     }
-    &__service{
-        
+
+    &__service {
+
         padding: 0 5rem;
-        display:flex;
+        display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -158,13 +158,13 @@
         justify-content: space-between;
         align-items: center;
 
-            figcaption{
-                font-family: 'Poppins', sans-serif;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-        
+        figcaption {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
 
 
         &Title {
@@ -172,7 +172,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            gap:1rem;
+            gap: 1rem;
             width: 100%;
 
             h3 {
@@ -210,9 +210,43 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 1;
+    // color: $blanc;
+    transition: opacity 0.3s ease-in-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 96%;
+        background: inherit;
+        background-color: $bleu;
+        z-index: -10;
+        opacity: 0.9;
+        border-radius: 10px;
+
+    }
+
+    &:hover::before {
+        // filter: blur(0);
+        filter: blur(1px);
+        border: 1px solid $bleu;
+        opacity: 1;
+        color: $blanc;
+        border-radius: 10px;
+
+    }
+
+    &:hover {
+        color: $blanc;
+        border: 1px solid $blanc;
+
+    }
 
     background : {
-        color: #D9D9D9;
+        // color: #D9D9D9;
     }
 
     // width:25%;
@@ -308,4 +342,3 @@
 
     
 }
-
