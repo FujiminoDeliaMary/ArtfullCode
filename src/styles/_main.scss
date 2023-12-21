@@ -123,30 +123,12 @@
 
     // todo
     &__title {
-        font-family: "David Libre" sans-serif;
-        text-transform: uppercase;
-        font-weight: 600;
-        text-align: center;
-        font-size: 2.5vh;
-        width: fit-content;
-        margin: 0 auto;
-        margin-bottom: 8vh;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 70%;
-            margin: 0 auto;
-            height: 1px;
-            margin-top: 4%;
-            background-color: #0e0c0c;
-            // todo
-        }
+    @include titre()
 
     }
     &__service{
         
-        padding: 0 5rem;
+        padding: 0 7rem;
         display:flex;
         justify-content: center;
         align-items:center;
@@ -202,6 +184,10 @@
 /* debut de nos avis */
 .avis {
     padding: 0 4vw;
+
+    &__title{
+        @include titre();
+    }
 }
 
 
@@ -215,7 +201,6 @@
         color: #D9D9D9;
     }
 
-    // width:25%;
     padding: 4vh 2vw;
     gap: 2vh;
     border-radius: 10px;
@@ -223,26 +208,28 @@
 
    
     &__image {
-        width: 10vw;
-        max-width: 10vw;
+        width: 10vh;
+        max-width: 10vh;
         border-radius: 70%;
     }
 
     &__nom {
         font-family: 'Poppins';
-        font-size: 1.8rem;
+        font-size: 2vh;
         font-weight: 800;
     }
 
     &__job {
         font-family: 'Poppins', sans-serif;
         text-align: center;
+        font-size: 1.8vh;
 
     }
 
     &__avis {
         text-align: center;
         line-height: 1.2;
+        font-size: 1.8vh;
     }
 
     &__notes {
@@ -253,47 +240,29 @@
 
 
 .realisations{
-    padding: 5vh 2rem;
-    margin-top:2vw;
+    padding: 0 2rem;
+    margin:10vh 0;
     display: flex;
     flex-direction: column;
     
     &__title {
-        position: relative;
-        text-align: center;
-        font-size: 3vh;
-        font-family: "David Libre", sans-serif;
-        width: fit-content;
-        margin: 0 auto;
-        margin-bottom:5vh;
-        &::after{
-            content: "";
-            display: block;
-            background-color: $blueberry;
-            height: 2px;
-            border-radius: 10px;
-            margin-top: 8px;
-            width:60%;
-            transform: translateX(-50%);
-            position: relative;
-            left: 50%;
-            
-        }
+        @include titre();
     }
 
     &__projet{
         display: flex;
         flex-direction: column;
-        gap:6vw;
+        gap:4vw;
     }
 
     &__img{
         width: 100%;
+        height: 100%;
         border-radius: 20px;
     }
 
     &__name{
-        font-size: clamp(2vh ,2.2vh, 3vh);
+        font-size: clamp(17px ,2.2vh, 20px);
         color:$blueberry;
         font-weight:600;
         margin-bottom: 2rem;
@@ -301,7 +270,7 @@
     }
 
     &__content{
-        font-size: clamp(1.6vh,1.6vh,1.8vh);
+        font-size: clamp(14px, 13px + 1vw, 15px);
         line-height: 1.4;
         font-family: 'Poppins';
     }

@@ -3,18 +3,6 @@
 @media  screen and (width > 767px) {
 
     .header{
-        &__arrow{
-            display: flex;
-           
-         }
-    }
-   
-}
-
-
-@media  screen and (width > 1200px) {
-
-    .header {
         position: relative;
         top: 0;
         left: 0;
@@ -22,9 +10,77 @@
         height: 80vh;
         overflow: hidden;
         background-color: rgba(39, 73, 109, 0.9);
-    
-     
+        &__arrow{
+            display: flex;
+           
+         }
 
+        &__menuBurger{
+            position: relative;
+            z-index:3000000;
+        }
+    
+        &__menu{
+            width:30%;
+            &.visible{
+                width:30%;
+            }
+        }
+        
+        &__navbar {
+            display: flex;
+            margin: 1rem 0;
+            justify-content: space-between;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+    
+    
+    }
+
+    .realisations{
+        &__projet{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height:50vh;
+        }
+
+        &__libelle{
+
+            text-align: center;
+            padding: 4vh 4rem;
+            padding-right:7rem;
+            // background-color: $blueberry;
+            background-color: none;
+            border: 3px $blueberry solid;
+            width: 100%;
+            max-width: 100%;
+            height:100% ;
+            margin :0 auto;
+        }
+
+        &__content{
+            max-width: 100%;
+            font-size: 1.4vw;
+        }
+
+        &__img{
+            border-radius: 0;
+            position: relative;
+            width: 45%;
+            height:100%;
+            object-fit: cover;
+        }
+    }
+   
+}
+
+
+@media  screen and (width > 1366px) {
+
+    .header {
+    
         &__logo{
 
             width:8vh;
@@ -36,10 +92,9 @@
             z-index: 30; 
            
         }
-    
-      
-    
+
         &__menu{
+            width: 100%;
             background-color: rgba(39, 73, 109, 0);
             top: -20%;
             position: fixed;
@@ -49,6 +104,7 @@
             top 0.2s ease-out,
             opacity 0.2s ease-out;
             &.visible{
+                width: 100%;
                 transition:
                 opacity 0.2s ease-out,
                 top 0.2s ease-out;
@@ -61,23 +117,10 @@
                 align-items: center;
             }
         }
-
-        &__menuBurger{
-            position: relative;
-            z-index:3000000;
-        }
     
+      
     
-        
-        &__navbar {
-            display: flex;
-            margin: 1rem 0;
-            justify-content: space-between;
-            font-family: 'Poppins', sans-serif;
-            
-        }
-    
-    
+       
     }
 
       .about{
@@ -140,12 +183,13 @@
        
         &__img{
             border-radius: 0;
-            width: 80vh;
             position: relative;
-          
+            width: 45%;
+            height:40vh;
         }
 
         &__name{
+            font-size: 1.3vw;
             color:$blanc;
             text-align: center;
         }
@@ -159,6 +203,10 @@
             width: 100%;
             height:fit-content ;
             margin :0 auto;
+        }
+
+        &__content{
+            font-size: 0.8vw;
         }
        
     }

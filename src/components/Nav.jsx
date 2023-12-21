@@ -5,7 +5,7 @@ const Nav = (props) => {
     const { visible, bref} = props;
     const [isVisible, setIsVisible] = useState(visible);
 
-    if (window.innerWidth<1200){
+    if (window.innerWidth<1366){
         const menu = document.getElementById('menu');
         console.log(menu);
         if (menu){

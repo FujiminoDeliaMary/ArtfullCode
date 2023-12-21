@@ -27,7 +27,7 @@ const Avis = () => {
     return (
         // <>
         <section className='avis'>
-
+            <h2 className='avis__title'>Des avis de nos clients les plus satisfaits</h2>
 
             <Swiper
                 effect={'coverflow'}

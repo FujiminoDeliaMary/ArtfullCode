@@ -9,27 +9,22 @@ import { FaClock } from "react-icons/fa6";
 const Footer = () => {
 
     const emailAddress = 'marilynedelia@gmail.com';
-    const latitude = '46.166667';
-    const longitude = '-1.150000';
-
+ 
     const handleEmailClick = () => {
         window.location.href = `mailto:${emailAddress}`;
       };
 
-    const handleLocalisationClick= () =>{
-        window.location.href = `geo:${latitude}, ${longitude}`;
-    }
 
     return <footer className="footer">
             <div className="footer__coordonnees">
                  <div className="footer__adress">
                     <p><IoLocation size={30} color="white"/>Adresse</p>
-                    <p><a href={`geo:${latitude},${longitude}`} onClick={handleLocalisationClick}>44 avenue Albert Einstein, 17000 La Rochelle</a></p>
+                    <p><a href="https://maps.app.goo.gl/uEN1Kg6vP38o6mYp7" >44 avenue Albert Einstein, 17000 La Rochelle</a></p>
                     <br />
                  </div>
                  <div className="footer__email">
                     <p><img className="footer__icon" src={emailIcon} alt="" />Email:</p>
-                    <p><a href={`mailto:${emailAddress}`} onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
+                    <p><a href="/" onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
                     <br />
                  </div>
                 <div className="footer__tel">
