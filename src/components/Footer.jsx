@@ -46,7 +46,11 @@ const Footer = () => {
             <div className="footer__nav">
                 <nav >
                     <ul class="footer__logos">
-                        <li><FaFacebookF size={30} className="footer__logo"/></li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M256 512C397.385 512 512 397.385 512 256C512 114.615 397.385 3.8147e-05 256 3.8147e-05C114.615 3.8147e-05 3.05176e-05 114.615 3.05176e-05 256C3.05176e-05 397.385 114.615 512 256 512Z" fill="#3C5A9A"/>
+                            </svg>
+                        </li>
                         <li><FaLinkedinIn size={30} className="footer__logo"/></li>
                         <li><FaTwitter size={30} className="footer__logo"/></li>
                     </ul>

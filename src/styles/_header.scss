@@ -63,7 +63,7 @@
         }
 
         &.scrolled{
-            background-color: rgba(39, 73, 109,0.8);
+            background-color: rgba(39, 73, 109,0.9);
             box-shadow: rgba(0, 0, 0, 0.40) 1.95px 1.95px 2.6px;
             transition: background-color .3s ease-in;
         }
@@ -200,17 +200,20 @@
         left: 50%;
         transform: translate(-50%, 50%);
         font-family: "Stick No Bills", sans-serif;
-        font-size: 1.8vh;
         text-align: center;
         bottom: 48%;
         color: $blanc;
         width: 100%;
     }
 
+    &__slogan{
+        font-size: 2vh;
+    }
+
     &__nomAgence {
         font-family: "David Libre";
         text-transform: uppercase;
-        font-size: 4.2vh;
+        font-size: 7vh;
         color: $blanc;
         bottom: 55%;
     }
