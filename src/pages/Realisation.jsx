@@ -21,9 +21,9 @@ const Realisation = () => {
                 <figure className="realisations__projet">
                     <img className="realisations__img" src={projet2} alt="projet1" />
                     <figcaption class="realisations__libelle">
-                        <h3 className="realisations__name">Aide à l'alphabétisation d'illétrés en détention</h3>
-                        <p className="realisations__content">Nous avons été chanceuses d'avoir comme premier projet de notre entreprise, une application web qui permet d'aider les illétrés, allophones et analphabètes de pouvoir bénéficier d'une meilleur approche concernant leur apprentissage du français pour une meilleure réinsertion future.</p><br></br>
-                        <p className="realisations__content">De ce fait, leur situation nous ayant énormément touchée, nous avons décidée de nous porter volontaire gratuitement pour les aider à améliorer leur situation, donc bénéficier d'une meilleur système d'éducation</p>
+                        <h3 className="realisations__name">Soutien à l'apprentissage de la lecture pour les détenus en situation d'illettrisme</h3>
+                        <p className="realisations__content">Nous avons eu la chance d'initier notre entreprise avec un projet phare : une application web qui vise à offrir une meilleure approche d'apprentissage du français aux illettrés, aux allophones et aux analphabètes, dans le but de favoriser leur réinsertion future.</p><br></br>
+                        <p className="realisations__content">Étant profondément touchées par leur situation, nous avons décidé de nous porter volontaires, offrant nos services gratuitement pour les aider à améliorer leur situation et à bénéficier d'un meilleur système d'éducation. Notre objectif est de contribuer à leur réinsertion en proposant des outils éducatifs adaptés à leurs besoins spécifiques.</p>
                     </figcaption>
                 </figure>
 
