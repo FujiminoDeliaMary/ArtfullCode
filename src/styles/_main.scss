@@ -1,4 +1,3 @@
-
 .about {
 
     span {
@@ -121,6 +120,7 @@
 
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 
+
     // todo
     &__title {
         font-family: "David Libre" sans-serif;
@@ -144,12 +144,13 @@
         }
 
     }
-    &__service{
-        
+
+    &__service {
+
         padding: 0 5rem;
-        display:flex;
+        display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -158,13 +159,13 @@
         justify-content: space-between;
         align-items: center;
 
-            figcaption{
-                font-family: 'Poppins', sans-serif;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-        
+        figcaption {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
 
 
         &Title {
@@ -172,7 +173,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            gap:1rem;
+            gap: 1rem;
             width: 100%;
 
             h3 {
@@ -221,7 +222,7 @@
     border-radius: 10px;
     margin-bottom: 2vh;
 
-   
+
     &__image {
         width: 10vw;
         max-width: 10vw;
@@ -252,12 +253,12 @@
 }
 
 
-.realisations{
+.realisations {
     padding: 5vh 2rem;
-    margin-top:2vw;
+    margin-top: 2vw;
     display: flex;
     flex-direction: column;
-    
+
     &__title {
         position: relative;
         text-align: center;
@@ -265,47 +266,47 @@
         font-family: "David Libre", sans-serif;
         width: fit-content;
         margin: 0 auto;
-        margin-bottom:5vh;
-        &::after{
+        margin-bottom: 5vh;
+
+        &::after {
             content: "";
             display: block;
             background-color: $blueberry;
             height: 2px;
             border-radius: 10px;
             margin-top: 8px;
-            width:60%;
+            width: 60%;
             transform: translateX(-50%);
             position: relative;
             left: 50%;
-            
+
         }
     }
 
-    &__projet{
+    &__projet {
         display: flex;
         flex-direction: column;
-        gap:6vw;
+        gap: 6vw;
     }
 
-    &__img{
+    &__img {
         width: 100%;
         border-radius: 20px;
     }
 
-    &__name{
-        font-size: clamp(2vh ,2.2vh, 3vh);
-        color:$blueberry;
-        font-weight:600;
+    &__name {
+        font-size: clamp(2vh, 2.2vh, 3vh);
+        color: $blueberry;
+        font-weight: 600;
         margin-bottom: 2rem;
         // font-family: "Marcellus SC", sans-serif;
     }
 
-    &__content{
-        font-size: clamp(1.6vh,1.6vh,1.8vh);
+    &__content {
+        font-size: clamp(1.6vh, 1.6vh, 1.8vh);
         line-height: 1.4;
         font-family: 'Poppins';
     }
 
-    
-}
 
+}
