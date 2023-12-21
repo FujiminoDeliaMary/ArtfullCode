@@ -1,11 +1,11 @@
 import React from "react";
-import facebookIcon from '../assets/icons/Facebook.png'
-import twitterIcon from '../assets/icons/Twitter.png'
-import linkedinIcon from '../assets/icons/LinkedIn.png'
-import emailIcon from '../assets/icons/Email.png'
-import PhoneIcon from '../assets/icons/Phone.png'
-import { IoLocation } from "react-icons/io5";
-import { FaClock } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { BsTelephoneFill } from "react-icons/bs";
+import { IoMail } from "react-icons/io5";
+import { FaClock } from "react-icons/fa";
+
 const Footer = () => {
 
     const emailAddress = 'marilynedelia@gmail.com';
@@ -22,35 +22,33 @@ const Footer = () => {
 
     return <footer className="footer">
             <div className="footer__coordonnees">
-                 <div className="footer__adress">
-                    <p><IoLocation size={30} color="white"/>Adresse</p>
+                <span>
+                    Adresse
+                </span>
                     <p><a href={`geo:${latitude},${longitude}`} onClick={handleLocalisationClick}>44 avenue Albert Einstein, 17000 La Rochelle</a></p>
                     <br />
-                 </div>
-                 <div className="footer__email">
-                    <p><img className="footer__icon" src={emailIcon} alt="" />Email:</p>
-                    <p><a href={`mailto:${emailAddress}`} onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
-                    <br />
-                 </div>
-                <div className="footer__tel">
-                    <p><img src={PhoneIcon} alt="" className="footer__icon" /> Tel:</p>                    
-                    <p>0757130897</p>
-                </div>
-                
+                <span>
+                   <IoMail size={30} />Email
+                </span>
+                <p><a href={`mailto:${emailAddress}`} onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
+                <br />
+                <span>
+                    <BsTelephoneFill size={20} />
+                    Tel
+                </span>
+                <p>0757130897</p>
             </div>
 
             <div className="footer__heure">
-              <p><FaClock size={30} color="white"/> Horaires: Du lundi au vendredi, de 8h à 17h </p>
+               <FaClock size={30} /> Horaires : Du lundi au vendredi de 9h à 17h
             </div>
 
             <div className="footer__nav">
                 <nav >
-                    <ul className="footer__logos">
-                        <li className="footer__logo">
-                            <img src={facebookIcon} alt="" />
-                        </li>
-                        <li className="footer__logo"><img src={linkedinIcon} alt="" /></li>
-                        <li className="footer__logo"><img src={twitterIcon} alt="" /></li>
+                    <ul class="footer__logos">
+                        <li><FaFacebookF size={30} className="footer__logo"/></li>
+                        <li><FaLinkedinIn size={30} className="footer__logo"/></li>
+                        <li><FaTwitter size={30} className="footer__logo"/></li>
                     </ul>
                 </nav>
                 <p>Nous contacter</p>
