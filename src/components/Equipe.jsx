@@ -29,7 +29,7 @@ const Equipe  = () => {
         <img src={photo} alt="les membres de léquipe" />
         <figcaption className="membre">
           <p className="membre__nom">Loane<br />Sene</p>
-          <p className="membre__filiere">Web Designer</p>
+          <p className="membre__filiere">Web Designeuse Intégratrice</p>
         </figcaption>
       </figure>
 
@@ -37,7 +37,7 @@ const Equipe  = () => {
         <img src={photo} alt="les membres de léquipe" />
         <figcaption className="membre">
           <p className="membre__nom">Clarence<br />Noirot</p>
-          <p className="membre__filiere">Web Designer</p>
+          <p className="membre__filiere">Web Designeuse Intégratrice</p>
         </figcaption>
       </figure>
     </article>
