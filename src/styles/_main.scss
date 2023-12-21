@@ -43,12 +43,13 @@
         top: -5vh;
         left: 50%;
         transform: translateX(-50%);
+
         background-color: $bleu;
         padding: 4% 0;
         text-align: center;
         font-size: 3vh;
         z-index: 5;
-        font-family: "David Libre", sans-serif;
+        font-family: "David Libre";
         text-transform: uppercase;
         box-shadow:
             rgba(0, 0, 0, 0.19) 0px 10px 20px,
@@ -113,7 +114,7 @@
 .services {
     position: relative;
     margin-bottom: 5vh;
-    padding: 3.5rem 2rem;
+    padding: 2rem 2rem;
     background-color: $blanc;
     width: 80%;
     margin: 0 auto;
@@ -126,7 +127,7 @@
         text-transform: uppercase;
         font-weight: 600;
         text-align: center;
-        font-size: 2.5vh;
+        font-size: 3vh;
         width: fit-content;
         margin: 0 auto;
         margin-bottom: 8vh;
@@ -187,7 +188,7 @@
 
 
     &__content {
-        font-size: 1.8vh;
+        font-size: 1.6vh;
         line-height: 1.4;
     }
 
@@ -201,9 +202,50 @@
 
 /* debut de nos avis */
 .avis {
-    padding: 0 4vw;
+    padding: 20rem 4vw;
 }
 
+// .swipClass {
+//     width: 60%;
+//     padding-top: 50px;
+//     padding-bottom: 20%;
+//     // height: 100%;
+//     width: 90%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     overflow: hidden;
+
+//     &__slide {
+//         position: relative;
+
+//         background-position: center;
+//         background-size: cover;
+//         width: 800px;
+//     }
+
+//     &__slide img {
+//         position: relative;
+
+//         display: block;
+//         width: 80%;
+//         // -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0002, #0004);
+//         // box-reflect: below 1px linear-gradient(transparent, transparent, #0002, #0004);
+//     }
+// }
+
+// .carousel {
+//     position: relative;
+//     margin-bottom: 10%;
+
+// }
+
+@keyframes drawBorder {
+    to {
+        left: 100%; // Déplace le pseudo-élément à la position finale (100% de la largeur)
+    }
+}
 
 .card {
     margin: 0 auto;
@@ -255,7 +297,7 @@
     border-radius: 10px;
     margin-bottom: 2vh;
 
-   
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     &__image {
         width: 10vw;
         max-width: 10vw;
@@ -285,60 +327,9 @@
 
 }
 
-
-.realisations{
-    padding: 5vh 2rem;
-    margin-top:2vw;
-    display: flex;
-    flex-direction: column;
-    
-    &__title {
-        position: relative;
-        text-align: center;
-        font-size: 3vh;
-        font-family: "David Libre", sans-serif;
-        width: fit-content;
-        margin: 0 auto;
-        margin-bottom:5vh;
-        &::after{
-            content: "";
-            display: block;
-            background-color: $blueberry;
-            height: 2px;
-            border-radius: 10px;
-            margin-top: 8px;
-            width:60%;
-            transform: translateX(-50%);
-            position: relative;
-            left: 50%;
-            
-        }
-    }
-
-    &__projet{
-        display: flex;
-        flex-direction: column;
-        gap:6vw;
-    }
-
-    &__img{
-        width: 100%;
-        border-radius: 20px;
-    }
-
-    &__name{
-        font-size: clamp(2vh ,2.2vh, 3vh);
-        color:$blueberry;
-        font-weight:600;
-        margin-bottom: 2rem;
-        // font-family: "Marcellus SC", sans-serif;
-    }
-
-    &__content{
-        font-size: 1.6vh;
-        line-height: 1.4;
-        font-family: 'Poppins';
-    }
-
-    
+.leSvg {
+    // width: 100px;
+    overflow: hidden;
+    position: relative;
+    top: auto;
 }

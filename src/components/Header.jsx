@@ -6,14 +6,6 @@ import Particules from "./Particle";
 
 const Header = () => {
 
-    window.addEventListener('scroll',()=>{
-      if (window.scrollY > 50){
-        document.getElementById('menu').classList.add('scrolled');
-      }else{
-        document.getElementById('menu').classList.remove('scrolled');
-      }
-    })
-  
     const [isMenuVisible, setMenuVisible] = useState(false);
     const [scrollDisabled, setScrollDisabled] = useState(false);
     const [scroll, setScroll] = useState(document.body.style.overflow);
@@ -51,7 +43,7 @@ const Header = () => {
             
 
     return <header className="header">
-        <Particules className="particule" />
+        <Particules />
         <div className="header__navbar">
             <img
                 src={Logo}
@@ -79,10 +71,9 @@ const Header = () => {
                 spy={true}
             >
 
-                <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.5 12L0 19.5L20 39.5L40 19.5L32.5 12L20 24.5L7.5 12Z" fill="#F8F8F8" />
                 </svg>
-
             </Link>
 
         </div>
