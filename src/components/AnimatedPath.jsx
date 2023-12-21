@@ -21,7 +21,7 @@ const AnimatedPath = () => {
         start: "top 75%",
         end: "bottom 75%",
         toggleActions: "restart pause reverse pause",
-        markers: true,
+        markers: false,
         scrub: 3,
       },
       duration: 4,
