@@ -659,6 +659,7 @@ a:visited {
   padding: 2rem 0;
   gap: 25vh;
   width: 100%;
+  margin-top: 3rem;
 }
 .footer__adress p, .footer__tel p, .footer__email p, .footer__heure p {
   display: flex;

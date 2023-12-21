@@ -1,5 +1,3 @@
-
-
 .footer {
     display: flex;
     justify-content: space-evenly;
@@ -11,24 +9,29 @@
     padding: 2rem 0;
     gap: 25vh;
     width: 100%;
+    margin-top: 3rem;
 
-    &__adress,&__tel,&__email,&__heure{
-        p{
+    &__adress,
+    &__tel,
+    &__email,
+    &__heure {
+        p {
             display: flex;
             align-items: center;
-            gap:2px;
+            gap: 2px;
         }
-      
+
 
     }
-   
+
     p {
         line-height: 2vw;
         margin-bottom: 1rem;
-        a{
-            color:$nacre;
+
+        a {
+            color: $nacre;
         }
-        
+
     }
 
     &__logos {
@@ -38,14 +41,14 @@
         gap: 2%;
     }
 
-    &__logo{
-        width:40px;
-        height:40px;
+    &__logo {
+        width: 40px;
+        height: 40px;
     }
 
-    &__icon{
-        width:30px;
-        height:30px;
+    &__icon {
+        width: 30px;
+        height: 30px;
     }
 
 
@@ -57,21 +60,23 @@
         display: none;
     }
 
-    &__image{
+    &__image {
         display: none;
     }
 
-    &__heure, &__coordonnees, &__nav{
-            display: none;
-        }
-    
+    &__heure,
+    &__coordonnees,
+    &__nav {
+        display: none;
+    }
 
-    &__mobile{
+
+    &__mobile {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap:2vh;
+        gap: 2vh;
     }
 
 }
