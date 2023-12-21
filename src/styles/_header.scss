@@ -8,21 +8,20 @@
     overflow: hidden;
     background-color: rgba(39, 73, 109, 0.9);
 
-    .particule{
+    .particule {
         width: 100%;
         position: absolute;
-        bottom:0;
-        left:0;
+        bottom: 0;
+        left: 0;
     }
-    &__arrow{
-        display:none;
-        width:7vh;
-        height:7vh;
+
+    &__arrow {
+        display: none;
+        width: 7vh;
+        height: 7vh;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background-color: rgba(88, 96, 133, 0.5);
-        margin-bottom: 2vh;
         cursor: pointer;
         position: absolute;
         bottom: 1vh;
@@ -61,8 +60,8 @@
                 background-color .3s ease-in;
         }
 
-        &.scrolled{
-            background-color: rgba(39, 73, 109,0.9);
+        &.scrolled {
+            background-color: rgba(39, 73, 109, 0.9);
             box-shadow: rgba(0, 0, 0, 0.40) 1.95px 1.95px 2.6px;
             transition: background-color .3s ease-in;
         }
@@ -117,13 +116,14 @@
 
                 &:hover {
                     cursor: pointer;
+
                     &::after {
                         width: 100%;
                         transition: width 0.3 ease-out;
                     }
                 }
             }
-        
+
         }
     }
 
@@ -205,7 +205,7 @@
         width: 100%;
     }
 
-    &__slogan{
+    &__slogan {
         font-size: 2vh;
     }
 

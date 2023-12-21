@@ -80,8 +80,6 @@ a:visited {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: rgba(88, 96, 133, 0.5);
-  margin-bottom: 2vh;
   cursor: pointer;
   position: absolute;
   bottom: 1vh;
