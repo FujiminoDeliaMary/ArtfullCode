@@ -49,8 +49,13 @@ a:visited {
 }
 
 .strong {
-  font-weight: 900 !important;
+  font-weight: bold;
   color: black;
+}
+
+.strong2 {
+  font-weight: bold;
+  color: white;
 }
 
 .header {
