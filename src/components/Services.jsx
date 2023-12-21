@@ -8,7 +8,7 @@ import iconeMaintenance from '../assets/services/maintenanceIcone.png'
 import iconeClient from '../assets/services/formationIcone.png'
 // Import des images
 import imageFormation from '../assets/services/image-formation.jpg'
-import imageUx from '../assets/services/uxImage.png'
+import imageux from '../assets/services/image-ux.jpg'
 import imageMaintenance from '../assets/services/imageMaintenance.png'
 import imageWebDesign from '../assets/services/webDesign.png'
 
@@ -107,7 +107,7 @@ const Services = () => {
 
               </p>
             </figcaption>
-            <img src={imageUx} alt="" class="services__image" />
+            <img src={imageux} alt="" class="services__image" />
           </figure>
         </SwiperSlide>
 
