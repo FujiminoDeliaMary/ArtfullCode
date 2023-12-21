@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AnimatedPath = () => {
+const AnimatedPathHaut = () => {
   const pathRef = useRef();
 
   useEffect(() => {
@@ -40,4 +40,4 @@ const AnimatedPath = () => {
   );
 };
 
-export default AnimatedPath;
+export default AnimatedPathHaut;

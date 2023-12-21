@@ -4,13 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AnimatedPath = props => {
+const AnimatedPath = () => {
   const pathRef = useRef();
-  const {
-    start,
-    end
-
-  } = props;
 
   useEffect(() => {
     const myPath = pathRef.current;
@@ -24,11 +19,9 @@ const AnimatedPath = props => {
       scrollTrigger: {
         trigger: ".leSvg",
         start: "top 75%",
-        end: "bottom 65%",
-        // start: { start },
-        // end: { end },
+        end: "bottom 75%",
         toggleActions: "restart pause reverse pause",
-        markers: false,
+        markers: true,
         scrub: 3,
       },
       duration: 4,
