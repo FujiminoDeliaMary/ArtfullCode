@@ -1,260 +1,180 @@
-import React from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { IoStar } from "react-icons/io5";
+import { IoStarHalf } from "react-icons/io5";
+import { IoStarOutline } from "react-icons/io5";
+
+// import avis
+import avisHomme from "../assets/avis/avatar-homme.png"
+import avisHomme2 from "../assets/avis/avatar-homme2.png"
+import avisHomme3 from "../assets/avis/avatar-homme3.png"
+import avisHomme4 from "../assets/avis/avatar-homme4.png"
+import avisFemme from "../assets/avis/avatar-femme.png"
+import avisFemme2 from "../assets/avis/avatar-femme2.png"
+import avisFemme3 from "../assets/avis/avatar-femme3.png"
+import avisFemme4 from "../assets/avis/avatar-femme4.png"
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { EffectCoverflow, Navigation } from 'swiper/modules';
 
 const Avis = () => {
+    return (
+        // <>
+        <section className='avis'>
 
-    return <>
-        {/* nos avis  */}
-        <section class="avis">
-            <h2 class="avis__titre">Quelques <span>avis</span> de nos clients</h2>
 
-            {/* Swiper */}
-            <article class="carousel">
-                <div class="swiper swipClass mySwiper">
-                    <div class="swipClass__wrap swiper-wrapper">
-                        <div class="swipClass__slide swiper-slide">
-                            <aside class="card">
-                                <img src="images/Group10.png" alt="" class="cardimage" />
-                                <h2 class="cardnom">Marc Vido</h2>
-                                <h3 class="cardjob">
-                                    Gestionnaire Service Public
-                                </h3>
-                                <p class="cardavis">
-                                    "Très satisfait des services proposés par l'équipe d'ArtFull Code.
-                                    Je me suis senti bien accompagné du début à la fin."
-                                </p>
-                                <ul class="card__notes">
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="swipClass__slide swiper-slide">
-                            <aside class="card">
-                                <img src="images/frog.png" alt="" class="cardimage" />
-                                <h2 class="cardnom">Jasmine Marki</h2>
-                                <h3 class="cardjob"> Co-gérante de la statup MineDiv
-                                </h3>
-                                <p class="cardavis">
-                                    "Je recommande vivement leurs services à toute entreprise cherchant
-                                    à élever le niveau de sa formation en ligne."
-                                </p>
-                                <ul class="card__notes">
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="swipClass__slide swiper-slide">
-                            <aside class="card">
-                                <img src="images/Group 8.png" alt="" class="cardimage" />
-                                <h2 class="cardnom">Solène Bouvier</h2>
-                                <h3 class="cardjob">Fleuriste
-                                </h3>
-                                <p class="cardavis">
-                                    "Je suis satisfait par les services de l'Agence Artfull Code,
-                                    merci à eux pour leur professionnalisme et leur écoute attentive.
-                                    Leurs services ont dépassé mes attentes."
-                                </p>
-                                <ul class="card__notes">
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="swipClass__slide swiper-slide">
-                            <aside class="card">
-                                <img src="images/Group 7.png" alt="" class="cardimage" />
-                                <h2 class="cardnom">Pierre Olivier</h2>
-                                <h3 class="cardjob"> Gérante d'une association animalière
-                                </h3>
-                                <p class="cardavis">
-                                    "Leur capacité à comprendre mes besoins a abouti à des services impeccables.
-                                    Je recommande vivement leur expertise à tous ceux qui recherchent un service client
-                                    exceptionnel et sur mesure."
-                                </p>
-                                <ul class="card__notes">
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="swipClass__slide swiper-slide">
-                            <aside class="card">
-                                <img src="images/Logo.png" alt="" class="cardimage" />
-                                <h2 class="cardnom">Elise Tellier</h2>
-                                <h3 class="cardjob">Directrice d'une organisation à but non lucratif</h3>
-                                <p class="cardavis">
-                                    "Je recommande vivement l'agence ArtFull Code à toute personne en quête d'un service clientèle de haute qualité.
-                                    Chaque membre de l'équipe a été à l'écoute de mes besoins."
-                                </p>
-                                <ul class="card__notes">
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="swipClass__slide swiper-slide">
-                            <aside class="card">
-                                <img src="images/frog.png" alt="" class="cardimage" />
-                                <h2 class="cardnom">François Dubois</h2>
-                                <h3 class="cardjob">Enseignant au sein d'un Centre Pénitencier</h3>
-                                <p class="cardavis">
-                                    "Mon projet à été mené à bien du début à la fin.
-                                    Bonne communication et collaboration, avec tout les membres de l'équipe. Merci !"
-                                </p>
-                                <ul class="card__notes">
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="swipClass__slide swiper-slide">
-                            <aside class="card">
-                                <img src="images/frog.png" alt="" class="cardimage" />
-                                <h2 class="cardnom">Marina Satère</h2>
-                                <h3 class="cardjob">Gérante pharmaceutique</h3>
-                                <p class="cardavis">
-                                    "Équipe très rassurante à l'écoute de son client,
-                                    je suis aujourd'hui pleinement satisfait des prestations de cette Agence. Je la recommande !"
-                                </p>
-                                <ul class="card__notes">
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="swipClass__slide swiper-slide">
-                            <aside class="card">
-                                <img src="images/photo1.jpeg" alt="" class="cardimage" />
-                                <h2 class="cardnom">Thomas Guy</h2>
-                                <h3 class="cardjob">
-                                    Directeur de l'Agence Technoweb
-                                </h3>
-                                <p class="cardavis">
-                                    "Je suis satisfait par les services de l'Agence Artfull Code,
-                                    merci à eux pour leur professionnalisme et leur écoute attentive.
-                                    Leurs services ont dépassé mes attentes !"
-                                </p>
-                                <ul class="card__notes">
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #d27c2c"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-solid fa-star fa-lg" style="color: #ffffff"></i>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                    </div>
-                    <aside class="swiper__buttons">
-                        <div class="swiper-button-next swiper__next swiper__next"></div>
-                        <div class="swiper-button-prev swiper__prev swiper__prev"></div>
+            <Swiper
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={2}
+                spaceBetween={0}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: true
+                }}
+                coverflowEffect={{
+                    rotate: 7,
+                    stretch: 0,
+                    depth: 800,
+                    modifier: 1,
+                    slideShadows: false,
+                }}
+                navigation={true}
+                pagination={false}
+                modules={[EffectCoverflow, Navigation]}
+                loop={true}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <aside class="card">
+                        <img src={avisHomme} alt="" class="card__image" />
+                        <h2 class="card__nom">Marc Vido</h2>
+                        <h3 class="card__job">
+                            Gestionnaire Service Public
+                        </h3>
+                        <p class="card__avis">
+                            "Très satisfait des services proposés par l'équipe d'ArtFull Code.
+                            Je me suis senti bien accompagné du début à la fin."
+                        </p>
+                        <p class="card__notes">
 
+                            <IoStar size={25} color='#eee' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' />
+
+
+                        </p>
                     </aside>
-                </div>
-            </article>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <aside class="card">
+                        <img src={avisHomme2} alt="" class="card__image" />
+                        <h2 class="card__nom">Pierre Olivier</h2>
+                        <h3 class="card__job"> Gérante d'une association animalière
+                        </h3>
+                        <p class="card__avis">
+                            "Leur capacité à comprendre mes besoins a abouti à des services impeccables.
+                            Je recommande vivement leur expertise à tous ceux qui recherchent un service client
+                            exceptionnel et sur mesure."
+                        </p>
+                        <ul class="card__notes">
+                            <li>
+                                <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStarHalf size={25} color='#d27c2c' /> <IoStarOutline size={25} color='#d27c2c' />
+                            </li>
+                        </ul>
+                    </aside>
+
+                </SwiperSlide>
+                <SwiperSlide>
+                    <aside class="card">
+                        <img src={avisFemme} alt="" class="card__image" />
+                        <h2 class="card__nom">Jasmine Marki</h2>
+                        <h3 class="card__job"> Co-gérante de la statup MineDiv
+                        </h3>
+                        <p class="card__avis">
+                            "Je recommande vivement leurs services à toute entreprise cherchant
+                            à élever le niveau de sa formation en ligne."
+                        </p>
+                        <ul class="card__notes">
+                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+
+                        </ul>
+                    </aside>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <aside class="card">
+                        <img src={avisFemme2} alt="" class="card__image" />
+                        <h2 class="card__nom">Elise Tellier</h2>
+                        <h3 class="card__job">Directrice d'une organisation à but non lucratif</h3>
+                        <p class="card__avis">
+                            "Je recommande vivement l'agence ArtFull Code à toute personne en quête d'un service clientèle de haute qualité.
+                            Chaque membre de l'équipe a été à l'écoute de mes besoins."
+                        </p>
+                        <ul class="card__notes">
+                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+
+                        </ul>
+                    </aside>
+                </SwiperSlide>
+
+                <SwiperSlide>
+
+                    <aside class="card">
+                        <img src={avisHomme3} alt="" class="card__image" />
+                        <h2 class="card__nom">François Dubois</h2>
+                        <h3 class="card__job">Enseignant au sein d'un Centre Pénitencier</h3>
+                        <p class="card__avis">
+                            "Mon projet à été mené à bien du début à la fin.
+                            Bonne communication et collaboration, avec tout les membres de l'équipe. Merci !"
+                        </p>
+                        <ul class="card__notes">
+                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+
+                        </ul>
+                    </aside>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <aside class="card">
+                        <img src={avisFemme3} alt="" class="card__image" />
+                        <h2 class="card__nom">Marina Satère</h2>
+                        <h3 class="card__job">Gérante pharmaceutique</h3>
+                        <p class="card__avis">
+                            "Équipe très rassurante à l'écoute de son client,
+                            je suis aujourd'hui pleinement satisfait des prestations de cette Agence. Je la recommande !"
+                        </p>
+                        <ul class="card__notes">
+                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+
+                        </ul>
+                    </aside>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <aside class="card">
+                        <img src={avisHomme4} alt="" class="card__image" />
+                        <h2 class="card__nom">Thomas Guy</h2>
+                        <h3 class="card__job">
+                            Directeur de l'Agence Technoweb
+                        </h3>
+                        <p class="card__avis">
+                            "Je suis satisfait par les services de l'Agence Artfull Code,
+                            merci à eux pour leur professionnalisme et leur écoute attentive.
+                            Leurs services ont dépassé mes attentes !"
+                        </p>
+                        <ul class="card__notes">
+                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+
+                        </ul>
+                    </aside>
+                </SwiperSlide>
+            </Swiper>
         </section>
 
-    </>
+    );
 }
 export default Avis;

@@ -2,10 +2,6 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-
-// import { loadAll } from "@/tsparticles/all";
-// import { loadFull } from "tsparticles"; 
-// import { loadBasic } from "@tsparticles/basic";
 const Particules = () => {
     const [init, setInit] = useState(false);
 
@@ -28,12 +24,44 @@ const Particules = () => {
                 color: {
                     // value: "#0d47a1",
                 },
+                size: {
+                    value: { min: 1, max: 5 },
+                },
             },
             fpsLimit: 120,
+            fullScreen: {
+                enable: false,
+                zIndex: 10,
+            },
+
+            responsive: [
+                {
+                    breakpoint: 768,
+                    options: {
+                        particles: {
+                            size: {
+                                value: 3 // Taille des particules pour les écrans de largeur jusqu'à 768px
+                            }
+                        }
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    options: {
+                        particles: {
+                            size: {
+                                value: 5 // Taille des particules pour les écrans de largeur jusqu'à 1024px
+                            }
+                        }
+                    }
+                },
+                // Ajouter d'autres points de rupture et options spécifiques si nécessaire
+            ],
+
             interactivity: {
                 events: {
                     onClick: {
-                        enable: true,
+                        enable: false,
                         mode: "push",
                     },
                     onHover: {
@@ -75,6 +103,7 @@ const Particules = () => {
                 number: {
                     density: {
                         enable: true,
+                        area: 80,
                     },
                     value: 140,
                 },
@@ -95,15 +124,16 @@ const Particules = () => {
 
     if (init) {
         return (
+
             <Particles
                 id="tsparticles"
                 className="particule"
                 particlesLoaded={particlesLoaded}
                 options={options}
             />
+
         );
     }
 
-    return <></>;
 };
 export default Particules;

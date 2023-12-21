@@ -19,3 +19,16 @@ $black:#141414;
       transform: translateY(0); /* Retour à la position initiale */
     }
   }
+
+  @keyframes changeColor {
+    0% {
+      background-color: $bleuocean; 
+    }
+    50% {
+      transform: $bleu; 
+    }
+    100% {
+      background-color: $blueberry; /* Retour à la position initiale */
+    }
+  }
+

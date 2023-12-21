@@ -6,6 +6,14 @@ import Particules from "./Particle";
 
 const Header = () => {
 
+    window.addEventListener('scroll',()=>{
+      if (window.scrollY > 50){
+        document.getElementById('menu').classList.add('scrolled');
+      }else{
+        document.getElementById('menu').classList.remove('scrolled');
+      }
+    })
+  
     const [isMenuVisible, setMenuVisible] = useState(false);
     const [scrollDisabled, setScrollDisabled] = useState(false);
     const [scroll, setScroll] = useState(document.body.style.overflow);

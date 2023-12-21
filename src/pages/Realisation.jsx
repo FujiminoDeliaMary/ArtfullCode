@@ -9,27 +9,23 @@ const Realisation = () => {
 
     return <section className="realisations">
            
-            <h2 class="realisations__title">Ils nous ont fait confiance</h2>
+            <h2 className="realisations__title">Ils nous ont fait confiance</h2>
       
-            <article class="realisations__projet">
-             
-                <figure >
+                {/* <figure class="realisations__projet">
                     <img class="realisations__img" src={projet1} alt="projet1" />
                     <figcaption class="realisations__libelle">
                         <p class="realisations__content">Ce club de canoë-kayak a fait appel à nous afin de retravailler leur site </p>
                     </figcaption>
-                </figure>
-            </article>
+                </figure> */}
 
-            <article class="realisations__projet">
-            
-                <figure >
-                    <img class="realisations__img" src={projet2Logo} alt="projet1" />
+                <figure className="realisations__projet">
+                    <img className="realisations__img" src={projet2} alt="projet1" />
                     <figcaption class="realisations__libelle">
-                        <p class="realisations__content">Studio Light Tattoo nous à fait confiance pour la création et la réalisation de son site web </p>
+                        <h3 className="realisations__name">Aide à l'alphabétisation de la prison d'aytré</h3>
+                        <p className="realisations__content">Studio Light Tattoo nous à fait confiance pour la création et la réalisation de son site web </p>
                     </figcaption>
                 </figure>
-            </article>
+
 
     </section>
 }
