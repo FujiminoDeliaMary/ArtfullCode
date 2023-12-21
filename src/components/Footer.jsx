@@ -34,7 +34,7 @@ const Footer = () => {
                  </div>
                 <div className="footer__tel">
                     <p><img src={PhoneIcon} alt="" className="footer__icon" /> Tel:</p>                    
-                    <p>0757130897</p>
+                    <p><a href="tel:+33612345678">06.12.34.56.78</a></p>
                 </div>
                 
             </div>
@@ -56,7 +56,6 @@ const Footer = () => {
                 <p>Nous contacter</p>
                 <p>Mentions Legales</p>
                 <p>CGU</p>
-                <p>Test</p>
 
             </div>
 
@@ -64,8 +63,8 @@ const Footer = () => {
 
                 <h2>Artfull Code</h2>
                 <p>44 avenue albert einstein, 17000 La rochelle</p>
-                <p>artfullcode@gmail.com</p>
-                <p>Tél:06 34 76 12 34</p>
+                <p><a href={`mailto:${emailAddress}`} onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
+                <p><a href="tel:+33612345678">Tel: 06.12.34.56.78</a></p>
 
             </div>
         </footer>
