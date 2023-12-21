@@ -40,17 +40,16 @@ const Services = () => {
                   <figure className='services__service'>
                       <figcaption>
                         <div class="services__serviceTitle">
-                          <img src={iconeSeo} alt="" class="services__icone" />
+                          <img src={iconeSeo} alt="" class="services__icone"/>
                           <h3>Référencement seo</h3>
                         </div>
                         <p className='services__content'>
-                        Maximisez votre visibilité en ligne grâce à notre services de référencement. 
-                        Nous optimisons votre site pour les moteurs de recherche, mettons en place des stratégies
-                        de mots-clés efficaces et veillons à ce que votre site soit classé en tête des résultats pertinents.
-
+                        Maximisez votre <strong className="strong"> visibilité</strong> en ligne grâce à notre <strong className="strong">service de référencement. </strong> 
+                        Nous <strong className='strong'> optimisons </strong>votre site pour les moteurs de recherche, mettons en place des <strong className='strong'> stratégies </strong>
+                        de mots-clés <strong className='strong'>efficaces</strong> et veillons à ce que votre site soit classé en tête des résultats pertinents.
                         </p>
                       </figcaption>
-                      <img src={service} alt="" class="services__image" />
+                      <img src={service} alt="" class="services__image"/>
                     </figure>
           </SwiperSlide>
 
@@ -63,9 +62,9 @@ const Services = () => {
                 <h3>Maintenance et support technique</h3>
               </div>
               <p className='services__content'>
-              Nous nous engageons à <strong>maintenir votre site à jour</strong> avec les <strong>dernières fonctionnalités</strong> assurant une compatibilité optimale au fil des années, pour cela, nous établisons des contrats de maintenance adaptables selon vos besoins.
-              Notre équipe interviendras'il y a de petits bugs pour qu'il ne devienne pas un obstacle dangereux et pour garantir 
-
+              Nous nous engageons à <strong className='strong'>maintenir votre site à jour</strong> avec les <strong className='strong'>dernières fonctionnalités </strong> 
+              assurant une <strong className='strong'>compatibilité optimale</strong> au fil des années. Pour cela, nous établisons des contrats de maintenance adaptables selon vos besoins.
+              Notre équipe interviendra en cas de disfonctionnement afin de <strong className='strong'>garantir la sécurité de votre site.</strong>
               </p>
             </figcaption>
             <img src={imageMaintenance} alt="" class="services__image" />
@@ -81,9 +80,9 @@ const Services = () => {
                 <h3>Formation et Support</h3>
               </div>
               <p className='services__content'>
-              Chez <strong>ArtFull Code</strong>, nous ne nous contentons pas de créer des sites web exceptionnels,
-              nous nous engageons également à vous fournir les compétences nécessaires pour en tirer le meilleur parti.
-              Nos <strong>services de formation et de support</strong> sont conçus pour vous aider à prendre en main votre présence en ligne de manière autonome.
+              Chez <strong className='strong'>ArtFull Code</strong>, nous ne nous contentons pas de créer des sites web exceptionnels,
+              nous nous engageons également à vous fournir les <strong className='strong'>compétences nécessaires</strong> pour en tirer le meilleur parti.
+              Nos <strong className='strong'> services de formation et de support </strong> sont conçus pour vous aider à prendre en main votre présence en ligne de <strong className='strong'>manière autonome</strong>.
 
               </p>
             </figcaption>
@@ -99,11 +98,11 @@ const Services = () => {
                 <h3>UI/UX Design</h3>
               </div>
               <p className='services__content'>
-                <strong>L'expérience utilisateur</strong> est une priorité chez nous.
-                Nous débutons chaque projet par une analyse de vos utilisateurs potentiels,
+                <strong className='strong'>L'expérience utilisateur</strong> est une priorité chez nous.
+                Nous débutons chaque projet par une analyse de <strong className='strong'>vos utilisateurs potentiels</strong>,
                 créant des personas détaillées et concevant des parcours utilisateur intuitifs.
                 Notre approche centrée sur l'utilisateur garantit que chaque interaction sur votre site est non seulement agréable,
-                mais aussi alignée sur vos objectifs.
+                mais aussi alignée sur <strong className='strong'>vos objectifs</strong>.
 
               </p>
             </figcaption>
@@ -119,10 +118,10 @@ const Services = () => {
                 <h3>Web Design </h3>
               </div>
               <p className='services__content'>
-                Notre équipe de designers transforme vos concepts en réalité visuelle.
-                Le webdesign ne se contente pas d'être esthétique, il est fonctionnel.
-                Chaque élément visuel est <strong>soigneusement élaboré</strong> pour refléter votre identité de marque tout en
-                offrant une expérience visuelle immersive et engageante.
+                Notre équipe de designers transforme vos concepts en <strong className='strong'>réalité visuelle.</strong>
+                Le <strong className='strong'>webdesign</strong> ne se contente pas d'être esthétique, il est fonctionnel.
+                Chaque élément visuel est soigneusement élaboré pour refléter votre <strong className='strong'>identité de marque</strong> tout en
+                offrant une expérience visuelle <strong className='strong'>immersive</strong> et <strong className='strong'>engageante.</strong>
 
               </p>
             </figcaption>
