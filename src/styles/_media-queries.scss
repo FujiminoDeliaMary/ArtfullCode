@@ -52,7 +52,7 @@
         }
 
         &__libelle {
-
+            flex-basis:50%;
             text-align: center;
             padding: 4vh 4rem;
             padding-right: 7rem;
@@ -70,6 +70,7 @@
         }
 
         &__img {
+            flex-basis: 50%;
             border-radius: 0;
             position: relative;
             width: 45%;
@@ -215,7 +216,8 @@
     }
 
     .footer {
-
+        padding: 2rem 0;
+        justify-content: space-around;
         &__heure,
         &__coordonnees,
         &__nav {

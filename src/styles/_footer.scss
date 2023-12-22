@@ -2,16 +2,14 @@
 
 .footer {
     display: flex;
-    justify-content: space-around;
     justify-content: center;
+    padding: 2rem 0;
     background-color: #27496D;
     color: #EFEBEB;
-    font-size: clamp(13px,1.5vw,20px);
+    font-size: clamp(14px,1.4vw,20px);
     font-family: 'gabriela', sans-serif;
-    padding: 2rem 2rem;
-    gap: 25vh;
-    width: 100%;
 
+    width: 100%;
     &__adress,&__tel,&__email,&__heure{
         width:fit-content;
         p{
