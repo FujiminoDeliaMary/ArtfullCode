@@ -1,8 +1,6 @@
+@media screen and (width > 767px) {
 
-
-@media  screen and (width > 767px) {
-
-    .header{
+    .header {
         position: relative;
         top: 0;
         left: 0;
@@ -10,36 +8,41 @@
         height: 80vh;
         overflow: hidden;
         background-color: rgba(39, 73, 109, 0.9);
-        &__arrow{
-            display: flex;
-           
-         }
 
-        &__menuBurger{
-            position: relative;
-            z-index:3000000;
+        &__logo{
+            margin-left: 2rem;
         }
-    
-        &__menu{
-            width:30%;
-            &.visible{
-                width:30%;
+        &__arrow {
+            display: flex;
+
+        }
+
+        &__menuBurger {
+            
+            z-index: 3000000;
+        }
+
+        &__menu {
+            width: 30%;
+
+            &.visible {
+                width: 30%;
             }
         }
-        
+
         &__navbar {
-            display: flex;
-            margin: 1rem 0;
+            margin: 1rem;
             justify-content: space-between;
-            font-family: 'Poppins', sans-serif;
             
+            font-family: 'Poppins', sans-serif;
+
         }
-    
-    
+
+
     }
 
-    .realisations{
-        &__projet{
+    .realisations {
+        &__projet {
             flex-direction: row;
             justify-content: center;
             align-items: center;
@@ -47,192 +50,187 @@
          
         }
 
-        &__libelle{
+        &__libelle {
 
             text-align: center;
             padding: 4vh 4rem;
-            padding-right:7rem;
-            // background-color: $blueberry;
+            padding-right: 7rem;
             background-color: none;
-            border: 3px $blueberry solid;
+            border: 3px $bleu solid;
             width: 100%;
             max-width: 100%;
-            height:100% ;
-            margin :0 auto;
+            height: 100%;
+            margin: 0 auto;
         }
 
-        &__content{
+        &__content {
             max-width: 100%;
-            font-size: 1.4vw;
+            font-size: 1.51vw;
         }
 
-        &__img{
+        &__img {
             border-radius: 0;
             position: relative;
             width: 45%;
-            height:100%;
+            height: inherit;
             object-fit: cover;
         }
     }
-   
+
+    
+
 }
 
 
-@media  screen and (width > 1200px) {
+@media screen and (width > 1200px) {
 
     .header {
-    
-        &__logo{
 
-            width:8vh;
-            position: relative;
-            top:0;
-            left:0;
-            margin-left:3vw;
-            transform: translateX(-50%);
-            z-index: 30; 
-           
+        &__navbar{
+            flex-direction: row;
+            justify-content: space-between;
         }
 
-        &__menu{
+        &__logo {
+
+            width: clamp(20px,6vw,80px);
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-left: 6rem;
+            transform: translateX(-50%);
+            z-index: 30;
+
+        }
+
+        &__menu {
             width: 100%;
             background-color: rgba(39, 73, 109, 0);
             top: -20%;
             position: fixed;
-            left:0;
+            left: 0;
             height: fit-content;
             transition:
-            top 0.2s ease-out,
-            opacity 0.2s ease-out;
-            &.visible{
+                top 0.2s ease-out,
+                opacity 0.2s ease-out;
+
+            &.visible {
                 width: 100%;
                 transition:
-                opacity 0.2s ease-out,
-                top 0.2s ease-out;
+                    opacity 0.2s ease-out,
+                    top 0.2s ease-out;
             }
 
-            &-list{
+            &-list {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
             }
         }
-    
-      
-    
-       
+
+
+
+
     }
 
-      .about{
+    .about {
         padding: 0 30vw;
-        padding-top:10vh;
-        padding-bottom: 25vh;
-        background-image: url("../assets/vecteurs.png");
+        padding-top: 10vh;
+        // padding-bottom: 25vh;
+        // background-image: url("../assets/vecteurs.png");
 
-      }
-
-      .equipe {
-        background-color: transparent;
-        color:$black;
-            &__title{
-                top: -10vh;
-                right:30%;
-                width: 40%;
-                
-            }
-    
-            &__membres {
-                gap:0;
-            }
-
-            &__fig {
-                flex-basis: 25%;
-               
-            }
-            &--bleu {
-                background-color: $bleu;
-                color:$blanc;
-            }
     }
 
-    .services{
-        padding: 3vh 8vh;
-        &__image{
-            display: block;
-            width: 20vw;
+    .equipe {
+        background-color: transparent;
+        color: $black;
+        padding-top:15rem;
+        &__title {
+            top: 6vh;
+            right: 30%;
+            width: 40%;
+
         }
 
-        &__service{
-            &Title{
+        &__membres {
+            gap: 0;
+        }
+
+        &__fig {
+            flex-basis: 25%;
+            
+        }
+        &--bleu {
+            background-color: $bleu;
+            color:$blanc;
+        }
+    }
+
+    .services {
+        padding: 3vh 8vh;
+
+        &__image {
+            display: block;
+            width: 20vw;
+            height:20vh
+        }
+
+        &__service {
+            &Title {
                 flex-direction: row;
-                h3{
+
+                h3 {
                     text-align: left;
                 }
             }
         }
     }
 
-    .realisations{
-       
-        &__projet{
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap:0;
-            flex-basis:0%;
+    .realisations {
+
+
+
+        &__name {
+            font-size: 1.5vw;
+            color: $black;
+            text-align: left;
         }
 
-       
-        &__img{
-            border-radius: 0;
-            position: relative;
-            width: 45%;
-            height:40vh;
-        }
-
-        &__name{
-            font-size: 1.3vw;
-            color:$blanc;
-            text-align: center;
-        }
-        &__libelle{
-
-            text-align: center;
-            padding: 4vh 4rem;
-            padding-right:7rem;
-            color:$blanc;
-            background-color: $blueberry;
+        &__libelle {
+            text-align: left;
+            color: $blanc;
+            background-color: $bleu;
             width: 100%;
-            height:fit-content ;
-            margin :0 auto;
+        
         }
 
         &__content{
-            font-size: 1vw;
+            font-size: clamp(17px,1.1vw, 20px);
         }
-       
+
     }
 
-    .footer{
-        &__heure, &__coordonnees, &__nav{
+    .footer {
+
+        &__heure,
+        &__coordonnees,
+        &__nav {
             display: block;
         }
 
-        &__mobile{
+        &__mobile {
             display: none;
         }
     }
 
-    .contact{
+    .contact {
         justify-content: space-between;
 
-        &__speech{
+        &__speech {
             display: inline;
         }
     }
 
 
 }
-
-

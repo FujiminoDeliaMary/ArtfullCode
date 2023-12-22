@@ -37,10 +37,10 @@ $black:#141414;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    font-size: 2.5vh;
+    font-size: clamp(26px,1.8vw, 33px);
     width: fit-content;
     margin: 0 auto;
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
 
     &::after {
         content: "";

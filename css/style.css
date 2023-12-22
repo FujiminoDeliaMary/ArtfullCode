@@ -42,20 +42,8 @@ body {
   font-size: 1.1rem;
 }
 
-a,
-a:hover,
-a:visited {
+a, a:hover, a:visited {
   text-decoration: none;
-}
-
-.strong {
-  font-weight: bold;
-  color: black;
-}
-
-.strong2 {
-  font-weight: bold;
-  color: white;
 }
 
 .header {
@@ -80,6 +68,7 @@ a:visited {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  margin-bottom: 2vh;
   cursor: pointer;
   position: absolute;
   bottom: 1vh;
@@ -365,7 +354,7 @@ a:visited {
   background-color: #0e0c0c;
 }
 .services__service {
-  padding: 0 5rem;
+  padding: 0 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,6 +398,26 @@ a:visited {
 .avis {
   padding: 0 4vw;
 }
+.avis__title {
+  font-family: "David Libre" sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.5vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 8vh;
+}
+.avis__title::after {
+  content: "";
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  height: 1px;
+  margin-top: 4%;
+  background-color: #0e0c0c;
+}
 
 .card {
   margin: 0 auto;
@@ -422,72 +431,73 @@ a:visited {
   margin-bottom: 2vh;
 }
 .card__image {
-  width: 10vw;
-  max-width: 10vw;
+  width: 10vh;
+  max-width: 10vh;
   border-radius: 70%;
 }
 .card__nom {
   font-family: "Poppins";
-  font-size: 1.8rem;
+  font-size: 2vh;
   font-weight: 800;
 }
 .card__job {
   font-family: "Poppins", sans-serif;
   text-align: center;
+  font-size: 1.8vh;
 }
 .card__avis {
   text-align: center;
   line-height: 1.2;
+  font-size: 1.8vh;
 }
 .card__notes {
   margin-top: 3vh;
 }
 
 .realisations {
-  padding: 5vh 2rem;
-  margin-top: 2vw;
+  padding: 0 2rem;
+  margin: 10vh 0;
   display: flex;
   flex-direction: column;
 }
 .realisations__title {
-  position: relative;
+  font-family: "David Libre" sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
   text-align: center;
-  font-size: 3vh;
-  font-family: "David Libre", sans-serif;
+  font-size: 2.5vh;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  margin-bottom: 5vh;
+  margin-bottom: 8vh;
 }
 .realisations__title::after {
   content: "";
   display: block;
-  background-color: #01254C;
-  height: 2px;
-  border-radius: 10px;
-  margin-top: 8px;
-  width: 60%;
-  transform: translateX(-50%);
-  position: relative;
-  left: 50%;
+  width: 70%;
+  margin: 0 auto;
+  height: 1px;
+  margin-top: 4%;
+  background-color: #0e0c0c;
 }
 .realisations__projet {
   display: flex;
   flex-direction: column;
-  gap: 6vw;
+  gap: 4vw;
 }
 .realisations__img {
   width: 100%;
+  height: 100%;
   border-radius: 20px;
 }
 .realisations__name {
-  font-size: 2.2vh;
+  font-size: clamp(17px, 2.2vh, 20px);
   color: #01254C;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 .realisations__content {
-  font-size: 1.6vh;
+  font-size: clamp(14px, 13px + 1vw, 15px);
   line-height: 1.4;
   font-family: "Poppins";
 }
@@ -657,7 +667,6 @@ a:visited {
   padding: 2rem 0;
   gap: 25vh;
   width: 100%;
-  margin-top: 3rem;
 }
 .footer__adress p, .footer__tel p, .footer__email p, .footer__heure p {
   display: flex;
@@ -707,11 +716,6 @@ a:visited {
 }
 
 @media screen and (width > 767px) {
-  .header__arrow {
-    display: flex;
-  }
-}
-@media screen and (width > 1200px) {
   .header {
     position: relative;
     top: 0;
@@ -721,6 +725,56 @@ a:visited {
     overflow: hidden;
     background-color: rgba(39, 73, 109, 0.9);
   }
+  .header__arrow {
+    display: flex;
+  }
+  .header__menuBurger {
+    position: relative;
+    z-index: 3000000;
+  }
+  .header__menu {
+    width: 30%;
+  }
+  .header__menu.visible {
+    width: 30%;
+  }
+  .header__navbar {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+  }
+  .realisations__projet {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .realisations__libelle {
+    text-align: center;
+    padding: 4vh 4rem;
+    padding-right: 7rem;
+    background-color: none;
+    border: 3px #01254C solid;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .realisations__content {
+    max-width: 100%;
+    font-size: 1.4vw;
+  }
+  .realisations__img {
+    border-radius: 0;
+    position: relative;
+    width: 45%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (width > 1366px) {
   .header__logo {
     width: 8vh;
     position: relative;
@@ -731,6 +785,7 @@ a:visited {
     z-index: 30;
   }
   .header__menu {
+    width: 100%;
     background-color: rgba(39, 73, 109, 0);
     top: -20%;
     position: fixed;
@@ -740,6 +795,7 @@ a:visited {
     transition: top 0.2s ease-out, opacity 0.2s ease-out;
   }
   .header__menu.visible {
+    width: 100%;
     transition: opacity 0.2s ease-out, top 0.2s ease-out;
   }
   .header__menu-list {
@@ -747,16 +803,6 @@ a:visited {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-  .header__menuBurger {
-    position: relative;
-    z-index: 3000000;
-  }
-  .header__navbar {
-    display: flex;
-    margin: 1rem 0;
-    justify-content: space-between;
-    font-family: "Poppins", sans-serif;
   }
   .about {
     padding: 0 30vw;
@@ -804,10 +850,12 @@ a:visited {
   }
   .realisations__img {
     border-radius: 0;
-    width: 80vh;
     position: relative;
+    width: 45%;
+    height: 40vh;
   }
   .realisations__name {
+    font-size: 1.3vw;
     color: white;
     text-align: center;
   }
@@ -821,6 +869,9 @@ a:visited {
     height: -moz-fit-content;
     height: fit-content;
     margin: 0 auto;
+  }
+  .realisations__content {
+    font-size: 0.8vw;
   }
   .footer__heure, .footer__coordonnees, .footer__nav {
     display: block;

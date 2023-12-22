@@ -4,9 +4,49 @@
     align-items: center;
     padding: 2vh 10vw;
 
+    &__title{
+        background-color: $orange;
+        padding:3vh 4vw;
+        color:#000000;
+        border-radius: 10px;
+        font-size:4rem;
+        text-align: center;
+        font-weight:600;
+        &::after {
+            content: '';
+            display: block;
+            width: 70%;
+            height: 1px;
+            background-color: $nacre; 
+            margin-top: 1.5rem; 
+            border-radius: 5px; 
+            margin-left: 15%;
+    
+        } 
+    }
+
+    &__alert{
+        padding: 3vh 1vw;
+        font-size: clamp(18px, 1.5vw, 20px);
+        border-radius: 5px;
+        text-align: center;
+
+        &.invalid{
+            background-color: rgb(206, 86, 86);
+        }
+
+        &.valid{
+            background-color: rgb(94, 157, 94);
+        }
+    }
+
+    
+
+   
+
     &__speech{
         display: none;
-        font-size:clamp(3vh, 3.2vh, 3.2vh);
+        font-size:clamp(30px, 2vw, 60px);
         color:$blueberry;
     }
 
@@ -16,41 +56,11 @@
         flex-direction: column;
         gap:2vh;
         font-family:'Poppins';
-
-        p{
-            background-color: $orange;
-            padding:3vh 4vw;
-            color:#000000;
-            border-radius: 10px;
-            font-size:4rem;
-            text-align: center;
-            font-weight:600;
-            &::after {
-                content: '';
-                display: block;
-                width: 70%;
-                height: 1px;
-                background-color: $nacre; 
-                margin-top: 1.5rem; 
-                border-radius: 5px; 
-                margin-left: 15%;
-        
-            } 
-        }
         
     }
-
-    &__formGroup{
-        span{
-            color:red;
-            font-size:1.1vh;
-            font-family: 'Poppins';
-        }
-    }
-
     &__label{
         color:$blueberry; 
-        font-size:2vh;  
+        font-size: clamp(15px, 1.3vw, 20px);;
         font-weight:500;
          
     }
@@ -60,7 +70,7 @@
         resize: none;
         border-radius: 5px;
         margin-top: 1%;
-        font-size: 2vh;
+        font-size: clamp(14px, 1.1vw, 20px);
         width:100%;
         &:focus{
             outline: none;

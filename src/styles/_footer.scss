@@ -8,7 +8,7 @@
     color: #EFEBEB;
     font-size: 1.8vh;
     font-family: 'gabriela', sans-serif;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     gap: 25vh;
     width: 100%;
 
@@ -18,7 +18,6 @@
             align-items: center;
             gap:2px;
         }
-      
 
     }
    
@@ -55,6 +54,7 @@
         align-items: center;
         align-self: flex-start;
         display: none;
+        
     }
 
     &__image{

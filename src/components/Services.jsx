@@ -8,9 +8,9 @@ import iconeMaintenance from '../assets/services/maintenanceIcone.png'
 import iconeClient from '../assets/services/formationIcone.png'
 // Import des images
 import imageFormation from '../assets/services/image-formation.jpg'
-import imageUx from '../assets/services/uxImage.png'
+import imageUx from '../assets/services/image-ux.jpg'
 import imageMaintenance from '../assets/services/imageMaintenance.png'
-import imageWebDesign from '../assets/services/webDesign.png'
+import imageWebDesign from '../assets/services/image-responsive.jpeg'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -33,7 +33,7 @@ const Services = () => {
         modules={[EffectFade, Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
-        
+        effect={'fade'}
         navigation
         autoplay={{ delay: 3000 }}
         
@@ -107,8 +107,7 @@ const Services = () => {
                   <strong>L'expérience utilisateur</strong> est une priorité chez nous.
                   Nous débutons chaque projet par une analyse de vos utilisateurs potentiels,
                   créant des personas détaillées et concevant des parcours utilisateur intuitifs.
-                  Notre approche centrée sur l'utilisateur garantit que chaque interaction sur votre site est non seulement agréable,
-                  mais aussi alignée sur vos objectifs.
+                  Notre approche centrée sur l'utilisateur garantit que chaque interaction sur votre site soit agréable.
 
                 </p>
               </figcaption>

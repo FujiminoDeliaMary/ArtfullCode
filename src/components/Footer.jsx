@@ -20,12 +20,12 @@ const Footer = () => {
                  <div className="footer__adress">
                     <p><IoLocation size={30} color="white"/>Adresse</p>
                     <p><a href="https://maps.app.goo.gl/uEN1Kg6vP38o6mYp7" >44 avenue Albert Einstein, 17000 La Rochelle</a></p>
-                    <br />
+                
                  </div>
                  <div className="footer__email">
                     <p><img className="footer__icon" src={emailIcon} alt="" />Email:</p>
                     <p><a href="/" onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
-                    <br />
+             
                  </div>
                 <div className="footer__tel">
                     <p><img src={PhoneIcon} alt="" className="footer__icon" /> Tel:</p>                    

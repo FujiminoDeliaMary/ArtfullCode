@@ -8,26 +8,33 @@
     overflow: hidden;
     background-color: rgba(39, 73, 109, 0.9);
 
-    .particule{
+    .particule {
         width: 100%;
         position: absolute;
-        bottom:0;
-        left:0;
+        bottom: 0;
+        left: 0;
     }
-    &__arrow{
-        display:none;
-        width:7vh;
-        height:7vh;
+
+    &__arrow {
+        display: none;
+        width: 7vh;
+        height: 7vh;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background-color: rgba(88, 96, 133, 0.5);
         margin-bottom: 2vh;
         cursor: pointer;
         position: absolute;
         bottom: 1vh;
         left: 50%;
+        transform: translateX(50%);
+        background-color: grey;
         animation: levitate 2s infinite alternate ease-in-out;
+    }
+
+    &__navbar{
+        display: flex;
+        margin: 0 2rem;
     }
 
     &__menu {
@@ -79,7 +86,7 @@
 
             a {
                 color: $blanc;
-                font-size: 2.2vh;
+                font-size: clamp(18px, 1.2vw, 20px);;
                 font-family: 'Poppins';
 
             }
@@ -107,30 +114,23 @@
 
                 &:hover {
                     cursor: pointer;
+
                     &::after {
                         width: 100%;
                         transition: width 0.3 ease-out;
                     }
                 }
             }
-        
+
         }
     }
 
 
     &__logo {
-        margin: 0;
-        width: 14vh;
-        position: absolute;
-        top: 5vh;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 0;
-
+        width: 0;
     }
 
     &__menuBurger {
-        position: relative;
         background: transparent;
         border: none;
         cursor: pointer;
@@ -141,7 +141,6 @@
         justify-content: center;
         z-index: 3000;
         padding: 1rem 1rem;
-        margin-right: 1%;
         border-radius: 50%;
         transition: all 0.2s ease-out;
 
@@ -157,8 +156,8 @@
         .bar {
             font-size: 10px;
             background: $blanc;
-            width: 4vh;
-            height: 6px;
+            width: 40px;
+            height: 5px;
             transition: all 0.3s ease-in;
         }
 
@@ -195,14 +194,14 @@
         width: 100%;
     }
 
-    &__slogan{
-        font-size: 2vh;
+    &__slogan {
+        font-size: clamp(16px,1.5vw,25px);
     }
 
     &__nomAgence {
         font-family: "David Libre";
         text-transform: uppercase;
-        font-size: 7vh;
+        font-size: clamp(55px,6vw,80px);
         color: $blanc;
         bottom: 55%;
     }

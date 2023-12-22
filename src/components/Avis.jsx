@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { IoStar } from "react-icons/io5";
 import { IoStarHalf } from "react-icons/io5";
 import { IoStarOutline } from "react-icons/io5";
+// import AnimatedPath from "./AnimatedPath";
 
 // import avis
 import avisHomme from "../assets/avis/avatar-homme.png"
@@ -14,6 +15,12 @@ import avisFemme2 from "../assets/avis/avatar-femme2.png"
 import avisFemme3 from "../assets/avis/avatar-femme3.png"
 import avisFemme4 from "../assets/avis/avatar-femme4.png"
 
+// gsap
+import { useRef } from "react";
+// import { useGSAP } from "@gsap/react";
+// import { gsap } from "gsap";
+
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -23,12 +30,16 @@ import 'swiper/css/pagination';
 // import required modules
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 
-const Avis = () => {
-    return (
-        // <>
-        <section className='avis'>
-            <h2 className='avis__title'>Des avis de nos clients les plus satisfaits</h2>
 
+const Avis = () => {
+    const container = useRef();
+
+
+    return (
+
+        <><section className='avis'>
+
+            <h2 className="avis__title">Quelques avis de nos clients les plus satisfaits</h2>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -174,6 +185,11 @@ const Avis = () => {
                 </SwiperSlide>
             </Swiper>
         </section>
+            {/* <div class="leSvg" > */}
+            {/*style="display: flex; position :relative; z-index: 10; "*/}
+            {/* <AnimatedPath /> */}
+            {/* </div> */}
+        </>
 
     );
 }

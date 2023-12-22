@@ -7,7 +7,7 @@ const Nav = (props) => {
 
     if (window.innerWidth<1200){
         const menu = document.getElementById('menu');
-        console.log(menu);
+     
         if (menu){
             menu.style.backgroundColor = 'rgb(39, 73, 109)';
         }
@@ -26,13 +26,13 @@ const Nav = (props) => {
      
       };
 
-    console.log(visible);
+ 
     return <nav id="menu" className={(isVisible) ? "header__menu visible" : "header__menu"}>
         <ul className="header__menu-list">
             <li><a href="/">Accueil</a></li>
-            <li><Link to="equipe" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick}>Notre equipe</Link></li>
-            <li><Link to="services" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick}>Nos Services</Link></li>
-            <li><Link to="realisations" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick}>Nos réalisations</Link></li>
+            <li><Link to="equipe" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick} offset={-60}>Notre equipe</Link></li>
+            <li><Link to="services" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick} offset={-100}>Nos Services</Link></li>
+            <li><Link to="realisations" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick} offset={-100}>Nos réalisations</Link></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
 

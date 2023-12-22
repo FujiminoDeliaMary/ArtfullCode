@@ -16,9 +16,8 @@ const Header = () => {
   
     const [isMenuVisible, setMenuVisible] = useState(false);
     const [scrollDisabled, setScrollDisabled] = useState(false);
-    const [scroll, setScroll] = useState(document.body.style.overflow);
+    const [scroll, setScroll] = useState('auto');
 
-    console.log(scroll)
 
     const handleItemClick = (e) => {
       e.preventDefault();
@@ -31,20 +30,24 @@ const Header = () => {
                 console.log('auto');
             } else {
               setScroll('hidden');
+              console.log('hidden')
             }
           };
+          console.log(scrollDisabled)
     }
 
     useEffect(() => {
-      
       document.body.style.overflow = scroll;
       return () => {
         document.body.style.overflow = 'auto';
       };
     }, [scroll]); 
 
+    // Au click sur un des liens, tous les paramètres sont remis par défaut
     const handleChangeMenu = (param) =>{
       setMenuVisible(param);
+      setScrollDisabled(false)
+      setScroll('auto');
       document.body.style.overflow = 'auto';
     }
   
@@ -59,14 +62,14 @@ const Header = () => {
                 class="header__logo"
                 width="80"
             />
-
+               <Nav visible={isMenuVisible} bref={handleChangeMenu}/>
             <button className={`header__menuBurger menuTrigger ${isMenuVisible ? 'open' : ''}`} type="button" onClick={handleItemClick} >
 
                 <div id="bar1" className="bar"></div>
                 <div id="bar2" className="bar"></div>
                 <div id="bar3" className="bar"></div>
             </button>
-            <Nav visible={isMenuVisible} bref={handleChangeMenu}/>
+           
         </div>
         <p class="header__nomAgence"><strong>Artfull Code</strong></p>
         <h1 class="header__slogan"> Collaborez de façon créative et innovante avec ArtFull Code</h1>
