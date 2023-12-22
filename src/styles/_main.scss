@@ -6,7 +6,7 @@
     }
 
     &__title {
-        font-size: clamp(30px,1.8vw, 33px);
+        font-size: clamp(30px, 1.8vw, 33px);
         font-family: 'David Libre';
         font-weight: 600;
     }
@@ -20,12 +20,17 @@
     align-items: center;
     text-align: center;
     font-size: clamp(16px, 1.2vw, 20px);
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins",
+    sans-serif;
     background-image: none;
     background-repeat: no-repeat;
     background-position: left top -17vh;
     background-size: cover;
     color: $bleu;
+
+    .justify {
+        text-align: justify;
+    }
 
 }
 
@@ -45,7 +50,7 @@
         background-color: $bleu;
         padding: 4% 0;
         text-align: center;
-        font-size: clamp(30px,1.8vw, 33px);
+        font-size: clamp(30px, 1.8vw, 33px);
         z-index: 5;
         font-family: "David Libre", sans-serif;
         text-transform: uppercase;
@@ -153,7 +158,8 @@
 
             h3 {
                 font-family: 'Poppins', sans-serif;
-                font-size: clamp(19px, 1.3vw, 20px);;
+                font-size: clamp(19px, 1.3vw, 20px);
+                ;
                 width: 100%;
                 text-align: center;
             }
@@ -163,9 +169,10 @@
 
 
     &__content {
-        font-size: clamp(15px, 1.2vw, 20px);;
+        font-size: clamp(15px, 1.2vw, 20px);
+        ;
         line-height: 1.4;
-        
+
     }
 
     &__image {
@@ -180,9 +187,10 @@
 /* debut de nos avis */
 .avis {
 
-    &__title{
+    &__title {
         @include titre()
     }
+
     padding: {
         left: 4vw;
         right: 4vw;
