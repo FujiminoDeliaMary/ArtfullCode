@@ -20,19 +20,20 @@
         width: 7vh;
         height: 7vh;
         justify-content: center;
+        background-color: #053F5E;
         align-items: center;
         border-radius: 50%;
         margin-bottom: 2vh;
         cursor: pointer;
         position: absolute;
         bottom: 1vh;
-        left: 50%;
+        left: 48%;
         transform: translateX(50%);
         background-color: #27496D;
         animation: levitate 2s infinite alternate ease-in-out;
     }
 
-    &__navbar{
+    &__navbar {
         display: flex;
         margin: 0 2rem;
     }
@@ -68,7 +69,7 @@
                 background-color .3s ease-in;
         }
 
-        &.scrolled{
+        &.scrolled {
             background-color: rgb(39, 73, 109);
             box-shadow: rgba(0, 0, 0, 0.40) 1.95px 1.95px 2.6px;
             transition: background-color .3s ease-in;
@@ -86,13 +87,14 @@
 
             a {
                 color: $blanc;
-                font-size: clamp(18px, 1.2vw, 20px);;
+                font-size: clamp(18px, 1.2vw, 20px);
+                ;
                 font-family: 'Poppins';
 
             }
 
-            .active{
-                color:$orange
+            .active {
+                color: $orange
             }
 
             li {
@@ -195,13 +197,13 @@
     }
 
     &__slogan {
-        font-size: clamp(16px,1.5vw,25px);
+        font-size: clamp(16px, 1.5vw, 25px);
     }
 
     &__nomAgence {
         font-family: "David Libre";
         text-transform: uppercase;
-        font-size: clamp(55px,6vw,80px);
+        font-size: clamp(55px, 6vw, 80px);
         color: $blanc;
         bottom: 55%;
     }
