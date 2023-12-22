@@ -1,28 +1,37 @@
-*{
+* {
     box-sizing: border-box;
-    &::after, &::before{
+
+    &::after,
+    &::before {
         box-sizing: border-box;
+    }
+
+    &::selection {
+        color: $blanc;
+        background-color: $orange;
     }
 }
 
-img{
-    max-width:100%;
+img {
+    max-width: 100%;
 }
 
-html{
-    font-size:62.5%;
+html {
+    font-size: 62.5%;
     background-color: $nacre;
 }
 
-body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:1.1rem;
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
 }
 
-a, a:hover, a:visited{
+a,
+a:hover,
+a:visited {
     text-decoration: none;
 }
 
-.active{
-    color:black;
+.active {
+    color: black;
 }
