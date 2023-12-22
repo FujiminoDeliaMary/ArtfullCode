@@ -2,17 +2,18 @@
 
 .footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     justify-content: center;
     background-color: #27496D;
     color: #EFEBEB;
-    font-size: 1.8vh;
+    font-size: clamp(13px,1.5vw,20px);
     font-family: 'gabriela', sans-serif;
     padding: 2rem 2rem;
     gap: 25vh;
     width: 100%;
 
     &__adress,&__tel,&__email,&__heure{
+        width:fit-content;
         p{
             display: flex;
             align-items: center;
@@ -22,7 +23,7 @@
     }
    
     p {
-        line-height: 2vw;
+        line-height: 1vh;
         margin-bottom: 1rem;
         a{
             color:$nacre;
@@ -38,8 +39,8 @@
     }
 
     &__logo{
-        width:40px;
-        height:40px;
+        width:38px;
+        height:38px;
     }
 
     &__icon{
@@ -64,7 +65,12 @@
     &__heure, &__coordonnees, &__nav{
             display: none;
         }
-    
+    &__heure{      
+        p{
+            gap:4px
+        }
+     
+    }
 
     &__mobile{
         display: flex;

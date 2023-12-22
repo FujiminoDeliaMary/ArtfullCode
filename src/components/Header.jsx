@@ -7,11 +7,16 @@ import Particules from "./Particle";
 const Header = () => {
 
     window.addEventListener('scroll',()=>{
-      if (window.scrollY >  270){
-        document.getElementById('menu').classList.add('scrolled');
-      }else{
-        document.getElementById('menu').classList.remove('scrolled');
+      const menu = document.getElementById('menu');
+      if (menu){
+
+        if (window.scrollY >  270){
+          menu.classList.add('scrolled');
+        }else{
+          menu.classList.remove('scrolled');
+        }
       }
+
     })
   
     const [isMenuVisible, setMenuVisible] = useState(false);

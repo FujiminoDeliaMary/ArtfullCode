@@ -12,9 +12,9 @@ const Contact = () => {
 
     const sendEmail = (e) => {
       e.preventDefault();
-        
+      console.log(formSubmitted);
+      setFormSubmitted(true)
       if (isValidEmail){
-        setFormSubmitted(true)
         emailjs.sendForm('service_81pdbks', 'template_5nqqb8l', form.current, 'ru9WsHxGXFFGqcYiL')
         .then((result) => {
             console.log(result.text);
@@ -36,7 +36,7 @@ const Contact = () => {
         const isValidEmail = emailRegex.test(inputEmail);
         setIsValid(isValidEmail);
     };
-
+    console.log(formSubmitted);
     return <section class="contact">
       
                 <h3 class="contact__speech"  ><TypeAnimation 

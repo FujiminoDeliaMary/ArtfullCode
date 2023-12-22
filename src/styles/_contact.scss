@@ -9,9 +9,10 @@
         padding:3vh 4vw;
         color:#000000;
         border-radius: 10px;
-        font-size:4rem;
+        font-size:3rem;
         text-align: center;
         font-weight:600;
+
         &::after {
             content: '';
             display: block;
@@ -30,9 +31,9 @@
         font-size: clamp(18px, 1.5vw, 20px);
         border-radius: 5px;
         text-align: center;
-
+        width:100%;
         &.invalid{
-            background-color: rgb(206, 86, 86);
+            background-color: rgb(178, 18, 18);
         }
 
         &.valid{
@@ -48,6 +49,7 @@
         display: none;
         font-size:clamp(30px, 2vw, 60px);
         color:$blueberry;
+        flex-basis: 40%;
     }
 
     &__form{
@@ -56,6 +58,7 @@
         flex-direction: column;
         gap:2vh;
         font-family:'Poppins';
+        flex-basis: 35%;
         
     }
     &__label{
@@ -67,6 +70,7 @@
 
     &__input, &__textarea{
         border:none;
+        padding-left:1rem;
         resize: none;
         border-radius: 5px;
         margin-top: 1%;

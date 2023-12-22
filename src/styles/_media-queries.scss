@@ -217,10 +217,16 @@
         &__coordonnees,
         &__nav {
             display: block;
+          
+
         }
 
         &__mobile {
             display: none;
+        }
+
+        &__heure{
+            gap:3px;
         }
     }
 

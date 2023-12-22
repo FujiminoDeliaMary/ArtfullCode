@@ -6,6 +6,7 @@ import emailIcon from '../assets/icons/Email.png'
 import PhoneIcon from '../assets/icons/Phone.png'
 import { IoLocation } from "react-icons/io5";
 import { FaClock } from "react-icons/fa6";
+import {Link } from "react-router-dom";
 const Footer = () => {
 
     const emailAddress = 'marilynedelia@gmail.com';
@@ -21,12 +22,12 @@ const Footer = () => {
                     <p><IoLocation size={30} color="white"/>Adresse</p>
                     <p><a href="https://maps.app.goo.gl/uEN1Kg6vP38o6mYp7" >44 avenue Albert Einstein, 17000 La Rochelle</a></p>
                 
-                 </div>
+                 </div><br/>
                  <div className="footer__email">
                     <p><img className="footer__icon" src={emailIcon} alt="" />Email:</p>
                     <p><a href="/" onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
              
-                 </div>
+                 </div><br/>
                 <div className="footer__tel">
                     <p><img src={PhoneIcon} alt="" className="footer__icon" /> Tel:</p>                    
                     <p><a href="tel:+33612345678">06.12.34.56.78</a></p>
@@ -47,10 +48,10 @@ const Footer = () => {
                         <li className="footer__logo"><img src={linkedinIcon} alt="" /></li>
                         <li className="footer__logo"><img src={twitterIcon} alt="" /></li>
                     </ul>
-                </nav>
-                <p>Nous contacter</p>
-                <p>Mentions Legales</p>
-                <p>CGU</p>
+                </nav><br/>
+                <p><Link to='/contact'>Nous contacter</Link></p><br/>
+                <p>Mentions Legales</p><br/>
+                <p>CGU</p><br/>
 
             </div>
 
