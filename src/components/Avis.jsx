@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { IoStar } from "react-icons/io5";
 import { IoStarHalf } from "react-icons/io5";
 import { IoStarOutline } from "react-icons/io5";
-// import AnimatedPath from "./AnimatedPath";
+import AnimatedPath from "./AnimatedPath";
 
 // import avis
 import avisHomme from "../assets/avis/avatar-homme.png"
@@ -185,10 +185,9 @@ const Avis = () => {
                 </SwiperSlide>
             </Swiper>
         </section>
-            {/* <div class="leSvg" > */}
-            {/*style="display: flex; position :relative; z-index: 10; "*/}
-            {/* <AnimatedPath /> */}
-            {/* </div> */}
+
+            <AnimatedPath />
+
         </>
 
     );

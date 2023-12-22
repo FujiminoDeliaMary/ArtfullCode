@@ -1,5 +1,5 @@
 import React from "react";
-// import AnimatedPathHaut from "./AnimatedPathHaut";
+import AnimatedPathHaut from "./AnimatedPathHaut";
 
 const About = () => {
     return <section class="about" id="about">
@@ -14,7 +14,7 @@ const About = () => {
 
             Chez ArtFull Code, chaque ligne de code, chaque élément graphique est méticuleusement choisi et intégré pour transcender le simple site web. Nous créons des œuvres d'art digitales qui résistent à l'épreuve du temps et inspirent une connexion authentique entre votre marque et votre audience.
         </p>
-        {/* <AnimatedPathHaut /> */}
+        <AnimatedPathHaut />
     </section>
 }
 
