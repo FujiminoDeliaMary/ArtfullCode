@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="footer__mobile">
 
                 <h2>Artfull Code</h2>
-                <p>44 avenue albert einstein, 17000 La rochelle</p>
+                <p><a href="https://maps.app.goo.gl/uEN1Kg6vP38o6mYp7" >44 avenue Albert Einstein, 17000 La Rochelle</a></p>
                 <p><a href={`mailto:${emailAddress}`} onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
                 <p><a href="tel:+33612345678">Tel: 06.12.34.56.78</a></p>
 

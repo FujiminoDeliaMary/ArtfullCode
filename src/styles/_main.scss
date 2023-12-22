@@ -19,7 +19,7 @@
     line-height: 1.4;
     align-items: center;
     text-align: center;
-    font-size: clamp(16px, 1.2vw, 20px);
+    font-size: clamp(18px, 1.2vw, 20px);
     font-family: "Poppins",
     sans-serif;
     background-image: none;
@@ -28,7 +28,7 @@
     background-size: cover;
     color: $bleu;
 
-    .justify {
+    &__content--justify {
         text-align: justify;
     }
 

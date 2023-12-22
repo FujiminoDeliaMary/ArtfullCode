@@ -5,7 +5,7 @@
     padding: 2vh 10vw;
 
     &__title{
-        background-color: $orange;
+       
         padding:3vh 4vw;
         color:#000000;
         border-radius: 10px;
@@ -16,13 +16,13 @@
         &::after {
             content: '';
             display: block;
-            width: 70%;
-            height: 1px;
-            background-color: $nacre; 
+            width: 50%;
+            height: 3px;
+            background-color: $blueberry; 
             margin-top: 1.5rem; 
             border-radius: 5px; 
             margin-left: 15%;
-    
+          
         } 
     }
 
@@ -47,7 +47,7 @@
 
     &__speech{
         display: none;
-        font-size:clamp(30px, 2vw, 60px);
+        font-size:clamp(25px, 2vw, 60px);
         color:$blueberry;
         flex-basis: 40%;
     }

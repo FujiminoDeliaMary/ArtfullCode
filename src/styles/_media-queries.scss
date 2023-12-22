@@ -47,7 +47,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            height: 50vh;
+            height: 60vh;
 
         }
 
@@ -66,7 +66,7 @@
 
         &__content {
             max-width: 100%;
-            font-size: 1.51vw;
+            font-size: clamp(13px,1.5vw,18px);
         }
 
         &__img {
@@ -173,7 +173,7 @@
 
     .services {
         padding: 3vh 8vh;
-
+        border-radius: 20px;
         &__image {
             display: block;
             width: 20vw;
@@ -192,9 +192,7 @@
     }
 
     .realisations {
-
-
-
+     
         &__name {
             font-size: 1.5vw;
             color: #ffff;
@@ -203,7 +201,9 @@
 
         &__libelle {
             text-align: left;
+            overflow: auto;
             color: $blanc;
+         
             background-color: $bleu;
             width: 100%;
 

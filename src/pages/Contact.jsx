@@ -11,6 +11,7 @@ const Contact = () => {
 
 
     const sendEmail = (e) => {
+
       e.preventDefault();
       console.log(formSubmitted);
       setFormSubmitted(true)
