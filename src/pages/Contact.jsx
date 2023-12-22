@@ -30,7 +30,7 @@ const Contact = () => {
 
     //Vérification de la validité de l'email
     const handleEmailChange = (event) => {
-
+        setFormSubmitted(false)
         const inputEmail = event.target.value;
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
