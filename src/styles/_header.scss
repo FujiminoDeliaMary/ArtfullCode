@@ -129,7 +129,11 @@
 
 
     &__logo {
-        width: 0;
+        width: clamp(20px, 20vw, 100px);
+        position: absolute;
+        left:50%;
+        top:20%;
+        transform: translateX(-50%);
     }
 
     &__menuBurger {
@@ -155,10 +159,10 @@
         }
 
         .bar {
-            font-size: 10px;
+           
             background: $blanc;
-            width: 40px;
-            height: 5px;
+            width: 30px;
+            height: 4px;
             transition: all 0.3s ease-in;
         }
 

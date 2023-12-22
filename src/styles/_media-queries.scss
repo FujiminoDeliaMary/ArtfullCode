@@ -13,18 +13,20 @@
             margin-left: 2rem;
         }
 
-        &__arrow {
-            display: flex;
-
-        }
-
         &__menuBurger {
 
             z-index: 3000000;
+            .bar {
+                font-size: 10px;
+                background: $blanc;
+                width: 40px;
+                height: 5px;
+                transition: all 0.3s ease-in;
+            }
         }
 
         &__menu {
-            width: 30%;
+            width: 9vw;
 
             &.visible {
                 width: 30%;
@@ -83,6 +85,14 @@
         font-size: clamp(12px,1vw,20px);
     }
 
+    .services{
+        padding: 3.5rem 2rem;
+
+        &__service{
+            padding: 0 7rem;
+        }
+    }
+
 
 
 }
@@ -97,15 +107,26 @@
             justify-content: space-between;
         }
 
+        .bar{
+            width: 30px;
+            height: 4px;
+        }
+
         &__logo {
 
-            width: clamp(20px, 6vw, 80px);
+            width: clamp(20px, 4vw, 70px);
             position: relative;
             top: 0;
             left: 0;
             margin-left: 6rem;
             transform: translateX(-50%);
             z-index: 30;
+
+        }
+
+        &__arrow {
+            display: flex;
+            cursor: pointer;
 
         }
 
@@ -143,8 +164,6 @@
     .about {
         padding: 0 30vw;
         padding-top: 10vh;
-        // padding-bottom: 25vh;
-        // background-image: url("../assets/vecteurs.png");
 
     }
 
@@ -154,7 +173,7 @@
         padding-top: 10rem;
 
         &__title {
-            top: 6vh;
+            top: 2vh;
             right: 30%;
             width: 40%;
 
@@ -162,10 +181,12 @@
 
         &__membres {
             gap: 0;
+            flex-wrap: nowrap;
         }
 
         &__fig {
             flex-basis: 25%;
+            flex-wrap: nowrap;
 
         }
 
@@ -180,11 +201,18 @@
         border-radius: 20px;
         &__image {
             display: block;
-            width: 20vw;
-            height: 20vh
+            width: 40vw;
+            object-fit: cover;
+            height: 40vh
         }
 
+        .swiper, .swiper_container{
+            background-color: $blanc;
+        }
         &__service {
+            background-color: white;
+            height:inherit;
+            height:55vh;
             &Title {
                 flex-direction: row;
 
@@ -193,6 +221,7 @@
                 }
             }
         }
+
     }
 
     .realisations {

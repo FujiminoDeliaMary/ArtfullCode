@@ -120,7 +120,7 @@ const Services = () => {
               <figcaption>
                 <div class="services__serviceTitle">
                   <img src={iconeSeo} alt="" class="services__icone" />
-                  <h3>Web Design </h3>
+                  <h3>Responsive Web Design </h3>
                 </div>
                 <p className='services__content'>
                   Notre équipe de designers transforme vos concepts en réalité visuelle.

@@ -58,6 +58,10 @@
         font-size:clamp(25px, 2vw, 60px);
         color:$blueberry;
         flex-basis: 40%;
+        
+        &--orange{
+            color:$orange;
+        }
     }
 
     &__form{

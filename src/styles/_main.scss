@@ -19,7 +19,7 @@
     line-height: 1.4;
     align-items: center;
     text-align: center;
-    font-size: clamp(18px, 1.2vw, 20px);
+    font-size: clamp(16px, 1.1vw, 20px);
     font-family: "Poppins",
     sans-serif;
     background-image: none;
@@ -69,7 +69,6 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 2rem;
         // position: relative;
     }
 
@@ -78,7 +77,7 @@
         &__nom,
         &__filiere {
             text-align: center;
-            font-size: clamp(18px, 1.2vw, 20px);
+            font-size: clamp(18px, 1.4vw, 24px);
             font-family: "Poppins";
         }
 
@@ -86,6 +85,41 @@
             line-height: 1.2;
             padding-top: 2.5vh;
             padding-bottom: 3rem;
+        }
+
+        &__image{
+            &--delia,&--victoria,&--loane,&--clarence{
+                width:30vh;
+                height:30vh;
+                background-image: url('../assets/membres/deliaphoto1.png');
+                background-size: cover;
+                transition: background-image 0.3s ease-in-out;
+
+                &:hover{
+                    background-image: url("../assets//membres/deliaphoto2.png");
+                }
+            }
+
+            &--loane{
+                background-image: url('../assets/membres/loanphoto1.png');
+                &:hover{
+                    background-image: url('../assets/membres/loanephoto2.png');
+                }
+            }
+
+            &--victoria{
+                background-image: url('../assets/membres/victoriaphoto1.png');
+                &:hover{
+                    background-image: url('../assets/membres/victoriaphoto2.png');
+                }
+            }
+
+            &--clarence{
+                background-image: url('../assets/membres/clarencephoto1.png');
+                &:hover{
+                    background-image: url('../assets/membres/clarencephoto2.png');
+                }
+            }
         }
     }
 
@@ -98,7 +132,10 @@
         z-index: 1;
         position: relative;
         flex-basis: 45%;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding : {
             right: 2.5vw;
             left: 2.5vw;
@@ -111,7 +148,7 @@
 .services {
     position: relative;
     margin-bottom: 5vh;
-    padding: 3.5rem 2rem;
+    padding: 3.5rem 0rem;
     background-color: $blanc;
     width: 80%;
     margin: 0 auto;
@@ -125,15 +162,11 @@
 
     &__service {
         background-color: $blanc;
-        padding: 0 7rem;
+        padding: 0 4rem;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: flex;
         gap: 4vw;
         justify-content: space-between;
         align-items: center;
@@ -169,7 +202,7 @@
 
     &__content {
         font-size: clamp(15px, 1.2vw, 20px);
-        ;
+        
         line-height: 1.4;
 
     }
@@ -235,20 +268,13 @@
 
         }
 
-        // backdrop-filter: blur(15px);
-        // background: rgba(0, 0, 0, 0.19);
 
-        background : {
-            // color: #D9D9D9;
-        }
-
-        // width:25%;
         padding: 4vh 2vw;
         gap: 2vh;
         border-radius: 10px;
         margin-bottom: 2vh;
 
-        // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
         &__image {
             width: 10vw;
             max-width: 10vw;
@@ -257,19 +283,21 @@
 
         &__nom {
             font-family: 'Poppins';
-            font-size: 1.8rem;
+            font-size: clamp(15px, 1.2vw, 20px);
             font-weight: 800;
         }
 
         &__job {
             font-family: 'Poppins', sans-serif;
             text-align: center;
+            font-size: clamp(14px, 1.2vw, 20px);
 
         }
 
         &__avis {
             text-align: center;
             line-height: 1.2;
+            font-size: clamp(14px, 1.2vw, 20px);
         }
 
         &__notes {
@@ -290,10 +318,10 @@
 
 
 .leSvg__haut {
-    @extend .leSvg;
+    // @extend .leSvg;
     display: flex;
     position: relative;
-    top: -48vh;
+    top: -50vh;
     width: 100vw;
     height: 0;
 }
@@ -331,7 +359,7 @@
     }
 
     &__content {
-        font-size: clamp(18px, 13px + 1vw, 15px);
+        font-size: clamp(13px, 1.1vw, 20px);
         line-height: 1.4;
         font-family: 'Poppins';
     }

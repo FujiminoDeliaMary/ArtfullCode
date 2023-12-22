@@ -15,6 +15,7 @@ const Contact = () => {
       e.preventDefault();
       console.log(formSubmitted);
       setFormSubmitted(true)
+      form.current.reset(); 
       if (isValidEmail){
         emailjs.sendForm('service_81pdbks', 'template_5nqqb8l', form.current, 'ru9WsHxGXFFGqcYiL')
         .then((result) => {
@@ -43,6 +44,7 @@ const Contact = () => {
                 <h3 class="contact__speech"  ><TypeAnimation 
                                                 sequence={[
                                                     'Notre equipe est à votre écoute',
+                                                    <span className="contact__speech--orange">écoute</span>,
                                                     1000,
                                                 ]}
                                                 
@@ -50,7 +52,7 @@ const Contact = () => {
                 </h3>
             
                 <form className="contact__form" action="contact.php" method="post" ref={form} onSubmit={sendEmail}>
-                   {formSubmitted===true && <p className={`contact__alert ${isValidEmail ? 'valid' : 'invalid'}`}>{(!isValidEmail) ? 'Vous avez entrer une mauvaise adresse Email' : 'Envoyé avec succès'}</p>}
+                   {formSubmitted===true && <p className={`contact__alert ${isValidEmail ? 'valid' : 'invalid'}`}>{(!isValidEmail) ? 'Vous avez entré une mauvaise adresse Email' : 'Envoyé avec succès'}</p>}
                     <h2 className="contact__title">Nous contacter</h2>
 
                     <div class="contact__formGroup">
@@ -78,7 +80,7 @@ const Contact = () => {
                     </div>
 
 
-                    <button class="contact__submit" type="submit">Envoyer</button>
+                    <button class="contact__submit" type="submit">Envoyer</button><br></br>
                 </form>
     </section>
 

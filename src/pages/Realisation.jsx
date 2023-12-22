@@ -1,21 +1,12 @@
 import React from "react";
 import '../components/Nav';
-import projet1 from "../assets/projet1.png"
-import projet1Logo from "../assets/projet1Logo.png"
 import imagerealisation2 from "../assets/services/image-realisation2.jpg"
-import Nav from "../components/Nav";
 const Realisation = () => {
 
     return <section className="realisations" id="realisations">
            
             <h2 className="realisations__title">Nos réalisations</h2>
       
-                {/* <figure class="realisations__projet">
-                    <img class="realisations__img" src={projet1} alt="projet1" />
-                    <figcaption class="realisations__libelle">
-                        <p class="realisations__content">Ce club de canoë-kayak a fait appel à nous afin de retravailler leur site </p>
-                    </figcaption>
-                </figure> */}
 
                 <figure className="realisations__projet">
                     <img className="realisations__img" src={imagerealisation2} alt="projet1" />
