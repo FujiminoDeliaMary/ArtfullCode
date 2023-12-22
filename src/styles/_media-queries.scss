@@ -147,7 +147,7 @@
     .equipe {
         background-color: transparent;
         color: $black;
-        padding-top: 15rem;
+        padding-top: 10rem;
 
         &__title {
             top: 6vh;
@@ -222,7 +222,7 @@
         &__coordonnees,
         &__nav {
             display: block;
-          
+
 
         }
 
@@ -230,8 +230,8 @@
             display: none;
         }
 
-        &__heure{
-            gap:3px;
+        &__heure {
+            gap: 3px;
         }
     }
 
