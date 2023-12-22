@@ -281,21 +281,22 @@
 
 }
 
-
 .leSvg {
     display: flex;
-    // overflow: hidden;
-    // transform: translateY(-50px);
     position: relative;
     top: -20vh;
     width: 100vw;
     height: 20vh;
+}
 
-    &__Haut {
-        @extend .leSvg;
-        top: -45vh;
-        // top: ;
-    }
+
+.leSvg__haut {
+    @extend .leSvg;
+    display: flex;
+    position: relative;
+    top: -48vh;
+    width: 100vw;
+    height: 0;
 }
 
 // fin avisss
