@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
 
             <div className="footer__heure">
-              <p><FaClock size={30} color="white"/> Horaires: Du lundi au vendredi, de 8h à 17h </p>
+              <p><FaClock size={25} color="white"/> Horaires: Du lundi au vendredi, de 8h à 17h </p>
             </div>
 
             <div className="footer__nav">

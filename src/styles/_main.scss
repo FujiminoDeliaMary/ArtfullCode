@@ -89,8 +89,8 @@
 
         &__image{
             &--delia,&--victoria,&--loane,&--clarence{
-                width:30vh;
-                height:30vh;
+                width:33vh;
+                height:33vh;
                 background-image: url('../assets/membres/deliaphoto1.png');
                 background-size: cover;
                 transition: background-image 0.3s ease-in-out;
@@ -150,6 +150,7 @@
     margin-bottom: 5vh;
     padding: 3.5rem 0rem;
     background-color: $blanc;
+    border-radius: 10px;
     width: 80%;
     margin: 0 auto;
 

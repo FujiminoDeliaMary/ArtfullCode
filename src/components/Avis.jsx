@@ -71,7 +71,7 @@ const Avis = () => {
                         </p>
                         <p class="card__notes">
 
-                            <IoStar size={25} color='#eee' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' />
+                           <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> <IoStarOutline size={25} color='#d27c2c' /> <IoStarOutline size={25} color='#d27c2c' />
 
 
                         </p>
@@ -81,7 +81,7 @@ const Avis = () => {
                     <aside class="card">
                         <img src={avisHomme2} alt="" class="card__image" />
                         <h2 class="card__nom">Pierre Olivier</h2>
-                        <h3 class="card__job"> Gérante d'une association animalière
+                        <h3 class="card__job"> Gérant d'une association animalière
                         </h3>
                         <p class="card__avis">
                             "Leur capacité à comprendre mes besoins a abouti à des services impeccables.
@@ -107,7 +107,7 @@ const Avis = () => {
                             à élever le niveau de sa formation en ligne."
                         </p>
                         <ul class="card__notes">
-                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+                            <li>    <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> <IoStar size={25} color='#d27c2c' /> <IoStarOutline size={25} color='#d27c2c' /> </li>
 
                         </ul>
                     </aside>
@@ -123,7 +123,7 @@ const Avis = () => {
                             Chaque membre de l'équipe a été à l'écoute de mes besoins."
                         </p>
                         <ul class="card__notes">
-                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStarOutline size={25} color='#d27c2c' /> </li>
 
                         </ul>
                     </aside>
@@ -140,7 +140,7 @@ const Avis = () => {
                             Bonne communication et collaboration, avec tout les membres de l'équipe. Merci !"
                         </p>
                         <ul class="card__notes">
-                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStarHalf size={25} color='#d27c2c' />  </li>
 
                         </ul>
                     </aside>
@@ -155,7 +155,7 @@ const Avis = () => {
                             je suis aujourd'hui pleinement satisfait des prestations de cette Agence. Je la recommande !"
                         </p>
                         <ul class="card__notes">
-                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStarOutline size={25} color='#d27c2c' /><IoStarOutline size={25} color='#d27c2c' /> </li>
 
                         </ul>
                     </aside>
@@ -173,7 +173,7 @@ const Avis = () => {
                             Leurs services ont dépassé mes attentes !"
                         </p>
                         <ul class="card__notes">
-                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> </li>
+                            <li>  <IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /><IoStar size={25} color='#d27c2c' /> <IoStarHalf size={25} color='#d27c2c' />  </li>
 
                         </ul>
                     </aside>
