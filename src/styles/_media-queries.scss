@@ -16,12 +16,13 @@
         &__menuBurger {
 
             z-index: 3000000;
-      
+
         }
 
         &__menu {
             width: 9vw;
-            height:100%;
+            height: 100%;
+
             &.visible {
                 width: 30%;
             }
@@ -39,17 +40,17 @@
     }
 
     .realisations {
-        
+
         &__projet {
             flex-direction: row;
             align-items: stretch;
             justify-content: center;
-        
+
 
         }
 
         &__libelle {
-            flex-basis:50%;
+            flex-basis: 50%;
             text-align: center;
             padding: 2rem 1rem;
             background-color: none;
@@ -58,12 +59,12 @@
             max-width: 100%;
             height: 100%;
             margin: 0 auto;
-           
+
         }
 
         &__content {
             max-width: 100%;
-            font-size: clamp(13px,1.5vw,18px);
+            font-size: clamp(13px, 1.5vw, 18px);
         }
 
         &__img {
@@ -76,43 +77,45 @@
         }
     }
 
-    .footer{
-        font-size: clamp(12px,1vw,20px);
+    .footer {
+        font-size: clamp(12px, 1vw, 20px);
     }
 
     .contact {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         padding: 2vh 5vw;
+
         &__speech {
             display: inline;
         }
     }
 
-    .services{
+    .services {
         padding: 3.5rem 2rem;
 
-        &__service{
+        &__service {
             padding: 0 7rem;
         }
     }
 
-    .presentation{
-        .about{
+    .presentation {
+        .about {
             flex-direction: row;
-            gap:60px;
+            gap: 60px;
             text-align: left;
             display: flex;
             align-items: stretch;
-            .infos{
+
+            .infos {
                 flex-basis: 60%;
                 box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
                 padding: 5rem 2.1rem;
                 border-radius: 20px;
             }
-         
-            .stats{
-                
+
+            .stats {
+
                 display: flex;
                 flex: 1;
                 flex-direction: column;
@@ -120,42 +123,40 @@
                 box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
                 height: inherit;
                 border-radius: 20px;
-                &__div{
+
+                &__div {
                     border: 0;
                 }
             }
         }
     }
 
-    .presentation{
+    .presentation {
         padding: 0 5rem;
+
         .about {
             padding-top: 10vh;
-    
-            .infos{
+
+            .infos {
                 padding: 5rem;
             }
         }
 
-        .values{
+        .values {
             flex-direction: row;
-           
-            &__title{
+
+            &__title {
                 text-align: left;
                 margin: 0;
-                padding-left : 5rem;
+                padding-left: 5rem;
             }
 
-            &__item{
-                max-width:60vw;
+            &__item {
+                max-width: 60vw;
             }
 
         }
     }
-
-
-
-
 
 }
 
@@ -219,7 +220,7 @@
 
     }
 
- 
+
 
 
 
@@ -254,6 +255,7 @@
     .services {
         padding: 3vh 8vh;
         border-radius: 20px;
+
         &__image {
             display: block;
             width: 40vw;
@@ -261,13 +263,16 @@
             height: 40vh
         }
 
-        .swiper, .swiper_container{
+        .swiper,
+        .swiper_container {
             background-color: $blanc;
         }
+
         &__service {
             background-color: white;
-            height:inherit;
-            height:55vh;
+            height: inherit;
+            height: 55vh;
+
             &Title {
                 flex-direction: row;
 
@@ -280,11 +285,12 @@
     }
 
     .realisations {
-     
-        &__projet{
+
+        &__projet {
             display: flex;
             align-items: stretch;
         }
+
         &__name {
             font-size: 1.5vw;
             color: #ffff;
@@ -295,7 +301,7 @@
             text-align: left;
             overflow: auto;
             color: $blanc;
-         
+
             background-color: $bleu;
             width: 100%;
 
@@ -310,6 +316,7 @@
     .footer {
         padding: 2rem 0;
         justify-content: space-around;
+
         &__heure,
         &__coordonnees,
         &__nav {
@@ -327,7 +334,7 @@
         }
     }
 
- 
+
 
 
 }
