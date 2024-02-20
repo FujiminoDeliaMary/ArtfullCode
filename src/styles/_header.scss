@@ -30,12 +30,13 @@
         left: 48%;
         transform: translateX(50%);
         background-color: #27496D;
-        animation: levitate 2s infinite alternate ease-in-out;
+        animation: levitate 2s infinite ease-in-out;
     }
 
     &__navbar {
         display: flex;
         margin: 0 2rem;
+        padding: 0 3rem;
     }
 
     &__menu {
@@ -142,27 +143,23 @@
         cursor: pointer;
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 0.7rem;
         justify-content: center;
         z-index: 3000;
         padding: 1rem 0rem;
         border-radius: 50%;
         transition: all 0.2s ease-out;
-
+        width:3.5rem;
         &:hover {
-            transform: rotate(25deg);
             border: 4px $orange;
-            // border: 4px rgba(210,124,44,0.6) solid;
-            //  TODO
             transition: transform 0.2s ease-out,
                 border 0.3 ease-out;
         }
 
         .bar {
-           
-            background: $blanc;
-            width: 30px;
-            height: 4px;
+            width: 100%;
+            background: $nacre;
+            height: 3.2px;
             transition: all 0.3s ease-in;
         }
 

@@ -76,7 +76,7 @@ const Contact = () => {
 
                     <div class="contact__formGroup">
                         <label class="contact__label" for="message">Message</label><br/>
-                        <textarea class="contact__textarea" id="message" name="message" rows="7" required placeholder="Votre message"></textarea><br/><br/>
+                        <textarea class="contact__textarea" id="message" name="message" rows="7" required></textarea><br/><br/>
                     </div>
 
 

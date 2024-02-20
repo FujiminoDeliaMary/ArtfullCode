@@ -7,6 +7,12 @@ $marble: #F2F8FC;
 $nacre:#EFEBEB;
 $black:#141414;
 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../assets/fonts/Satoshi-Regular.woff') format(woff),
+       url('../assets/fonts/Satoshi-Regular.woff2') format(woff2)
+        ;
+}
  
 @keyframes levitate {
     0% {
@@ -37,7 +43,7 @@ $black:#141414;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    font-size: clamp(26px,1.8vw, 33px);
+    font-size: clamp(30px, 1.8vw, 33px);
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 5vh;
@@ -50,7 +56,30 @@ $black:#141414;
         height: 1px;
         margin-top: 4%;
         background-color: #0e0c0c;
-        // todo
+      
     }
   }
 
+  @mixin sous-titre{
+    font-family: "David Libre" sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(25px, 1.7vw, 40px);
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+  }
+
+  @mixin font-accordion($e){
+    @if($e =='title'){
+      font-family: "David Libre" sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: clamp(13px, 1.1vw, 30px);
+    }
+    @else{
+      font-family: "Poppins" sans-serif;
+      font-size: clamp(13px, 1.1vw, 20px);
+    }
+  }

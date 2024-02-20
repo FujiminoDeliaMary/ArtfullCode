@@ -1,4 +1,4 @@
-@media screen and (width > 767px) {
+@media screen and (width > 667px) {
 
     .header {
         position: relative;
@@ -16,13 +16,7 @@
         &__menuBurger {
 
             z-index: 3000000;
-            .bar {
-                font-size: 10px;
-                background: $blanc;
-                width: 40px;
-                height: 5px;
-                transition: all 0.3s ease-in;
-            }
+      
         }
 
         &__menu {
@@ -45,25 +39,26 @@
     }
 
     .realisations {
+        
         &__projet {
             flex-direction: row;
+            align-items: stretch;
             justify-content: center;
-            align-items: center;
-            height: 60vh;
+        
 
         }
 
         &__libelle {
             flex-basis:50%;
             text-align: center;
-            padding: 4vh 4rem;
-            padding-right: 7rem;
+            padding: 2rem 1rem;
             background-color: none;
             border: 3px $bleu solid;
             width: 100%;
             max-width: 100%;
             height: 100%;
             margin: 0 auto;
+           
         }
 
         &__content {
@@ -85,6 +80,15 @@
         font-size: clamp(12px,1vw,20px);
     }
 
+    .contact {
+        display:flex;
+        justify-content: space-between;
+        padding: 2vh 5vw;
+        &__speech {
+            display: inline;
+        }
+    }
+
     .services{
         padding: 3.5rem 2rem;
 
@@ -92,6 +96,64 @@
             padding: 0 7rem;
         }
     }
+
+    .presentation{
+        .about{
+            flex-direction: row;
+            gap:60px;
+            text-align: left;
+            display: flex;
+            align-items: stretch;
+            .infos{
+                flex-basis: 60%;
+                box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                padding: 5rem 2.1rem;
+                border-radius: 20px;
+            }
+         
+            .stats{
+                
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+                box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                height: inherit;
+                border-radius: 20px;
+                &__div{
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    .presentation{
+        padding: 0 5rem;
+        .about {
+            padding-top: 10vh;
+    
+            .infos{
+                padding: 5rem;
+            }
+        }
+
+        .values{
+            flex-direction: row;
+           
+            &__title{
+                text-align: left;
+                margin: 0;
+                padding-left : 5rem;
+            }
+
+            &__item{
+                max-width:60vw;
+            }
+
+        }
+    }
+
+
 
 
 
@@ -107,10 +169,6 @@
             justify-content: space-between;
         }
 
-        .bar{
-            width: 30px;
-            height: 4px;
-        }
 
         &__logo {
 
@@ -161,11 +219,9 @@
 
     }
 
-    .about {
-        padding: 0 30vw;
-        padding-top: 10vh;
+ 
 
-    }
+
 
     .equipe {
         background-color: transparent;
@@ -225,6 +281,10 @@
 
     .realisations {
      
+        &__projet{
+            display: flex;
+            align-items: stretch;
+        }
         &__name {
             font-size: 1.5vw;
             color: #ffff;
@@ -267,13 +327,7 @@
         }
     }
 
-    .contact {
-        justify-content: space-between;
-
-        &__speech {
-            display: inline;
-        }
-    }
+ 
 
 
 }
