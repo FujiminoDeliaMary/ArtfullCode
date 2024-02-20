@@ -94,10 +94,13 @@
             overflow: hidden;
           
             .title{
-                @include font-accordion('title')
+                @include font-accordion('title');
+                font-family: 'Satoshi', sans-serif;
+                font-weight: bold;
             }
 
             .details{
+                 font-family: 'Satoshi', sans-serif;
                 padding: 1rem;
                 @include font-accordion('details')
             }
