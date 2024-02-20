@@ -1,81 +1,66 @@
 
 
 .footer {
-    display: flex;
-    justify-content: center;
+
     padding: 2rem 0;
-    background-color: #27496D;
-    color: #EFEBEB;
+    background-color: $blueberry;
+    color: $nacre;
     font-size: clamp(14px,1.3vw,20px);
     font-family: 'Satoshi', sans-serif;
-
-    width: 100%;
-    &__adress,&__tel,&__email,&__heure{
-        width:fit-content;
-        p{
-            display: flex;
-            align-items: center;
-            gap:2px;
-        }
-
-    }
-   
     p {
-        line-height: 1vh;
-        margin-bottom: 1rem;
+   
+        display: flex;
+        align-items: center;
+        font-family: 'Satoshi', sans-serif;
         a{
             color:$nacre;
+            &:hover{
+                color: $orange;
+                transition: .2s solor ease-in-out;
+            }
         }
+     
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        border-top: 1px solid $bleu;
+        gap:2rem;
+        margin: 0
+    }
+
+    &__top{
         
+        p{
+            width: 100%;
+        };
+        font-family: 'Satoshi', sans-serif;
+        position: relative;
+
     }
 
     &__logos {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        gap: 2%;
+        gap: 1.5rem;
     }
 
     &__logo{
-        width:38px;
-        height:38px;
+        width:22px;
+   
     }
 
-    &__icon{
-        width:30px;
-        height:30px;
-    }
-
-
-    &__heure {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: flex-start;
-        display: none;
         
-    }
-
-    &__image{
-        display: none;
-    }
-
-    &__heure, &__coordonnees, &__nav{
-            display: none;
-        }
-    &__heure{      
-        p{
-            gap:4px
-        }
-     
-    }
-
-    &__mobile{
+    &__policy{
         display: flex;
-        justify-content: center;
         align-items: center;
-        flex-direction: column;
-        gap:2vh;
+        justify-content: center;
+        height: fit-content;
+        gap:2rem
     }
 
 }
