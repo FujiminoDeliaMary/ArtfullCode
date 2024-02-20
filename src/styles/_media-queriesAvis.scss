@@ -26,7 +26,13 @@
         &__description {
             display: flex;
             align-items: center;
-            gap: 10vw;
+            gap: 7vw;
+        }
+
+        &__image {
+
+            max-width: 10vw;
+            border-radius: 50%;
         }
 
     }
