@@ -1,4 +1,4 @@
-.contact {
+.contactFooter {
 
     justify-content: center;
     align-items: center;
@@ -57,17 +57,19 @@
 
 
 
-    // j'ai mis en commentaire pour pouvoir bien l'utiliser dans contactFooter
-    // &__speech{
-    //     display: none;
-    //     font-size:clamp(25px, 2vw, 60px);
-    //     color:$blueberry;
-    //     flex-basis: 40%;
 
-    //     &--orange{
-    //         color:$orange;
-    //     }
-    // }
+    &__speech {
+        display: none;
+        font-size: clamp(25px, 2vw, 60px);
+        color: $blueberry;
+        // flex-basis: 40%;
+        text-align: center;
+        margin-bottom: 5vh;
+
+        &--orange {
+            color: $orange;
+        }
+    }
 
     &__form {
 
@@ -82,9 +84,8 @@
     &__label {
         color: $blueberry;
         font-size: clamp(14px, 1.1vw, 20px);
-        ;
         font-weight: 500;
-
+        margin-bottom: 10px;
     }
 
     &__input,
@@ -96,6 +97,8 @@
         font-size: clamp(14px, 1.1vw, 20px);
         width: 100%;
         background: transparent;
+        margin-top: 1.5vh;
+        background-color: $marble;
 
         &:focus {
             outline: none;
@@ -112,7 +115,8 @@
     }
 
     &__textarea {
-        border: 2px solid $blueberry
+        border: 2px solid $blueberry;
+
     }
 
     &__submit {
@@ -155,4 +159,6 @@
             }
         }
     }
+
+
 }
