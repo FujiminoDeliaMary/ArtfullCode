@@ -1,0 +1,61 @@
+@media screen and (width < 667px) {
+    .avis {}
+
+    .card {
+
+        &__description {
+            display: flex;
+            align-items: center;
+            gap: 5vw;
+        }
+
+        &__image {
+            max-width: 20vw;
+        }
+
+    }
+
+
+}
+
+@media screen and (width > 667px) {
+    .avis {}
+
+    .card {
+
+        &__description {
+            display: flex;
+            align-items: center;
+            gap: 10vw;
+        }
+
+    }
+
+
+}
+
+@media screen and (width > 1200px) {
+    .avis {
+
+        .card {
+            min-height: 60vh;
+
+            &__description {
+                display: flex;
+                align-items: center;
+                gap: 2vw;
+                position: absolute;
+                bottom: 10vh;
+                left: 2vw;
+            }
+
+
+            &__image {
+
+                max-width: 5vw;
+                // min-height: 20vw;
+                border-radius: 50%;
+            }
+        }
+    }
+}
