@@ -41,6 +41,7 @@ const Avis = () => {
                 centeredSlides={true}
                 slidesPerView={1}
                 spaceBetween={0}
+
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: true
@@ -68,7 +69,12 @@ const Avis = () => {
                 }}
 
                 navigation={false}
-                pagination={true}
+                // pagination={true}    
+                pagination={{
+                    dynamicBullets: true,
+                    clickable: true,
+                }}
+
                 modules={[EffectCoverflow, Navigation, Pagination]}
                 loop={true}
                 className="mySwiper"
