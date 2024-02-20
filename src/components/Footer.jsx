@@ -1,11 +1,8 @@
 import React from "react";
 import facebookIcon from '../assets/icons/Facebook.png'
-import twitterIcon from '../assets/icons/Twitter.png'
+import instagramIcon from '../assets/icons/instagram.png'
 import linkedinIcon from '../assets/icons/LinkedIn.png'
-import emailIcon from '../assets/icons/Email.png'
-import PhoneIcon from '../assets/icons/Phone.png'
-import { IoLocation } from "react-icons/io5";
-import { FaClock } from "react-icons/fa6";
+import phoneIcon from '../assets/icons/phone.svg'
 import {Link } from "react-router-dom";
 const Footer = () => {
 
@@ -17,52 +14,28 @@ const Footer = () => {
 
 
     return <footer className="footer">
-            <div className="footer__coordonnees">
-                 <div className="footer__adress">
-                    <p><IoLocation size={30} color="white"/>Adresse</p>
-                    <p><a href="https://maps.app.goo.gl/uEN1Kg6vP38o6mYp7" >44 avenue Albert Einstein, 17000 La Rochelle</a></p>
-                
-                 </div><br/>
-                 <div className="footer__email">
-                    <p><img className="footer__icon" src={emailIcon} alt="" />Email:</p>
-                    <p><a href="/" onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
-             
-                 </div><br/>
-                <div className="footer__tel">
-                    <p><img src={PhoneIcon} alt="" className="footer__icon" /> Tel:</p>                    
-                    <p><a href="tel:+33612345678">06.12.34.56.78</a></p>
+
+            <div className="footer__top">
+                <p>ArtfullCode est une entreprise international de développement logiciel basée à la rochelle et axée sur la confiance, la performance et l'écoute utilisateur</p><br></br>
+                <p><img src={phoneIcon} alt="phone icon" /> <a href="tel:0651358858"> +33 06 51 35 88 58</a></p>
+
+            </div>
+            <div className="footer__bottom">
+                <div className="footer__policy">
+                    <p className="footer"><a href="/">Privacy Policy</a></p>
+                    <p><a href="/">Cookie Policy</a></p>
                 </div>
-                
+                <div className="footer__logos">
+                    <img src={facebookIcon} alt="" className="footer__logo"/>
+                    <img src={instagramIcon} alt="" className="footer__logo"/>
+                    <img src={linkedinIcon} alt="" className="footer__logo"/>
+                </div>
+                <p>
+                <a href="/">© 2024 artfullcode. all rights reserved | by maneuver</a>
+                </p>
             </div>
 
-            <div className="footer__heure">
-              <p><FaClock size={25} color="white"/> Horaires: Du lundi au vendredi, de 8h à 17h </p>
-            </div>
 
-            <div className="footer__nav">
-                <nav >
-                    <ul className="footer__logos">
-                        <li className="footer__logo">
-                            <img src={facebookIcon} alt="" />
-                        </li>
-                        <li className="footer__logo"><img src={linkedinIcon} alt="" /></li>
-                        <li className="footer__logo"><img src={twitterIcon} alt="" /></li>
-                    </ul>
-                </nav><br/>
-                <p><Link to='/contact'>Nous contacter</Link></p><br/>
-                <p>Mentions Legales</p><br/>
-                <p>CGU</p><br/>
-
-            </div>
-
-            <div className="footer__mobile">
-
-                <h2>Artfull Code</h2>
-                <p><a href="https://maps.app.goo.gl/uEN1Kg6vP38o6mYp7" >44 avenue Albert Einstein, 17000 La Rochelle</a></p>
-                <p><a href={`mailto:${emailAddress}`} onClick={handleEmailClick}>artfullcode@gmail.com</a></p>
-                <p><a href="tel:+33612345678">Tel: 06.12.34.56.78</a></p>
-
-            </div>
         </footer>
 }
 export default Footer;

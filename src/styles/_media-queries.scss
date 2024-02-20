@@ -77,9 +77,11 @@
         }
     }
 
-    .footer {
-        font-size: clamp(12px, 1vw, 20px);
+    .footer{
+        font-size: clamp(12px,1vw,20px);
+
     }
+  
 
     .contact {
         display: flex;
@@ -314,27 +316,21 @@
     }
 
     .footer {
-        padding: 2rem 0;
-        justify-content: space-around;
 
-        &__heure,
-        &__coordonnees,
-        &__nav {
-            display: block;
-
-
+        &__bottom{
+            justify-content: space-between;
+            flex-direction: row ;
+            align-items: center;
+            padding: 0rem 5rem
+            
         }
 
-        &__mobile {
-            display: none;
+        &__top{
+            padding-left: 5rem;
+            width: 40%;
+            margin-bottom:5rem
         }
-
-        &__heure {
-            gap: 3px;
-        }
+      
     }
-
-
-
 
 }
