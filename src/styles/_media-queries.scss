@@ -77,11 +77,11 @@
         }
     }
 
-    .footer{
-        font-size: clamp(12px,1vw,20px);
+    .footer {
+        font-size: clamp(12px, 1vw, 20px);
 
     }
-  
+
 
     .contact {
         display: flex;
@@ -89,7 +89,9 @@
         padding: 2vh 5vw;
 
         &__speech {
-            display: inline;
+            // j'ai changé en bloc
+            // display: inline;
+            display: block;
         }
     }
 
@@ -317,20 +319,19 @@
 
     .footer {
 
-        &__bottom{
+        &__bottom {
             justify-content: space-between;
-            flex-direction: row ;
+            flex-direction: row;
             align-items: center;
             padding: 0rem 5rem
-            
         }
 
-        &__top{
+        &__top {
             padding-left: 5rem;
             width: 40%;
-            margin-bottom:5rem
+            margin-bottom: 5rem
         }
-      
+
     }
 
 }

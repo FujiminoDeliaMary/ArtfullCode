@@ -16,6 +16,20 @@
     }
 
 
+    // media du formulaire de contact 
+    .contactFooter {
+        .imageContact {
+            display: none;
+
+
+            // position: relative;
+            // width: 100%;
+            // top: -60vh;
+            // min-height: 50vh;
+            // z-index: -1;
+            // filter: blur(23px);
+        }
+    }
 }
 
 @media screen and (width > 667px) {
@@ -37,6 +51,18 @@
 
     }
 
+
+    // media du formulaire de contact 
+    .contactFooter {
+        .imageContact {
+            display: none;
+
+        }
+
+        &__speech>span {
+            text-align: center;
+        }
+    }
 
 }
 
@@ -64,4 +90,42 @@
             }
         }
     }
+
+    // formulaire de contact
+
+    .contactFooter {
+        .imageContact {
+            display: block;
+        }
+
+        &__speech {
+            // display: block;
+            margin-bottom: 5vh;
+            text-align: right;
+        }
+
+        &__form {
+            margin-top: 5vh;
+            width: 50%;
+        }
+
+        &__input {
+            min-height: 7vh;
+        }
+
+        &__contact {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .imageContact {
+            width: 45vw;
+            height: 58vh;
+            position: relative;
+            top: 7.5vh;
+        }
+    }
+
+
+
 }
