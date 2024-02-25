@@ -9,31 +9,6 @@
         overflow: hidden;
         background-color: rgba(39, 73, 109, 0.9);
 
-        &__logo {
-            margin-left: 2rem;
-        }
-
-        &__menuBurger {
-
-            z-index: 3000000;
-
-        }
-
-        &__menu {
-            width: 9vw;
-            height: 100%;
-
-            &.visible {
-                width: 30%;
-            }
-        }
-
-        &__navbar {
-            justify-content: space-between;
-            margin: 1rem 5rem;
-            font-family: 'Poppins', sans-serif;
-
-        }
 
 
     }
@@ -180,14 +155,21 @@
 
     .header {
 
-        &__navbar {
-            flex-direction: row;
+        &__nomAgence{
+            font-size: clamp(55px, 2.5rem, 67px);
+        }
+        &__navbar{
+            min-height: 80px;
+            display: flex;
             justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 0;
+
         }
 
-
-        &__logo {
-
+        &__logo{
+            display: block;
             width: clamp(18px, 3.8vw, 60px);
             position: relative;
             top: 0;
@@ -195,38 +177,67 @@
             margin-left: 3rem;
             transform: translateX(-50%);
             z-index: 30;
-
         }
 
-        &__arrow {
-            display: flex;
-            cursor: pointer;
-
-        }
-
-        &__menu {
-            width: 100%;
-            background-color: rgba(39, 73, 109, 0);
-            top: -20%;
+        .menu{
             position: fixed;
             left: 0;
-            height: fit-content;
+            min-height: 80px;
+            width: 100%;
+            background-color: rgba(39, 73, 109, 0.4);
+            align-items: center;
+            top:0;
             transition:
                 top 0.2s ease-out,
                 opacity 0.2s ease-out;
 
-            &.visible {
-                width: 100%;
+            &.visible{
+               
+                opacity: 1;
+                top:0;
                 transition:
                     opacity 0.2s ease-out,
                     top 0.2s ease-out;
             }
-
-            &-list {
-                display: flex;
+            &__list{
                 flex-direction: row;
                 justify-content: center;
+                padding: 3rem 0;
+                gap:7rem;
+                top:0;
                 align-items: center;
+
+    
+            }
+
+            &__item{
+                border: none;
+                padding: 0;
+                width: fit-content;
+                font-size: clamp(15px, 1.7rem, 50px);
+
+                &::after {
+                    content: "";
+                    display: block;
+                    background-color: $orange;
+                    height: 2px;
+                    width: 0;
+                    border-radius: 10px;
+                    margin-top: 3px;
+                    transition: width 0.3s ease-out;
+                    transform: translateX(-50%);
+                    position: relative;
+                    left: 50%;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+    
+                    &::after {
+                        width: 100%;
+                        transition: width 0.3 ease-out;
+                    }
+                }
             }
         }
 

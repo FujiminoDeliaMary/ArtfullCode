@@ -62,21 +62,6 @@ const Equipe  = () => {
         </figcaption>
       </figure>
     </article>
-
-    <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
-
-  <path d="M 50 50 Q 150 0, 250 50" stroke="turquoise" fill="none"/>
-  
-
-  <circle cx="50" cy="50" r="30" fill="white" stroke="black"/>
-  
-
-  <text x="50" y="55" font-family="Satoshi, sans-serif" font-size="18" text-anchor="middle">1</text>
-  
-
-  <text x="50" y="80" font-family="Satoshi, sans-serif" font-size="18" text-anchor="middle">16%</text>
-</svg>
-
   </section>
 }
 

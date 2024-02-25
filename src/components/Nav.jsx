@@ -27,13 +27,13 @@ const Nav = (props) => {
       };
 
  
-    return <nav id="menu" className={(isVisible) ? "header__menu visible" : "header__menu"}>
-        <ul className="header__menu-list">
-            <li><a href="/">Accueil</a></li>
-            <li><Link to="equipe" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick} offset={-60}>Notre equipe</Link></li>
-            <li><Link to="services" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick} offset={-100}>Nos Services</Link></li>
-            <li><Link to="realisations" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick} offset={-100}>Nos réalisations</Link></li>
-            <li><a href="/contact">Contact</a></li>
+    return <nav id="menu" className={(isVisible) ? "menu visible" : "menu"}>
+        <ul className="menu__list">
+            <li className="menu__item"><a href="/">Accueil</a></li>
+            <li className="menu__item"><Link to="equipe" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick} offset={-60}>Notre equipe</Link></li>
+            <li className="menu__item"><Link to="services" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick} offset={-100}>Nos Services</Link></li>
+            <li className="menu__item"><Link to="realisations" activeClass="active" smooth={true} spy={true} onClick={handleLinkClick} offset={-100}>Nos réalisations</Link></li>
+            <li className="menu__item"><a href="/contact">Contact</a></li>
         </ul>
 
     </nav>
