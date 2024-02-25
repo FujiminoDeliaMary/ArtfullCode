@@ -131,8 +131,8 @@
     &__logo {
         width: clamp(20px, 20vw, 100px);
         position: absolute;
-        left:50%;
-        top:20%;
+        left: 50%;
+        top: 20%;
         transform: translateX(-50%);
     }
 
@@ -148,7 +148,8 @@
         padding: 1rem 0rem;
         border-radius: 50%;
         transition: all 0.2s ease-out;
-        width:3.5rem;
+        width: 3.5rem;
+
         &:hover {
             border: 4px $orange;
             transition: transform 0.2s ease-out,
@@ -190,7 +191,7 @@
         transform: translate(-50%, 50%);
         font-family: "Stick No Bills", sans-serif;
         text-align: center;
-        bottom: 48%;
+        bottom: 43%;
         color: $blanc;
         width: 100%;
     }
