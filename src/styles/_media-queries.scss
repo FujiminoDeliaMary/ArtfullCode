@@ -155,12 +155,16 @@
 
     .header {
 
-       
+        &__nomAgence{
+            font-size: clamp(55px, 2.5rem, 67px);
+        }
         &__navbar{
+            min-height: 80px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             position: relative;
-            padding: 0 1rem;
+            padding: 0;
 
         }
 
@@ -176,35 +180,64 @@
         }
 
         .menu{
-            top: -20%;
             position: fixed;
             left: 0;
-            min-height: fit-content;
-            
+            min-height: 80px;
+            width: 100%;
+            background-color: rgba(39, 73, 109, 0.4);
+            align-items: center;
+            top:0;
             transition:
                 top 0.2s ease-out,
                 opacity 0.2s ease-out;
 
             &.visible{
-                width: 100%;
-                top:2%;
+               
+                opacity: 1;
+                top:0;
                 transition:
                     opacity 0.2s ease-out,
                     top 0.2s ease-out;
             }
             &__list{
                 flex-direction: row;
-                background-color: rgba(39, 73, 109, 0.2);
                 justify-content: center;
-                gap:7rem
+                padding: 3rem 0;
+                gap:7rem;
+                top:0;
+                align-items: center;
+
+    
             }
 
             &__item{
                 border: none;
                 padding: 0;
                 width: fit-content;
-                padding: 4.5vh 0;
-                font-size: clamp(20px, 2rem, 50px);
+                font-size: clamp(15px, 1.7rem, 50px);
+
+                &::after {
+                    content: "";
+                    display: block;
+                    background-color: $orange;
+                    height: 2px;
+                    width: 0;
+                    border-radius: 10px;
+                    margin-top: 3px;
+                    transition: width 0.3s ease-out;
+                    transform: translateX(-50%);
+                    position: relative;
+                    left: 50%;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+    
+                    &::after {
+                        width: 100%;
+                        transition: width 0.3 ease-out;
+                    }
+                }
             }
         }
 

@@ -104,28 +104,7 @@
             border-top : 1px $marble solid;
             border-bottom : 1px $marble solid;
             width: 100%;
-            &::after {
-                content: "";
-                display: block;
-                background-color: $orange;
-                height: 2px;
-                width: 0;
-                border-radius: 10px;
-                margin-top: 3px;
-                transition: width 0.3s ease-out;
-                transform: translateX(-50%);
-                position: relative;
-                left: 50%;
-            }
-
-            &:hover {
-                cursor: pointer;
-
-                &::after {
-                    width: 100%;
-                    transition: width 0.3 ease-out;
-                }
-            }
+       
         }
     }
 
