@@ -21,8 +21,8 @@ const Equipe = () => {
             <p className="membre__filiere">Développeuse Full Stack</p>
           </div>
           <a href="https://www.linkedin.com/in/victoria-tandamba/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" className="membre__linkedin" /></a>
-
         </figcaption>
+
       </figure>
 
 
@@ -30,7 +30,7 @@ const Equipe = () => {
         <img src={deliaImg} alt="" className="equipe__img" />
         <figcaption className="membre">
           <div className="membre__infos">
-            <p className="membre__nom">Marilyne Tsene</p><br></br>
+            <p className="membre__nom">Marilyne D Tsene</p><br></br>
             <p className="membre__filiere">Développeuse Full Stack</p>
           </div>
           <a href="www.linkedin.com/in/delia-marilyne-tsene-4895a52a9" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" className="membre__linkedin" /></a>
@@ -63,7 +63,7 @@ const Equipe = () => {
       </figure>
     </article>
 
-    <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+    {/* <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
 
       <path d="M 50 50 Q 150 0, 250 50" stroke="turquoise" fill="none" />
 
@@ -75,7 +75,7 @@ const Equipe = () => {
 
 
       <text x="50" y="80" font-family="Satoshi, sans-serif" font-size="18" text-anchor="middle">16%</text>
-    </svg>
+    </svg> */}
 
   </section>
 }

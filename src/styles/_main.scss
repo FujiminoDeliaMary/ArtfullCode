@@ -144,8 +144,7 @@
         object-fit: cover;
         min-width: 100%;
         min-height: 40vh;
-        // a modifier si les images changent
-        padding-top: 2vh;
+
         //  background: linear-gradient(to bottom right, $blueberry, $marble);
         background: linear-gradient(to bottom, $blueberry, $marble);
         border-radius: 2px;
@@ -154,12 +153,15 @@
         padding: 2px;
 
 
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
     }
 
     &__fig {
 
         border-radius: 10px;
-        background-color: $marble;
+
         color: $black;
         overflow: hidden;
 

@@ -395,16 +395,16 @@ a:visited {
   object-fit: cover;
   min-width: 100%;
   min-height: 40vh;
-  padding-top: 2vh;
   background: linear-gradient(to bottom, #01254C, #F2F8FC);
   border-radius: 2px;
   box-shadow: 0px 0px 10px #F2F8FC;
   /* Ajoute une ombre pour l'effet de relief */
   padding: 2px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .equipe__fig {
   border-radius: 10px;
-  background-color: #F2F8FC;
   color: #141414;
   overflow: hidden;
 }
@@ -546,11 +546,37 @@ a:visited {
 .equipe__fig {
   /* Autres styles... */
   transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0), 0 1px 3px rgba(0, 0, 0, 0);
 }
-
 .equipe__fig:hover {
-  transform: translateY(-10px);
-  /* Déplace la carte vers le haut au survol */
+  transform: scale(1.05);
+  /* Agrandir légèrement la carte au survol */
+}
+.equipe__fig:hover .membre {
+  top: -5vh;
+  border-radius: 10px;
+  /* Déplacer les informations vers le haut au survol */
+  /* Bordure incurvée pour le coin supérieur droit */
+}
+.equipe__fig:hover .membre__infos {
+  transform: translateY(0);
+  /* Faire apparaître les informations au survol */
+}
+.equipe__fig:hover figcaption.membre {
+  transform: translateY(0);
+  /* Faire apparaître la figcaption au survol */
+}
+.equipe__fig .membre {
+  position: relative;
+  top: 10vh;
+  background-color: #F2F8FC;
+}
+.equipe__fig .membre__infos,
+.equipe__fig figcaption.membre {
+  transform: translateY(100%);
+  /* Cacher les informations initialement */
+  transition: transform 0.5s ease-in-out;
+  /* Ajouter une transition pour faire apparaître les informations en douceur */
 }
 
 .projet1 {
