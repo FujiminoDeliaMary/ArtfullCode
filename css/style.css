@@ -543,6 +543,16 @@ a:visited {
   font-family: "Poppins";
 }
 
+.equipe__fig {
+  /* Autres styles... */
+  transition: transform 0.3s ease-in-out;
+}
+
+.equipe__fig:hover {
+  transform: translateY(-10px);
+  /* Déplace la carte vers le haut au survol */
+}
+
 .projet1 {
   display: flex;
   flex-direction: column;
