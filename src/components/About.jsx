@@ -5,6 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import valuesImg from '../assets/Humaaans - 3 Characters.png'
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 
 const About = () => {
@@ -53,7 +54,7 @@ const About = () => {
                         <ul className="values__list">
                                 <Accordion className="values__item">
                                     <AccordionSummary
-                                        expandIcon={<ExpandMoreIcon />}
+                                        expandIcon={<MdKeyboardArrowDown size={25}/>}
                                         aria-controls="panel2-content"
                                         id="panel2-header"
                                  
@@ -69,7 +70,7 @@ const About = () => {
 
                                 <Accordion className="values__item">
                                     <AccordionSummary
-                                        expandIcon={<ExpandMoreIcon />}
+                                        expandIcon={<MdKeyboardArrowDown size={25}/>}
                                         aria-controls="panel2-content"
                                         id="panel2-header"
                                      
@@ -85,7 +86,7 @@ const About = () => {
 
                                 <Accordion className="values__item">
                                     <AccordionSummary
-                                        expandIcon={<ExpandMoreIcon />}
+                                        expandIcon={<MdKeyboardArrowDown size={25}/>}
                                         aria-controls="panel2-content"
                                         id="panel2-header"
                                        
@@ -102,7 +103,7 @@ const About = () => {
 
                                 <Accordion className="values__item">
                                     <AccordionSummary
-                                        expandIcon={<ExpandMoreIcon />}
+                                        expandIcon={<MdKeyboardArrowDown size={25}/>}
                                         aria-controls="panel2-content"
                                         id="panel2-header"
                                         

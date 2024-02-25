@@ -132,7 +132,7 @@
         margin: 0 auto;
         cursor: pointer;
         overflow: hidden;
-
+        z-index:1;
         &:active {
             box-shadow: none;
             transform: scale(0.95);
@@ -149,13 +149,15 @@
             background-color: $orange;
             height: 6vh;
             width: 0rem;
+            z-index: -1;
         }
 
         &:hover {
             &::after {
                 opacity: 1;
+                
                 width: 25rem;
-                transition: .100s all ease-in-out;
+                transition: .200s all ease-in-out;
             }
         }
     }
