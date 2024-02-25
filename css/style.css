@@ -394,6 +394,13 @@ a:visited {
 .equipe__img {
   object-fit: cover;
   min-width: 100%;
+  min-height: 40vh;
+  padding-top: 2vh;
+  background: linear-gradient(to bottom, #01254C, #F2F8FC);
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px #F2F8FC;
+  /* Ajoute une ombre pour l'effet de relief */
+  padding: 2px;
 }
 .equipe__fig {
   border-radius: 10px;

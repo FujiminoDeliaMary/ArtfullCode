@@ -121,62 +121,74 @@
 
 
 .equipe {
-   
+
     margin: 10vh 5rem;
 
-    &__title{
+    &__title {
 
         @include titre()
     }
 
-    &__membres{
+    &__membres {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         z-index: 1;
-        gap:5rem;
+        gap: 5rem;
 
         position: relative;
         width: 100%;
     }
 
-    &__img{
+    &__img {
         object-fit: cover;
-        min-width: 100%
+        min-width: 100%;
+        min-height: 40vh;
+        // a modifier si les images changent
+        padding-top: 2vh;
+        //  background: linear-gradient(to bottom right, $blueberry, $marble);
+        background: linear-gradient(to bottom, $blueberry, $marble);
+        border-radius: 2px;
+        box-shadow: 0px 0px 10px $marble;
+        /* Ajoute une ombre pour l'effet de relief */
+        padding: 2px;
+
+
     }
 
-    &__fig{
-    
+    &__fig {
+
         border-radius: 10px;
         background-color: $marble;
-        color:$black;
+        color: $black;
         overflow: hidden;
-        .membre{
+
+        .membre {
             padding: 2rem 1rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
-      
-            &__nom{
+
+            &__nom {
                 font-family: "Poppins", sans-serif;
                 font-size: clamp(15px, 1.2vw, 25px);
                 font-weight: 500;
             }
 
-            &__filiere{
+            &__filiere {
                 font-family: "Satoshi", sans-serif;
                 font-size: clamp(15px, 1vw, 20px);
             }
 
-            &__linkedin{
-                width:28px;
+            &__linkedin {
+                width: 28px;
                 height: 30px;
-           
+
             }
         }
     }
- 
-    
+
+
 
 }
 
