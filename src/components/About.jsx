@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import valuesImg from '../assets/Humaaans - 3 Characters.png'
 import { MdKeyboardArrowDown } from "react-icons/md";
+import CountUp from 'react-countup';
 
 
 const About = () => {
@@ -30,16 +31,16 @@ const About = () => {
 
                     <div className="stats">
                         <div className="stats__div">
-                            <h3 className="stats__number">600,000+ </h3>
+                            <h3 className="stats__number"><CountUp start={0} end={600000} duration={2.75} /> </h3>
                             <p>lignes de code</p>
                         </div>
 
                         <div className="stats__div">
-                            <h3 className="stats__number">53</h3>
+                            <h3 className="stats__number"><CountUp start={0} end={53} duration={2.75} /></h3>
                             <p>membres</p>
                         </div>
                         <div className="stats__div">
-                            <h3 className="stats__number">90%</h3>
+                            <h3 className="stats__number"><CountUp start={0} end={90} duration={2.75} />%</h3>
                             <p>de satisfaction</p>
                         </div>
                     </div>
