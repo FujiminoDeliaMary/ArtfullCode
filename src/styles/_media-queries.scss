@@ -28,23 +28,19 @@
     .realisations {
 
         &__projet {
-            flex-direction: row;
-            align-items: stretch;
-            justify-content: center;
-
-
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            gap:4rem
         }
 
         &__libelle {
-            flex-basis: 50%;
+            // flex-basis: 50%;
             text-align: center;
             padding: 2rem 1rem;
             background-color: none;
             border: 3px $bleu solid;
-            width: 100%;
-            max-width: 100%;
             height: 100%;
-            margin: 0 auto;
+       
 
         }
 
@@ -54,12 +50,12 @@
         }
 
         &__img {
-            flex-basis: 50%;
+           width: 30vw;;
             border-radius: 0;
             position: relative;
-            width: 45%;
             height: inherit;
-            object-fit: cover;
+            margin-left:3rem
+          
         }
     }
 
@@ -292,30 +288,48 @@
     }
 
     .realisations {
-
+        position: relative;
+        
         &__projet {
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
             display: flex;
-            align-items: stretch;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $marble;
+            padding: 3rem 7vw
+        }
+
+        &__img{
+        
+            width:17vw;
+            flex-basis: auto;
+            margin-right: 10rem;
+         
         }
 
         &__name {
             font-size: 1.5vw;
-            color: #ffff;
+            color: $bleu;
             text-align: left;
         }
 
-        &__libelle {
+        &__libelle {    
+            margin: 0;
             text-align: left;
             overflow: auto;
-            color: $blanc;
-
-            background-color: $bleu;
+            color: $bleu;
+            background-color: $marble;
+            justify-content:baseline;
+            border: none;
             width: 100%;
 
         }
 
         &__content {
-            font-size: clamp(17px, 1.1vw, 20px);
+            font-size: clamp(14px, 1vw, 20px);
+    
+           
         }
 
     }

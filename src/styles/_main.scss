@@ -28,10 +28,7 @@
         }
 
         &__title {
-            font-size: clamp(30px, 1.8vw, 33px);
-            font-family: 'David Libre';
-            font-weight: 600;
-            text-transform: uppercase;
+            @include titre();
         }
 
         .stats {
@@ -70,7 +67,6 @@
 
         &__title {
             @include titre();
-            font-family: 'David Libre';
 
             &::after {
                 display: none;
@@ -281,18 +277,20 @@
     &__projet {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 4vw;
     }
 
     &__img {
-        width: 100%;
+        width: 60vw;
         height: inherit;
         border-radius: 20px;
+        
 
     }
 
     &__name {
-        font-size: clamp(17px, 2.2vh, 20px);
+        font-size: clamp(25px, 2.2vw, 45px);
         color: $blueberry;
         font-weight: 600;
         margin-bottom: 2rem;
@@ -300,7 +298,7 @@
     }
 
     &__content {
-        font-size: clamp(13px, 1.1vw, 20px);
+        font-size: clamp(15px, 1.2vw, 20px);
         line-height: 1.4;
         font-family: 'Poppins';
 

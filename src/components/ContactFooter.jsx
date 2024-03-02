@@ -42,16 +42,19 @@ const ContactFooter = () => {
     console.log(formSubmitted);
     return <section class="contactFooter">
         <h2 className="contactFooter__title">Nous contacter</h2>
-        <h3 class="contactFooter__speech contact__speech"  ><TypeAnimation
-            sequence={[
-                'Notre équipe est à votre écoute',
-                <span className="contactFooter__speech--orange">écoute</span>,
-                1000,
-            ]}
-        />
-        </h3>
+ 
         <div className="contactFooter__contact">
+         
             <form className="contactFooter__form" action="contact.php" method="post" ref={form} onSubmit={sendEmail}>
+
+                <h3 class="contactFooter__speech contact__speech"  ><TypeAnimation
+                    sequence={[
+                        'Notre équipe est à votre écoute',
+                        <span className="contactFooter__speech--orange">écoute</span>,
+                        1000,
+                    ]}
+                />
+                </h3>
                 {formSubmitted === true && <p className={`contactFooter__alert ${isValidEmail ? 'valid' : 'invalid'}`}>{(!isValidEmail) ? 'Vous avez entré une mauvaise adresse Email' : 'Envoyé avec succès'}</p>}
 
 

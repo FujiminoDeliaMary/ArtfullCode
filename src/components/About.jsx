@@ -31,16 +31,16 @@ const About = () => {
 
                     <div className="stats">
                         <div className="stats__div">
-                            <h3 className="stats__number"><CountUp start={0} end={600000} duration={2.75} /> </h3>
+                            <h3 className="stats__number"><CountUp start={0} end={600000} duration={4} /> </h3>
                             <p>lignes de code</p>
                         </div>
 
                         <div className="stats__div">
-                            <h3 className="stats__number"><CountUp start={0} end={53} duration={2.75} /></h3>
+                            <h3 className="stats__number"><CountUp start={0} end={53} duration={4} /></h3>
                             <p>membres</p>
                         </div>
                         <div className="stats__div">
-                            <h3 className="stats__number"><CountUp start={0} end={90} duration={2.75} />%</h3>
+                            <h3 className="stats__number"><CountUp start={0} end={90} duration={4} />%</h3>
                             <p>de satisfaction</p>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const About = () => {
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography className="details">
-                                        Chez ArtFull Code, chaque ligne de code, chaque élément graphique est méticuleusement choisi et intégré pour transcender le simple site web. Nous créons des œuvres d'art digitales qui résistent à l'épreuve du temps et inspirent une connexion authentique entre votre marque et votre audience.
+                                        Chez ArtFull Code, nous plaçons la communication au cœur de notre processus créatif. Nous comprenons que l'établissement d'un dialogue ouvert et honnête entre nos équipes et nos clients est essentiel pour transformer une vision en réalité digitale. Notre approche repose sur l'écoute active, permettant de capturer l'essence de votre marque et de la transmettre à travers chaque aspect de votre site web. Nous croyons que c'est en parlant le même langage que nous pouvons créer des connexions durables et significatives.
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
@@ -80,7 +80,7 @@ const About = () => {
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography className="details">
-                                        Chez ArtFull Code, chaque ligne de code, chaque élément graphique est méticuleusement choisi et intégré pour transcender le simple site web. Nous créons des œuvres d'art digitales qui résistent à l'épreuve du temps et inspirent une connexion authentique entre votre marque et votre audience.
+                                        La créativité est le pilier de notre identité chez ArtFull Code. Nous embrassons l'innovation et l'originalité, cherchant constamment à repousser les limites de ce qui est possible dans le développement web. Notre équipe est composée de penseurs créatifs qui intègrent une perspective artistique unique dans chaque projet, garantissant que votre site se démarque non seulement techniquement, mais aussi esthétiquement. Nous ne nous contentons pas de créer des sites web; nous forgeons des expériences digitales immersives qui captivent et engagent.
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
@@ -96,8 +96,7 @@ const About = () => {
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography  className="details">
-                                        Chez ArtFull Code, chaque ligne de code, chaque élément graphique est méticuleusement choisi et intégré pour transcender le simple site web. 
-                                        Nous créons des œuvres d'art digitales qui résistent à l'épreuve du temps et inspirent une connexion authentique entre votre marque et votre audience.
+                                        "Sois le client" incarne notre philosophie centrée sur l'utilisateur chez ArtFull Code. Cette approche empathique nous guide à travers chaque décision de conception et de développement, nous assurant que nous répondons aux besoins réels de vos utilisateurs. En nous mettant à la place du client, nous pouvons anticiper les attentes et concevoir des solutions qui améliorent l'expérience utilisateur, augmentent l'engagement et favorisent la fidélité à la marque. Notre objectif est de créer des sites web qui ne se contentent pas de satisfaire les visiteurs, mais de les émerveiller.
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
@@ -113,7 +112,7 @@ const About = () => {
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography className="details">
-                                        Chez ArtFull Code, chaque ligne de code, chaque élément graphique est méticuleusement choisi et intégré pour transcender le simple site web. Nous créons des œuvres d'art digitales qui résistent à l'épreuve du temps et inspirent une connexion authentique entre votre marque et votre audience.
+                                        ArtFull Code est plus qu'un nom; c'est notre engagement envers l'excellence dans la fusion de l'art et de la technologie. Chaque projet est une toile où nous combinons des codes précis avec une conception visuelle impressionnante pour créer des sites web qui sont des chefs-d'œuvre numériques. Nous croyons que chaque pixel compte et que chaque ligne de code est une opportunité d'innover. Chez ArtFull Code, nous ne construisons pas simplement des sites web; nous sculptons des expériences digitales qui racontent l'histoire de votre marque de manière captivante et mémorable.
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
