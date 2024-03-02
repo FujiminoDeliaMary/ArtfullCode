@@ -1,55 +1,37 @@
 @media screen and (width < 667px) {
     .avis {}
 
-    .card {
 
-        &__description {
-            display: flex;
-            align-items: center;
-            gap: 5vw;
-        }
-
-        &__image {
-            max-width: 20vw;
-        }
-
-    }
 
 
     // media du formulaire de contact 
     .contactFooter {
         .imageContact {
             display: none;
-
-
-            // position: relative;
-            // width: 100%;
-            // top: -60vh;
-            // min-height: 50vh;
-            // z-index: -1;
-            // filter: blur(23px);
         }
     }
 }
 
 @media screen and (width > 667px) {
-    .avis {}
+    .avis {
+        .card {
 
-    .card {
-
-        &__description {
-            display: flex;
-            align-items: center;
-            gap: 7vw;
+            &__description {
+                display: flex;
+                align-items: center;
+                gap: 7vw;
+            }
+    
+            &__image {
+    
+                max-width: 10vw;
+                border-radius: 50%;
+            }
+    
         }
-
-        &__image {
-
-            max-width: 10vw;
-            border-radius: 50%;
-        }
-
     }
+
+
 
 
     // media du formulaire de contact 
