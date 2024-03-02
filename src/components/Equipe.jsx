@@ -30,10 +30,10 @@ const Equipe = () => {
         <img src={deliaImg} alt="" className="equipe__img" />
         <figcaption className="membre">
           <div className="membre__infos">
-            <p className="membre__nom">Marilyne D Tsene</p><br></br>
+            <p className="membre__nom">Marilyne Tsene</p><br></br>
             <p className="membre__filiere">Développeuse Full Stack</p>
           </div>
-          <a href="www.linkedin.com/in/delia-marilyne-tsene-4895a52a9" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" className="membre__linkedin" /></a>
+          <a href="https://www.linkedin.com/in/marilyne-tsene/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" className="membre__linkedin" /></a>
 
         </figcaption>
       </figure>
