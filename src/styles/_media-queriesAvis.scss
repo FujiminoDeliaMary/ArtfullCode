@@ -4,12 +4,6 @@
 
 
 
-    // media du formulaire de contact 
-    .contactFooter {
-        .imageContact {
-            display: none;
-        }
-    }
 }
 
 @media screen and (width > 667px) {
@@ -21,31 +15,15 @@
                 align-items: center;
                 gap: 7vw;
             }
-    
+
             &__image {
-    
+
                 max-width: 10vw;
                 border-radius: 50%;
             }
-    
+
         }
     }
-
-
-
-
-    // media du formulaire de contact 
-    .contactFooter {
-        .imageContact {
-            display: none;
-
-        }
-
-        &__speech>span {
-            text-align: center;
-        }
-    }
-
 }
 
 @media screen and (width > 1200px) {
@@ -70,41 +48,6 @@
                 // min-height: 20vw;
                 border-radius: 50%;
             }
-        }
-    }
-
-    // formulaire de contact
-
-    .contactFooter {
-        .imageContact {
-            display: block;
-        }
-
-        &__speech {
-            // display: block;
-            margin-bottom: 5vh;
-            text-align: right;
-        }
-
-        &__form {
-            margin-top: 5vh;
-            width: 50%;
-        }
-
-        &__input {
-            min-height: 7vh;
-        }
-
-        &__contact {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .imageContact {
-            width: 45vw;
-            height: 58vh;
-            position: relative;
-            top: 7.5vh;
         }
     }
 

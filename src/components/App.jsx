@@ -1,6 +1,4 @@
 import React from "react";
-import Contact from "../pages/Contact";
-import Realisation from "../pages/Realisation";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import Avis from "./Avis";
@@ -9,11 +7,9 @@ const App = () => {
     return <>
         <BrowserRouter>
             <Layout>
-              
+
                 <Routes>
                     <Route path="/" element={<Accueil />}></Route>
-                    <Route path="realisation" element={<Realisation />}></Route>
-                    <Route path="/contact" element={<Contact />} ></Route>
                     <Route path="*" element={<Avis />} ></Route>
                 </Routes>
             </Layout>
