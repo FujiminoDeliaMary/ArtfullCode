@@ -1,0 +1,55 @@
+@media screen and (width < 667px) {
+
+    .equipe__fig {
+        transform: scale(1.05);
+
+        /* Agrandir légèrement la carte au survol */
+        .membre {
+            top: -5vh;
+            border-radius: 10px;
+        }
+
+        .membre__infos {
+            transform: translateY(0);
+            /* Faire apparaître les informations au survol */
+        }
+
+        figcaption.membre {
+            transform: translateY(0);
+            /* Faire apparaître la figcaption au survol */
+        }
+    }
+}
+
+
+@media screen and (width > 1200px) {
+
+    .equipe {
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+        &__fig {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0), 0 1px 3px rgba(0, 0, 0, 0);
+
+            &:hover {
+                transform: scale(1.05);
+
+                /* Agrandir légèrement la carte au survol */
+                .membre {
+                    top: -5vh;
+                    border-radius: 10px;
+                }
+
+                .membre__infos {
+                    transform: translateY(0);
+                    /* Faire apparaître les informations au survol */
+                }
+
+                figcaption.membre {
+                    transform: translateY(0);
+                    /* Faire apparaître la figcaption au survol */
+                }
+            }
+
+        }
+    }
+}
