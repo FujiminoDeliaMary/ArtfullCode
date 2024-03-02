@@ -118,11 +118,12 @@
 
 .equipe {
 
-    margin: 10vh 5rem;
+    margin: 10vh 7rem;
+    padding: 1vh 3vw;
 
     &__title {
 
-        // @include titre()
+        @include titre()
 
     }
 
@@ -131,8 +132,6 @@
         justify-content: center;
         flex-wrap: wrap;
         z-index: 1;
-        gap: 5rem;
-
         position: relative;
         width: 100%;
     }
