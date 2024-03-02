@@ -2,7 +2,7 @@ import React from "react";
 import cole from '../assets/membres/cole.jpg'
 import linkedin from '../assets/icons/LinkedIn.png'
 import victoriaImg from '../assets/membres/victoriaphoto2.png';
-import loaneImg from '../assets/membres/loanephoto2.png';
+import loaneImg from '../assets/membres/loanphoto1.png';
 import deliaImg from '../assets/membres/deliaphoto2.png';
 import clarenceImg from '../assets/membres/clarencephoto2.png'
 
