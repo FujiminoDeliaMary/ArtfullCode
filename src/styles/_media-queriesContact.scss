@@ -1,0 +1,78 @@
+@media screen and (width < 667px) {
+
+    // media du formulaire de contact 
+    .contact {
+        .imageContact {
+            display: none;
+
+        }
+
+        &__speech>span {
+            text-align: center;
+        }
+    }
+
+
+
+    // media du formulaire de contact 
+    .contact {
+        .imageContact {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (width > 667px) {
+
+    // media du formulaire de contact 
+    .contact {
+        .imageContact {
+            display: none;
+
+        }
+
+        &__speech>span {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (width > 1200px) {
+    // formulaire de contact
+
+    .contact {
+        display: flex;
+
+        .imageContact {
+            display: block;
+        }
+
+        &__speech {
+            display: block;
+            margin-bottom: 5vh;
+            text-align: right;
+        }
+
+        &__form {
+            margin-top: 5vh;
+            width: 50%;
+        }
+
+        &__input {
+            min-height: 7vh;
+        }
+
+        &__groupe {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .imageContact {
+            width: 45vw;
+            height: 58vh;
+            position: relative;
+            top: 3vh;
+        }
+    }
+}

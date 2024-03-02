@@ -5,17 +5,14 @@
     display: block;
     padding: 7rem;
 
+    &__groupe {
+        // display: flex;
+        align-items: center
+    }
+
     &__title {
 
-        width: fit-content;
-        padding: 3vh 4vw;
-        color: #000000;
-        border-radius: 10px;
-        font-size: 3rem;
-        text-align: center;
-        margin: 0 auto;
-        font-weight: 600;
-        font-family: "David Libre", sans-serif;
+        @include titre();
 
         &::after {
             content: '';
@@ -54,20 +51,18 @@
         }
     }
 
+    &__speech {
+        display: none;
+        font-size: clamp(25px, 2vw, 60px);
+        color: $blueberry;
+        // flex-basis: 40%;
+        text-align: center;
+        margin-bottom: 5vh;
 
-
-
-    // j'ai mis en commentaire pour pouvoir bien l'utiliser dans contactFooter
-    // &__speech{
-    //     display: none;
-    //     font-size:clamp(25px, 2vw, 60px);
-    //     color:$blueberry;
-    //     flex-basis: 40%;
-
-    //     &--orange{
-    //         color:$orange;
-    //     }
-    // }
+        &--orange {
+            color: $orange;
+        }
+    }
 
     &__form {
 
@@ -82,9 +77,8 @@
     &__label {
         color: $blueberry;
         font-size: clamp(14px, 1.1vw, 20px);
-        ;
         font-weight: 500;
-
+        margin-bottom: 10px;
     }
 
     &__input,
@@ -96,6 +90,8 @@
         font-size: clamp(14px, 1.1vw, 20px);
         width: 100%;
         background: transparent;
+        margin-top: 1.5vh;
+        background-color: $marble;
 
         &:focus {
             outline: none;
@@ -112,7 +108,8 @@
     }
 
     &__textarea {
-        border: 2px solid $blueberry
+        border: 2px solid $blueberry;
+
     }
 
     &__submit {
@@ -128,6 +125,7 @@
         margin: 0 auto;
         cursor: pointer;
         overflow: hidden;
+        z-index: 1;
 
         &:active {
             box-shadow: none;
@@ -145,14 +143,18 @@
             background-color: $orange;
             height: 6vh;
             width: 0rem;
+            z-index: -1;
         }
 
         &:hover {
             &::after {
                 opacity: 1;
+
                 width: 25rem;
-                transition: .100s all ease-in-out;
+                transition: .200s all ease-in-out;
             }
         }
     }
+
+
 }

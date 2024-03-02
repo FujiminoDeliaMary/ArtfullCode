@@ -4,7 +4,7 @@ import instagramIcon from '../assets/icons/instagram.png'
 import linkedinIcon from '../assets/icons/LinkedIn.png'
 import phoneIcon from '../assets/icons/phone.svg'
 import { Link } from "react-router-dom";
-import ContactFooter from "./ContactFooter";
+import Contact from "./Contact";
 const Footer = () => {
 
     const emailAddress = 'marilynedelia@gmail.com';
@@ -16,7 +16,7 @@ const Footer = () => {
 
     return (
         <>
-            <ContactFooter />
+            <Contact />
 
             <footer className="footer">
 
