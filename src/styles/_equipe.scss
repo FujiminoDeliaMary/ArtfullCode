@@ -10,11 +10,6 @@
         .membre {
             top: -5vh;
             border-radius: 10px;
-            /* Déplacer les informations vers le haut au survol */
-            // border-top-left-radius: 30%;
-            // /* Bordure incurvée pour le coin supérieur gauche */
-            // border-top-right-radius: 30%;
-            /* Bordure incurvée pour le coin supérieur droit */
         }
 
         .membre__infos {
@@ -40,5 +35,27 @@
         /* Cacher les informations initialement */
         transition: transform 0.5s ease-in-out;
         /* Ajouter une transition pour faire apparaître les informations en douceur */
+    }
+}
+
+.equipe {
+    // background-color: $marble;
+    padding: 1vh 5vw;
+    border-radius: 5px;
+    // box-shadow: $blueberry 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, $bleuocean 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, $blueberry 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, $bleu 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, $blueberry 40px -40px;
+
+    &__title {
+        // padding: 7vh 1vw;
+        // text-transform: uppercase;
+        // font-weight: 600;
+        // text-align: center;
+        // font-size: clamp(30px, 1.8vw, 33px);
+        // width: -moz-fit-content;
+        // width: fit-content;
+        // margin: 0 auto;
+        // margin-bottom: 5vh;
+        // font-family: "David Libre";
+        @include titre();
+        // color: $bleu;
     }
 }
