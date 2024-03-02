@@ -1,6 +1,82 @@
-/* debut de nos avis */
-.avis {
+// /* debut de nos avis */
+// .avis {
 
+    // &__title {
+    //     @include titre()
+    // }
+
+    // padding: {
+    //     left: 4vw;
+    //     right: 4vw;
+    // }
+
+//     .card {
+//         // margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         // align-items: center;
+//         opacity: 1;
+//         // background-color: #fafaff;
+//         transition: opacity 0.3s ease-in-out;
+//         color: $bleu;
+//         box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+//             rgba(17, 17, 26, 0.05) 0px 8px 32px;
+//         border: 1px solid $bleu;
+//         padding: 4vh 2vw;
+//         gap: 5vh;
+//         border-radius: 10px;
+//         margin-bottom: 5vh;
+//         // min-height: 20vh; /* Hauteur fixe pour chaque carte */
+//         // min-width: clamp(400px, 18vw, 576px);
+//         padding-left: 5vw;
+//         padding-right: 5vw;
+
+//         &__image {
+//             border-radius: 70%;
+//         }
+
+//         &__nom {
+//             font-family: 'Poppins';
+//             font-size: clamp(20px, 1.4rem, 40px);
+//             font-weight: 800;
+//             margin-bottom: 2vh;
+//         }
+
+//         &__job {
+//             font-family: 'Poppins', sans-serif;
+//             // text-align: center;
+//             font-size: clamp(17px, 1.4rem, 40px);
+
+//         }
+
+//         &__avis {
+//             // text-align: justify;
+//             line-height: 1.2;
+//             font-size: clamp(17px, 1.5rem, 40px);
+//             min-height: 15vh;
+//         }
+
+//         &__description {
+//             display: flex;
+//             align-items: center;
+//             // gap: 10vw;
+
+//         }
+
+//         &__notes {
+//             // margin-top: 3vh;
+//             margin-bottom: 2vh;
+//             padding-bottom: 5vh;
+//             border-bottom: 0.5px $bleu solid;
+//         }
+
+
+//     }
+
+// }
+
+.avis{
+    
     &__title {
         @include titre()
     }
@@ -14,66 +90,62 @@
         // margin: 0 auto;
         display: flex;
         flex-direction: column;
-        // align-items: center;
+     
         opacity: 1;
-        // background-color: #fafaff;
+        
         transition: opacity 0.3s ease-in-out;
-        color: $bleu;
-        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
-            rgba(17, 17, 26, 0.05) 0px 8px 32px;
-        border: 1px solid $bleu;
+        color: $bleu; ;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        border: 1px solid $bleu; 
         padding: 4vh 2vw;
         gap: 5vh;
         border-radius: 10px;
         margin-bottom: 5vh;
-
+        min-height: 500px; 
+    
         padding-left: 5vw;
         padding-right: 5vw;
-
+      
         &__image {
-            border-radius: 70%;
+          border-radius: 70%;
         }
-
+      
         &__nom {
-            font-family: 'Poppins';
-            font-size: clamp(20px, 1.4rem, 40px);
-            font-weight: 800;
-            margin-bottom: 2vh;
+          font-family: 'Poppins';
+          font-size: clamp(20px, 1.4rem, 40px);
+          font-weight: 800;
+          margin-bottom: 2vh;
         }
-
+      
         &__job {
-            font-family: 'Poppins', sans-serif;
-            // text-align: center;
-            font-size: clamp(17px, 1.4rem, 40px);
-
+          font-family: 'Poppins', sans-serif;
+          font-size: clamp(17px, 1.4rem, 40px);
         }
-
+      
         &__avis {
-            // text-align: justify;
-            line-height: 1.2;
-            font-size: clamp(17px, 1.5rem, 40px);
-            min-height: 10vh;
+          line-height: 1.2;
+          font-size: clamp(17px, 1.5rem, 40px);
+          min-height: 15vh;
         }
-
+      
         &__description {
-            display: flex;
-            align-items: center;
-            // gap: 10vw;
-
+          display: flex;
+          align-items: center;
+       
         }
-
+      
         &__notes {
-            // margin-top: 3vh;
-            margin-bottom: 2vh;
-            padding-bottom: 5vh;
-            border-bottom: 0.5px $bleu solid;
+      
+          margin-bottom: 2vh;
+          padding-bottom: 5vh;
+          border-bottom: 0.5px solid $bleu; 
         }
-
-
-    }
-
+      }
+    
 }
 
+
+  
 .leSvg {
     display: flex;
     position: relative;

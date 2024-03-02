@@ -16,7 +16,6 @@ const Footer = () => {
 
     return (
         <>
-            <Contact />
 
             <footer className="footer">
 
