@@ -5,17 +5,14 @@
     display: block;
     padding: 7rem;
 
+    &__contact{
+        display:flex;
+        align-items: center
+    }
+
     &__title {
 
-        width: fit-content;
-        padding: 3vh 4vw;
-        color: #000000;
-        border-radius: 10px;
-        font-size: 3rem;
-        text-align: center;
-        margin: 0 auto;
-        font-weight: 600;
-        font-family: "David Libre", sans-serif;
+        @include titre();
 
         &::after {
             content: '';

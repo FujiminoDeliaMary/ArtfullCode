@@ -39,7 +39,8 @@ $black:#141414;
   }
 
   @mixin titre{
-    font-family: "David Libre" sans-serif;
+    font-family: "David Libre" ,sans-serif;
+    color: $bleu;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
@@ -53,9 +54,10 @@ $black:#141414;
         display: block;
         width: 70%;
         margin: 0 auto;
-        height: 1px;
+        height: 3px;
+
         margin-top: 4%;
-        background-color: #0e0c0c;
+        background-color: $bleu;
       
     }
   }
