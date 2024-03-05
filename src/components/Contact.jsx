@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import emailjs from '@emailjs/browser'
 import imageContact from "../assets/services/image-formation.jpg"
+import { orange } from "@mui/material/colors";
 
 const Contact = () => {
 
@@ -47,13 +48,15 @@ const Contact = () => {
 
             <form className="contact__form" action="contact.php" method="post" ref={form} onSubmit={sendEmail}>
 
-                <h3 class="contact__speech contact__speech"  ><TypeAnimation
+                <h3 class="contact__speech contact__speech"  >
+                <TypeAnimation
                     sequence={[
                         'Notre équipe est à votre écoute',
-                        <span className="contact__speech--orange">écoute</span>,
+                         <span className="contact__speech--orange" style={{ color:orange }}>écoute</span>,
                         1000,
                     ]}
-                />
+                    repeat={Infinity}
+                    />
                 </h3>
                 {formSubmitted === true && <p className={`contact__alert ${isValidEmail ? 'valid' : 'invalid'}`}>{(!isValidEmail) ? 'Vous avez entré une mauvaise adresse Email' : 'Envoyé avec succès'}</p>}
 

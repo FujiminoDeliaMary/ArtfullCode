@@ -3,7 +3,7 @@
 .footer {
 
     padding: 2rem 1rem;
-    background-color: $blueberry;
+    background-color: $bleu;
     color: $nacre;
     
     font-family: 'Satoshi', sans-serif;
@@ -12,13 +12,13 @@
         line-height: 1.2;
         display: flex;
         align-items: center;
-        width: 100%;
+        width: fit-content;
         font-family: 'Satoshi', sans-serif;
         a{
             color:$nacre;
             &:hover{
                 color: $orange;
-                transition: .2s solor ease-in-out;
+                transition: .2s color ease-in-out;
             }
         }
      
@@ -29,7 +29,7 @@
         align-items: center;
         text-align: left;
         width: 100%;
-        border-top: 1px solid $bleu;
+        border-top: 1px solid $nacre;
         gap:2rem;
         margin: 0
     }
